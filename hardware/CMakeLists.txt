@@ -34,7 +34,7 @@ endfunction()
 
 if (DEFINED kibot_EXECUTABLE)
     message("Configure PCBs")
-    add_subdirectory(AccelTag)
+    # add_subdirectory(AccelTag)
     add_subdirectory(BitTagv5)
     add_subdirectory(BitTagv7)
     add_subdirectory(MultiCharger)
