@@ -1,0 +1,1 @@
+add_pcb_outputs(MultiCharger ${CMAKE_CURRENT_SOURCE_DIR})

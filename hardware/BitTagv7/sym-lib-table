@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name bittagv7)(type Legacy)(uri ${KIPRJMOD}/../kicad_libraries/lib_sch/bittagv7.lib)(options "")(descr ""))
+  (lib (name tag-rescue)(type Legacy)(uri ${KIPRJMOD}/tag-rescue.lib)(options "")(descr "")(disabled))
+  (lib (name tag-v7-rescue)(type Legacy)(uri ${KIPRJMOD}/tag-v7-rescue.lib)(options "")(descr "")(disabled))
+)

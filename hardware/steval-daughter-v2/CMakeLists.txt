@@ -1,0 +1,1 @@
+add_pcb_outputs(steval-daughter-v2)

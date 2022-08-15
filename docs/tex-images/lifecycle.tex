@@ -1,0 +1,47 @@
+\documentclass[tikz, crop, convert=pdf2svg]{standalone}
+\usetikzlibrary{calc,arrows,automata,fit,backgrounds}
+\usetikzlibrary{shapes.geometric,shapes.symbols}
+
+\begin{document}
+
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=4.5cm,
+  thick,state/.style={circle,draw,minimum size=2.5cm,fill=white},
+  initial text=init]
+  \tikzstyle{surround} = [fill=blue!5,draw=black,rounded corners=2mm]
+%  scale=0.8, every node/.style={scale=0.8},
+ 
+ 
+  \node[initial left,state]   (IDLE)                         {\bf Idle};
+  
+   \node[state] (TEST) [below of=IDLE]  {\bf Test};
+ 
+\node[state]           (CONFIGURED) [right of=IDLE ,node distance=5cm]          {\bf Configured};
+  \node[state]           (RUNNING)   [right of=CONFIGURED]     {\bf Running};
+\node[state]     (RESET)     [below of=CONFIGURED]           {\bf Reset};
+
+\node[state]           (ABORTED)   [right of=RESET]     {\bf Aborted};
+\node[state]           (FINISHED)  [right of=ABORTED]     {\bf Finished};
+\node[state]           (HIBERNATING) [right of=RUNNING] {\bf Hibernating};
+\path 
+      (IDLE)      edge               node {Start(Config)}            (CONFIGURED)
+      (CONFIGURED) edge [dashed]     node {Config.start}                                        (RUNNING)
+      (CONFIGURED) edge               node [right] {Stop()}              (ABORTED)
+      (RUNNING)   edge         node {Stop() or Config.end}                                        (FINISHED)
+      (RUNNING)   edge [dashed]       node {(1)}                                       (ABORTED)
+      (ABORTED)   edge              node [above]{Erase()}                (RESET)
+      (FINISHED)  edge  [bend left]    node(l1) [below]{Erase()} (RESET)
+      (RESET)     edge  [dashed] (IDLE)
+      (IDLE)      edge [bend right] node {Test(n)} (TEST)
+      (TEST)      edge [dashed,bend right] (IDLE)
+      (RUNNING)   edge [dashed,bend right] node {(2)} (HIBERNATING)
+      (HIBERNATING) edge [dashed,bend right] (RUNNING);
+
+\begin{pgfonlayer}{background}
+\node[surround] (background) [ fit = (CONFIGURED) (RUNNING) (HIBERNATING), label={right:Active}] {Active};
+\node[surround] (background) [ fit = (RESET) (ABORTED) (FINISHED) (l1),label={right:Completed}] {Dirty};
+\end{pgfonlayer}
+
+\end{tikzpicture}
+
+\end{document}
+

@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name PresOptTag-v1-rescue)(type Legacy)(uri ${KIPRJMOD}/PresOptTag-v1-rescue.lib)(options "")(descr ""))
+  (lib (name at25xe)(type Legacy)(uri ${KIPRJMOD}/at25xe.lib)(options "")(descr ""))
+  (lib (name lps27)(type Legacy)(uri ${KIPRJMOD}/lps27.lib)(options "")(descr ""))
+  (lib (name parts)(type Legacy)(uri ${KIPRJMOD}/parts.lib)(options "")(descr ""))
+  (lib (name PresOptTag-v1-0201-rescue)(type Legacy)(uri ${KIPRJMOD}/PresOptTag-v1-0201-rescue.lib)(options "")(descr ""))
+  (lib (name PresTag-v3-rescue)(type Legacy)(uri ${KIPRJMOD}/PresTag-v3-rescue.lib)(options "")(descr ""))
+)

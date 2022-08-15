@@ -1,0 +1,18 @@
+\documentclass[tikz, crop, convert=pdf2svg]{standalone}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes.geometric,shapes.symbols,shadows}
+
+
+\makeatletter
+\tikzset{reset preactions/.code={\def\tikz@preactions{}}}
+\makeatother
+
+\begin{document}
+\begin{tikzpicture}[align=center]
+\tikzstyle{Dotted} = [draw=black,dashed,thick,rectangle,minimum width=120mm,minimum height=33mm]
+\tikzstyle{Normal} = [draw=black,thick,rectangle,minimum width=108mm,minimum height=12mm]
+\node[label=left:host,label={[label distance=5.5mm]},dotted](Host){};
+
+
+\end{tikzpicture}
+\end{document}

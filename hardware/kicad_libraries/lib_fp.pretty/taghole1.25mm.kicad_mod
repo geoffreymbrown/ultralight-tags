@@ -1,0 +1,9 @@
+(module library:taghole1.25mm (layer F.Cu) (tedit 5AB50DD1)
+  (fp_text reference J304 (at 0 1.9812) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Conn_01x01 (at -0.0254 -1.778) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 1.25 1.25) (drill 1.25) (layers *.Cu *.Mask))
+)

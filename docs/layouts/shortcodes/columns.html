@@ -1,0 +1,8 @@
+<div class="row">
+    {{ range split .Inner "<--->" }}
+    <div class="col-md">
+      {{ . | markdownify }}
+    </div>
+    {{ end }}
+</div>
+  

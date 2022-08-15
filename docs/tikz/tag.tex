@@ -1,0 +1,59 @@
+\documentclass[tikz,crop,convert=pdf2svg]{standalone}
+\usetikzlibrary{arrows.meta, bending, calc,fit,positioning,shapes,backgrounds}
+
+\usepackage[latin1]{inputenc}
+\usepackage{verbatim}
+
+\pgfdeclarelayer{bg1}
+\pgfdeclarelayer{bg2}
+\pgfsetlayers{bg1,bg2,main}
+
+\begin{document}
+
+\begin{tikzpicture}[auto,
+        ->,thick,
+        node distance = 0.5cm and 1cm,
+        state/.style = {draw, rounded corners=1.5mm,
+                             inner ysep=2mm, inner xsep=4mm,
+                             minimum height=6ex,
+                             text width=18mm, align=center},
+                    ]
+\linespread{0.8}
+
+\node[state,dashed,fill=white] (Flash) {External Flash};
+\node[state,dashed,fill=white] (SenseHigh)[below=of Flash] {High $I_q$ Sensors};
+\node[state,fill=none] (Label1) [below= of SenseHigh,draw=none]{Switched};
+
+\begin{pgfonlayer}{bg2}
+  \node[state,inner sep=10pt] (Switched)
+       [fit=(Flash)(SenseHigh)(Label1),fill=blue!10,thick]{};
+\end{pgfonlayer}
+
+\node[state,fill=white] (Processor) [right=2
+cm of Flash]{Processor};
+\node[state,dashed,fill=white] (SenseLow)[below=of Processor] {Low $I_q$ Sensors};
+\node[state,fill=white] (RTC)[above=of Processor] {RTC};
+\node[fill=none](Label2)[below=of SenseLow,draw=none]{Always On};
+
+\begin{pgfonlayer}{bg2}
+  \node[state,inner sep=10pt](UnSwitched)
+  [fit=(RTC)(Processor)(SenseLow)(Label2),fill=blue!10, thick]{};
+\end{pgfonlayer}  
+
+\node[state,fill=white](Battery)[right=2cm of Processor] {Battery};
+\node[state,dashed,fill=white](Regulator)[below=of Battery]{Regulator};
+\node[state,fill=none](Label3)[below=of Regulator,draw=none]{Power};
+\begin{pgfonlayer}{bg2}
+  \node[state,inner sep=10pt](Power)
+       [fit=(Battery)(Regulator)(Label3),fill=blue!10, thick]{};
+\end{pgfonlayer}  
+
+\node[state,fill=white](Interface)[above=of Power]{Interface};
+\begin{pgfonlayer}{bg1}
+  \node[state,inner sep=10pt](Tag)
+      [fit=(Switched)(UnSwitched)(Power)(Interface),fill=blue!5, thick]{};
+\end{pgfonlayer}         
+\draw [-] (UnSwitched) -- (UnSwitched-|Switched.east);
+\draw[-](UnSwitched) -- (UnSwitched-|Power.west);
+\end{tikzpicture}
+\end{document}
