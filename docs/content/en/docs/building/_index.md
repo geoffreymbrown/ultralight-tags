@@ -22,6 +22,8 @@ used to exchange data and control messages with the tags, and
 ChibiOS, which is the embedded operating system (RTOS) used in the 
 tags.  Finally there is a directory (cmake) and files (CMakeLists.txt) used by the CMake build system.
 
+**Note** it's better to install nanopb from the available binary as this is less likely to have version problems with the install protoc
+
 
 
 ```
@@ -74,7 +76,7 @@ cd target_directory_name
 git submodule update --init --recursive 
 ```
 
-The repository for this project includes two *submodules* -- nanopb and ChibiOS; these are external repositories upon which our system builds.  Nanopb is a code library and tool for creating the communication code used in our tags to communicate with the host applications.  ChibiOS is an excellent embedded operating systems that is used on our tags.
+The repository for this project includes one *submodules* -- ChibiOS; these are external repositories upon which our system builds. Nanopb used to be installed as a submodule but it's best to install the available binary distribution in the named directory. Nanopb is a code library and tool for creating the communication code used in our tags to communicate with the host applications.  ChibiOS is an excellent embedded operating systems that is used on our tags.
 
 The line `git submodule...` initializes these submodules and clones their contents.
 

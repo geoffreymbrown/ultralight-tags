@@ -10,7 +10,7 @@ type: docs
 
 * CMake
 * protobuf
-* nanopb  (submodule)
+* nanopb  (install binary version https://jpa.kapsi.fi/nanopb/download/ in root_dir/nanopb)
 * QT5
 
 ## Host
