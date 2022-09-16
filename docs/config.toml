@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "NanoLoggers"
+title = "Sub-gram Tags"
 
 enableRobotsTXT = true
 canonifyURLS = true
@@ -71,7 +71,7 @@ anchor = "smart"
 
 [languages]
 [languages.en]
-title = "NanoLoggers"
+title = "Sub-gram Tags"
 description = "Ultralight data loggers for songbirds"
 languageName ="English"
 # Weight used for sorting.

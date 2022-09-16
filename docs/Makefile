@@ -1,10 +1,10 @@
 .PHONY: public
 public : 
-	hugo -d ../public -b "https://pages.github.iu.edu/geobrown/NanoTag-paper/"
+	hugo -d ../public -b "https://pages.github.com/geoffreymbrown/abt-tag"
 
 install : public
 	rsync -rcv --delete --exclude=.git \
-	../public/  ../../NanoTag-paper-gh-pages
+	../public/  ../../abt-tag-gh-pages
 
 .PHONY: clean
 clean:

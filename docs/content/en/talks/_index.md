@@ -4,7 +4,7 @@ linkTitle: "Talks"
 weight: 20
 type: docs
 description: >
-  "Talks about NanoLoggers."
+  "Talks about Tags."
 menu:
   main:
     weight: 40

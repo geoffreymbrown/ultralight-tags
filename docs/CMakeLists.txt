@@ -40,7 +40,7 @@ foreach(f ${SRC_FILES})
 endforeach()
 
 add_custom_target(docs 
-COMMAND hugo -d "${CMAKE_CURRENT_BINARY_DIR}/public/" -s "${CMAKE_CURRENT_SOURCE_DIR}" -b "https://pages.github.iu.edu/geobrown/ab-tag/"
+COMMAND hugo -d "${CMAKE_CURRENT_BINARY_DIR}/public/" -s "${CMAKE_CURRENT_SOURCE_DIR}" -b "https://pages.github.com/geoffreymbrown/ab-tag/"
 )
 
 add_custom_command(TARGET docs POST_BUILD COMMAND rsync -rcv --delete --exclude=.git "${CMAKE_CURRENT_BINARY_DIR}/public/" "${CMAKE_BINARY_DIR}/../ab-paper-gh-pages")

@@ -8,7 +8,7 @@ description: >
     Installing and building software and hardware design files
 ---
 
-The NanoLogger system consists of software, both host and embedded, and hardware including printed circuit boards (PCBs) and 3D printed adapters.  Consequently, there are a relatively large number of software tools involved.   All of the software and 
+The tag system consists of software, both host and embedded, and hardware including printed circuit boards (PCBs) and 3D printed adapters.  Consequently, there are a relatively large number of software tools involved.   All of the software and 
 hardware designs (source code) are available in the [github repository](https://git.iu.edu/geobrown/Nanotag-paper).  While you can explore that repository on-line, in order to compile the code and generate the processing files necessary to build boards, it is necessary to first
 *clone* the repository as described in [Installing the Repository]({{< ref "#install-1" >}})
 
@@ -56,11 +56,11 @@ printed bases.
 
 The software directory includes separate sub-directories for embedded and host code, and a directory for the protocol definitions used to communicate between the host and the tags.
 
-All of the software and hardware for NanoLoggers can be compiled (built) on Windows, OS X, or Linux.  Enabling this process requires
+All of the software and hardware for tags can be compiled (built) on Windows, OS X, or Linux.  Enabling this process requires
 installing a number of programs and libraries.  There are 
 differences in the installation and build process for the three 
 platforms that will be called out.  In this section we describe
-the processes for *cloning* the NanoLogger repository and installing the CMake build system.  The tools and libraries required to perform a build are discussed in separate sections for
+the processes for *cloning* the tag repository and installing the CMake build system.  The tools and libraries required to perform a build are discussed in separate sections for
 hardware and software.
 
 ##  1. Installing the Repository {#install-1}

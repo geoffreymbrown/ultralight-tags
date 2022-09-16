@@ -37,7 +37,7 @@ class="ml-2"
 {{< class "pure-u-3-4" >}}
 
 This website documents 
-the use, design, and fabrication of **NanoLoggers** which are custom tags 
+the use, design, and fabrication of  custom tags 
 below the mass and power budgets of most low-energy devices -- $1g$ and $1\mu W$, respectively --
 that can collect continuous data for up to a year.  The tags we present are *archival*, which
 means that the data they collect can only be downloaded by retrieving the tags. 
