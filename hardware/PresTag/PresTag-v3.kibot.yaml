@@ -98,7 +98,7 @@ outputs:
           name: Manufacturer
         - field: MPN
           name: 'Mfg Part #'
-        - field: Digikey
+        - field: DISTPN
           name:  'Digikey Part #'
         - field: Description
           name: Description/Value
