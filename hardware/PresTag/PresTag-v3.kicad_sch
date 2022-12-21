@@ -1501,7 +1501,7 @@
     (property "Reference" "U302" (id 0) (at 124.46 80.01 0)
       (effects (font (size 1.524 1.524)) (justify right))
     )
-    (property "Value" "stm32l431kc" (id 1) (at 128.27 93.98 0)
+    (property "Value" "stm32l412kb" (id 1) (at 128.27 93.98 0)
       (effects (font (size 1.524 1.524)) (justify right))
     )
     (property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" (id 2) (at 87.63 76.2 0)
@@ -2528,7 +2528,7 @@
       (reference "U2") (unit 1) (value "LPS27HHWTR") (footprint "QFN_HHWTR_STM")
     )
     (path "/00000000-0000-0000-0000-000058a7531d"
-      (reference "U302") (unit 1) (value "stm32l431kc") (footprint "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm")
+      (reference "U302") (unit 1) (value "stm32l412kb") (footprint "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm")
     )
     (path "/00000000-0000-0000-0000-00005ef60ddb"
       (reference "U501") (unit 1) (value "RV-3028-C7") (footprint "library:RV-8803-C7")

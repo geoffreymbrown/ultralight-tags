@@ -64,11 +64,11 @@ outputs:
         - from_output: PCBWay_drill
           dest: /
 
-  - name: "jlc-cpl"
+  - name: "pcbway-pos"
     type: position
-    dir: Production
+    dir: Production/PCBWay
     options:
-      output: '%f_cpl_jlc.%x'
+      output: '%f_pos_pcb_way.%x'
       format: CSV
       units: millimeters
       separate_files_for_front_and_back: false
