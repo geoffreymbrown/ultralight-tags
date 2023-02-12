@@ -18,7 +18,7 @@ function(add_nanopb_target name)
   set(NANOPB_OPTIONS "-I${CMAKE_CURRENT_SOURCE_DIR}"
                      --experimental_allow_proto3_optional)
   set(NANOPB_DEPENDS tag.options tagdata.options)
-  nanopb_generate_cpp(NANOPROTO_SRCS NANOPROTO_HDRS ${TAG_PROTO_SOURCES})
+  NANOPB_GENERATE_CPP(NANOPROTO_SRCS NANOPROTO_HDRS ${TAG_PROTO_SOURCES})
 
   add_custom_target(
     ${name}_proto_sources ALL

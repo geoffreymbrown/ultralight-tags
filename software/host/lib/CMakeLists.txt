@@ -13,6 +13,9 @@ else()
      find_package(libusb-1.0 REQUIRED)
 endif()
 
+find_package(PkgConfig REQUIRED)
+    pkg_check_modules(libusb REQUIRED libusb-1.0)
+
 #
 # Create tag library 
 #

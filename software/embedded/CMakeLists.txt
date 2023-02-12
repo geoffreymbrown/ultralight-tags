@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 find_program(GCCARM arm-none-eabi-gcc REQUIRED)
 if(MSVC)
-  find_program(FMPP fmpp fmpp.bat PATHS "c:/Program Files/fmpp/bin" REQUIRED)
+  find_program(FMPP fmpp fmpp.bat )#PATHS "c:/Program Files/fmpp/bin" REQUIRED)
 else()
   find_program(FMPP fmpp REQUIRED)
 endif()
@@ -25,8 +25,9 @@ if(MSVC)
   find_program(
     STM32_PROGRAMMER
     NAMES STM32_Programmer_CLI STM32_Programmer_CLI.exe
-    PATHS
-      "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin")
+    #PATHS
+    # "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin"
+    )
 else()
   find_program(
     STM32_PROGRAMMER

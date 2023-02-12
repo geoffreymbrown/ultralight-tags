@@ -20,13 +20,14 @@ set(CMAKE_AUTOUIC ON)
 
 # Find the QtWidgets library
 
-find_package(Qt5 COMPONENTS Core Widgets PrintSupport CONFIG)
+find_package(Qt6 COMPONENTS Core Widgets PrintSupport CONFIG)
 
-if (NOT Qt5_FOUND) 
-  message("Qt5 not found")
-  message("Cannot build btviz")
-  return()
-endif()
+if (NOT Qt6_FOUND) 
+    message("Qt6 not found")
+    message("Cannot build btviz")
+    return()
+  endif()
+
 
 # Populate a CMake variable with the sources
 
@@ -57,6 +58,6 @@ elseif(WIN32)
 #windeployqt(btviz)
 endif()
 
-target_link_libraries(btviz PRIVATE Qt5::Widgets Qt5::PrintSupport)
+target_link_libraries(btviz PRIVATE Qt6::Widgets Qt6::PrintSupport)
 
 
