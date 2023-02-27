@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 set (CMAKE_CXX_STANDARD 14)
+set(CMAKE_OSX_DEPLOYMENT_TARGET "12.3" CACHE STRING "Minimum OS X deployment version")
 
 if (MSVC)
     set(Protobuf_USE_STATIC_LIBS ON)

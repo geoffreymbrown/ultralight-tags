@@ -53,6 +53,9 @@ set_target_properties(btviz
 
 if (APPLE)
 include(DeployQt)
+set_target_properties(btviz PROPERTIES
+    MACOSX_BUNDLE TRUE
+)
 macdeployqt(btviz)
 elseif(WIN32)
 #windeployqt(btviz)
