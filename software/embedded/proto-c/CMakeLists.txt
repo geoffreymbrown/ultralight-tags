@@ -20,6 +20,11 @@ function(add_nanopb_target name)
   set(NANOPB_DEPENDS tag.options tagdata.options)
   nanopb_generate_cpp(NANOPROTO_SRCS NANOPROTO_HDRS ${TAG_PROTO_SOURCES})
 
+
+  #execute_process(COMMAND ${NANOPB_GENERATOR_SOURCE_DIR}/nanopb_generator
+  #                   ${NANOPB_OPTIONS}
+  #                   NANOPROTO_SRCS NANOPROTO_HDRS ${TAG_PROTO_SOURCES} -D ${CMAKE_CURRENT_BINARY_DIR} )
+
   add_custom_target(
     ${name}_proto_sources ALL
     DEPENDS ${NANOPROTO_SRCS} ${NANOPROTO_HDRS} tag.options tagdata.options

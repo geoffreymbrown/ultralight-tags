@@ -96,7 +96,11 @@ include $(CHIBIOS)/os/license/license.mk
 include $(CHIBIOS)/os/common/startup/ARMCMx/compilers/GCC/mk/startup_stm32l4xx.mk
 # HAL-OSAL files (optional).
 include $(CHIBIOS)/os/hal/hal.mk
+ifdef USE_STM32L412
+include $(CHIBIOS)/os/hal/ports/STM32/STM32L4xx/platform_l412_l422.mk
+else
 include $(CHIBIOS)/os/hal/ports/STM32/STM32L4xx/platform_l432.mk
+endif
 
 include $(CHIBIOS)/os/hal/osal/rt-nil/osal.mk
 # RTOS files (optional).
@@ -106,7 +110,11 @@ include $(CHIBIOS)/os/common/ports/ARMCMx/compilers/GCC/mk/port_v7m.mk
 #include $(CHIBIOS)/os/hal/lib/streams/streams.mk
 include $(CHIBIOS)/tools/mk/autobuild.mk
 # Define linker script file here
+ifdef USE_STM32L412
+LDSCRIPT= ../common/USE_STM32L412.ld
+else
 LDSCRIPT= ../common/STM32L432xC.ld
+endif
 #$(STARTUPLD)/
 
 # C sources that can be compiled in ARM or THUMB mode depending on the global

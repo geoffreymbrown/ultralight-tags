@@ -1,6 +1,6 @@
 # List of all the project related files.
 USE_HAL_I2C_FALLBACK = yes
-include $(BOARDDIR)/PresTagv3/board.mk
+include $(BOARDDIR)/TagSteval/board.mk
 
 ALLCSRC += \
        at25xe.c \

@@ -11,7 +11,7 @@
   <board_name>Tag Steval I2C</board_name>
   <board_id>TAG_Steval_I2C</board_id>
   <board_functions></board_functions>
-  <subtype>STM32L412xx</subtype>
+  <subtype>STM32L432xx</subtype>
   <clocks
     HSEFrequency="0"
     HSEBypass="false"
@@ -102,7 +102,7 @@
         AnalogSwitch="Disabled"
         PinLock="Disabled" />
       <pin8
-        ID="STEVAL_CS"
+        ID=""
         Type="PushPull"
         Level="Low"
         Speed="Low"
@@ -112,7 +112,7 @@
         AnalogSwitch="Disabled"
         PinLock="Disabled" />
       <pin9
-        ID="STEVAL_SCL"
+        ID=""
         Type="PushPull"
         Level="High"
         Speed="Maximum"
@@ -122,11 +122,11 @@
         AnalogSwitch="Disabled"
         PinLock="Disabled" />
       <pin10
-        ID="STEVAL_SDA"
-        Type="OpenDrain"
+        ID="STEVAL_CS"
+        Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
+        Resistor="Floating"
         Mode="Analog"
         Alternate="0"
         AnalogSwitch="Disabled"
@@ -234,7 +234,7 @@
         AnalogSwitch="Disabled"
         PinLock="Disabled" />
       <pin5
-        ID=""
+        ID="STEVAL_PWR"
         Type="PushPull"
         Level="High"
         Speed="High"
@@ -264,7 +264,7 @@
         AnalogSwitch="Disabled"
         PinLock="Disabled" />
       <pin8
-        ID="STEVAL_PWR"
+        ID=""
         Type="PushPull"
         Level="High"
         Speed="Maximum"
