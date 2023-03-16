@@ -339,7 +339,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "tag-v7.kicad_pro",
+    "filename": "BitTagv7.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -410,7 +410,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
