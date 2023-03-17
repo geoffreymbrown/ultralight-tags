@@ -108,13 +108,7 @@ outputs:
         hide_pcb_info: true
         hide_stats_info: true
         quote_all: false
-
-  - name: 'pcb draw'
-    comment: "Generate 2d rendering"
-    type: pcbdraw
-    options: 
-      format: 'svg'
-
+        
   - name: "Schematic-PDF"
     comment: "Schematic as PDF"
     type: pdf_sch_print
