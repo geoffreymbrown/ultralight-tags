@@ -24,7 +24,7 @@ pogo_box_width = 7;          // width of pogo pin group
 
 //
 // PCB cutout and Base dimensions
-// These neeed to be gathered from
+// These need to be gathered from
 // kicad pcb file
 //
 pcb_min_thick = 0.6;                   // fiberglass thickness

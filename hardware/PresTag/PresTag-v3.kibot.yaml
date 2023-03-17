@@ -109,16 +109,22 @@ outputs:
         hide_stats_info: true
         quote_all: false
 
-  - name: 'step'
-    comment: "Step file of board"
-    type: step
-    options:
-      download: false
+  - name: 'pcb draw'
+    comment: "Generate 2d rendering"
+    type: pcbdraw
+    options: 
+      format: 'svg'
+
+  - name: "Schematic-PDF"
+    comment: "Schematic as PDF"
+    type: pdf_sch_print
 
   - name: 'render 3d'
     comment: "Generate 3d rendering"
     type: render_3d
 
-  - name: "Schematic-PDF"
-    comment: "Schematic as PDF"
-    type: pdf_sch_print
+  - name: 'step'
+    comment: "Step file of board"
+    type: step
+    options:
+      download: false
