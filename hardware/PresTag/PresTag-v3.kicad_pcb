@@ -29,6 +29,19 @@
   )
 
   (setup
+    (stackup
+      (layer "F.SilkS" (type "Top Silk Screen"))
+      (layer "F.Paste" (type "Top Solder Paste"))
+      (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
+      (layer "F.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 1" (type "core") (thickness 0.31) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "B.Cu" (type "copper") (thickness 0.035))
+      (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
+      (layer "B.Paste" (type "Bottom Solder Paste"))
+      (layer "B.SilkS" (type "Bottom Silk Screen"))
+      (copper_finish "None")
+      (dielectric_constraints no)
+    )
     (pad_to_mask_clearance 0)
     (aux_axis_origin 139.33 112.941)
     (grid_origin 139.33 112.941)
@@ -367,6 +380,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0201_0603Metric" (layer "F.Cu")
@@ -477,7 +495,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 22999e73-da32-43a5-9163-4b3a41614f25)
     )
-    (fp_text value "at25ex321D-UUN" (at 0 2.76 90) (layer "F.Fab")
+    (fp_text value "at25ex321D-UUN" (at 0 2.76 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6e68f0cd-800e-4167-9553-71fc59da1eeb)
     )
@@ -774,27 +792,27 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3a15ecec-5f11-41c5-be63-847a48aadf23)
     )
-    (fp_text user "0.026in/0.66mm" (at 0 3.3782 90) (layer "Dwgs.User")
+    (fp_text user "0.026in/0.66mm" (at 0 3.3782 90) (layer "Dwgs.User") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 77cd617c-f6a0-4e1e-8c0b-b00656df71c1)
     )
-    (fp_text user "0.024in/0.6mm" (at -3.053 0 90) (layer "Dwgs.User")
+    (fp_text user "0.024in/0.6mm" (at -3.053 0 90) (layer "Dwgs.User") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp af68bb2a-a049-4667-86c9-e505f1f7703e)
     )
-    (fp_text user "0.08in/2.042mm" (at 0 6.604 90) (layer "Dwgs.User")
+    (fp_text user "0.08in/2.042mm" (at 0 6.604 90) (layer "Dwgs.User") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b93b5cc0-2d9d-4c15-a53e-ad8cb1d162ae)
     )
-    (fp_text user "0.016in/0.406mm" (at -4.069 1.016 90) (layer "Dwgs.User")
+    (fp_text user "0.016in/0.406mm" (at -4.069 1.016 90) (layer "Dwgs.User") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp dc800e96-a700-4c63-87eb-4cf6622b5999)
     )
-    (fp_text user "0.02in/0.508mm" (at -1.021 -4.064 90) (layer "Dwgs.User")
+    (fp_text user "0.02in/0.508mm" (at -1.021 -4.064 90) (layer "Dwgs.User") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f9efdbea-dba7-4125-aa22-eb9f21a6e6d3)
     )
-    (fp_text user "Copyright 2016 Accelerated Designs. All rights reserved." (at 0 0 90) (layer "Cmts.User")
+    (fp_text user "Copyright 2016 Accelerated Designs. All rights reserved." (at 0 0 90) (layer "Cmts.User") hide
       (effects (font (size 0.127 0.127) (thickness 0.002)))
       (tstamp 3e4f9a46-b7cc-455c-89fd-e6bfeced4c04)
     )
@@ -879,7 +897,7 @@
     (fp_line (start -1.3462 0.5032) (end -1.3462 0.0968) (layer "F.Fab") (width 0.1524) (tstamp f92c6be6-1242-4ec0-8603-ab6f8cb6b6e6))
     (fp_line (start -1.3462 -1.3462) (end -1.3462 -1.3462) (layer "F.Fab") (width 0.1524) (tstamp fac78da5-61e9-4a6c-bf61-2e9b36345241))
     (pad "1" smd rect (at -1.020999 -0.299999 180) (size 0.4064 0.508) (layers "F.Cu" "F.Paste" "F.Mask")
-      (net 17 "/LPS_PWR") (pinfunction "VDD_IO") (pintype "power_in") (tstamp 49b21ae4-3f65-4644-84d9-ccac78d49444))
+      (net 17 "/LPS_PWR") (pinfunction "VDD_IO") (pintype "passive") (tstamp 49b21ae4-3f65-4644-84d9-ccac78d49444))
     (pad "2" smd rect (at -1.020999 0.299999 180) (size 0.4064 0.508) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 20 "/LPS_SCK") (pinfunction "SCL/SPC") (pintype "input") (tstamp fa3e5820-ec21-4580-9b1c-e7a097bae9b5))
     (pad "3" smd rect (at -0.599999 1.016 90) (size 0.4064 0.508) (layers "F.Cu" "F.Paste" "F.Mask")
@@ -897,7 +915,7 @@
     (pad "9" smd rect (at 0 -1.016 90) (size 0.4064 0.508) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp ad3fa417-1054-4459-ab2a-e6725567c92e))
     (pad "10" smd rect (at -0.599999 -1.016 90) (size 0.4064 0.508) (layers "F.Cu" "F.Paste" "F.Mask")
-      (net 17 "/LPS_PWR") (pinfunction "VDD") (pintype "power_in") (tstamp 7671347b-e457-4b8f-9e6b-86f1020596ad))
+      (net 17 "/LPS_PWR") (pinfunction "VDD") (pintype "input") (tstamp 7671347b-e457-4b8f-9e6b-86f1020596ad))
     (pad "11" smd rect (at 0 0 90) (size 0.6604 0.6604) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 5bdb9952-d729-4cc2-b367-92988bb91c0e))
     (model "${KIPRJMOD}/lps27.step"
@@ -1111,7 +1129,7 @@
     (pad "8" smd roundrect locked (at -2.4375 -1.75) (size 0.875 0.25) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 29 "unconnected-(U302-Pad8)") (pinfunction "PA2") (pintype "bidirectional+no_connect") (tstamp 5bcace5d-edd0-4e19-92d0-835e43cf8eb2))
     (pad "9" smd roundrect locked (at -1.75 -2.4375) (size 0.25 0.875) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
-      (net 1 "GND") (pinfunction "PA3") (pintype "bidirectional") (tstamp bd065eaf-e495-4837-bdb3-129934de1fc7))
+      (net 1 "GND") (pinfunction "PA3") (pintype "passive") (tstamp bd065eaf-e495-4837-bdb3-129934de1fc7))
     (pad "10" smd roundrect locked (at -1.25 -2.4375) (size 0.25 0.875) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 13 "/AT25_nCS") (pinfunction "PA4") (pintype "bidirectional") (tstamp 6ec113ca-7d27-4b14-a180-1e5e2fd1c167))
     (pad "11" smd roundrect locked (at -0.75 -2.4375) (size 0.25 0.875) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)

@@ -48,7 +48,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [
         "silk_overlap|145620476|111451000|30f15357-ce1d-48b9-93dc-7d9b1b2aa048|efeac2a2-7682-4dc7-83ee-f6f1b23da506",
         "silk_overlap|147419922|111748097|d5641ac9-9be7-46bf-90b3-6c83d852b5ba|4107d40a-e5df-4255-aacc-13f9928e090c"
@@ -120,7 +126,12 @@
         0.0,
         0.254
       ],
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
