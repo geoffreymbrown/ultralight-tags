@@ -82,6 +82,7 @@ outputs:
        sketch_plot: false 
        polygon_mode: false
        metric_units: true
+       use_aux_axis_as_origin: true
 
   - name: "csv-bom"
     comment: "Bill of Materials in CSV format"
