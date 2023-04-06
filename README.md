@@ -152,3 +152,17 @@ $env:Path += "; C:\Program Files\fmpp\bin"
 $env:Path += "; C:\Program Files\Java\jre1.8.0_261\bin"
 $env:Path += "; C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin"
 $env:Path += "; C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\SDK\ScopeCppSDK\vc15\SDK\bin"
+
+
+# Notes on universal binary
+
+cmake ~/Research/ultralight-tags    -DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" -DCMAKE_OSX_DEPLOYMENT_TARGET="12.3"
+
+libusb
+
+ ./configure CFLAGS="-arch x86_64 -arch arm64" CXXFLAGS="-arch x86_64 -arch arm64"
+
+ protobuf
+
+ ./configure CFLAGS="-arch x86_64 -arch arm64" CXXFLAGS="-arch x86_64 -arch arm64"
+ 
