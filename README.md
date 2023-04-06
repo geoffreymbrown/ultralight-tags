@@ -14,6 +14,20 @@ Building the dmg file
 
 cpack -G DragNDrop
 
+Building QT
+
+https://doc.qt.io/qt-6/macos-building.html
+
+
+_ ./configure -- -DCMAKE_OSX_ARCHITECTURES="x86_64h;arm64"
+
+Install	macports
+
+sudo port install libusb-1.0
+#sudo port install qt6
+
+
+
 
 # building with MSVC
 
