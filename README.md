@@ -19,13 +19,12 @@ Building QT
 https://doc.qt.io/qt-6/macos-building.html
 
 
-./configure -- -DCMAKE_OSX_ARCHITECTURES="x86_64h;arm64"
+_ ./configure -- -DCMAKE_OSX_ARCHITECTURES="x86_64h;arm64"
 
 Install	macports
 
-sudo port install libusb +universal
+sudo port install libusb-1.0
 #sudo port install qt6
-sudo port install protobuf-c +universal
 
 
 
@@ -176,10 +175,6 @@ cmake ~/Research/ultralight-tags    -DCMAKE_OSX_ARCHITECTURES="x86_64;arm64" -DC
 libusb
 
  ./configure CFLAGS="-arch x86_64 -arch arm64" CXXFLAGS="-arch x86_64 -arch arm64"
-
- or 
-
- port install libusb +universal
 
  protobuf
 

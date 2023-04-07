@@ -1,11 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 set (CMAKE_CXX_STANDARD 14)
-
-if(APPLE)
-    set (CMAKE_OSX_DEPLOYMENT_TARGET "12.3" CACHE STRING "Minimum OS X deployment version" FORCE)
-    set (CMAKE_OSX_ARCHITECTURES "x86_64;arm64" CACHE STRING "Architectures" FORCE)
-endif()
-
+set(CMAKE_OSX_DEPLOYMENT_TARGET "12.3" CACHE STRING "Minimum OS X deployment version")
+set(CMAKE_OSX_SYSROOT "/Users/geobrown/Software/macos-sdk/MacOSX12.3.sdk")
 
 if (MSVC)
     set(Protobuf_USE_STATIC_LIBS ON)
