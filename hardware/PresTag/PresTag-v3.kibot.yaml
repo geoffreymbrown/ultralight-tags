@@ -110,11 +110,12 @@ outputs:
         hide_stats_info: true
         quote_all: false
 
-  - name: "csv-cost"
-    comment: "Bill of Materials with cost in CSV format"
-    type: kicost
-    options:
-      number: 100
+ # - name: "csv-cost"
+ 
+ #   comment: "Bill of Materials with cost in CSV format"
+ #   type: kicost
+ #   options:
+ #     number: 100
         
   - name: "Schematic-PDF"
     comment: "Schematic as PDF"
