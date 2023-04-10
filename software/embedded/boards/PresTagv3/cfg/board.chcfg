@@ -8,8 +8,8 @@
     <output_path>..</output_path>
     <hal_version>5.0.x</hal_version>
   </configuration_settings>
-  <board_name>Tag Steval I2C</board_name>
-  <board_id>TAG_Steval_I2C</board_id>
+  <board_name>PresTag v4</board_name>
+  <board_id>PresTag_v4</board_id>
   <board_functions></board_functions>
   <subtype>STM32L432xx</subtype>
   <clocks
