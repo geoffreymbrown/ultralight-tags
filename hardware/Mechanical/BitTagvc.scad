@@ -24,10 +24,10 @@ pogo_box_width = 7;          // width of pogo pin group
 
 //
 // PCB cutout and Base dimensions
-// These need to be gathered from
+// These neeed to be gathered from
 // kicad pcb file
 //
-pcb_min_thick = 0.6;                   // fiberglass thickness
+pcb_min_thick = 0.4;                   // fiberglass thickness
 pcb_thick     = 4.0;                    // pcb clearance  (for sweeping space)
 pcb_clearance = 0.006*25.4;             // edge clearance (routing error)
 pcb_len       = 13.5 + pcb_clearance*2;
@@ -171,7 +171,7 @@ module makeBase() {
              // thin battery end
   // battery
          translate([pcb_len/2.0+6.5,0,pcb_min_thick])cylinder(r=6.5,h=pcb_thick);
-	        translate([pcb_len/2 - 2,-7/2,0.6])
+	        translate([pcb_len/2 - 2,-7/2,pcb_min_thick])
 	         cube([5,7,pcb_thick]);
 	               
         };
