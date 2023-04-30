@@ -1,0 +1,25 @@
+{
+    "layout": {
+        "hspace": "5mm",
+        "vspace": "5mm",
+        "rows": "5",
+        "cols": "4",
+        "vbonecut": "False",
+        "hbonecut": "False"
+    },
+    "tabs": {
+        "type": "fixed",
+        "vwidth": "28mm",
+        "hwidth": "14mm",
+        "fillet": "0.5mm"
+    },
+    "framing": {
+        "type": "frame",
+        "fillet": "1mm"
+    },
+    "text": {
+        "type": "simple",
+        "voffset": "2mm",
+        "text": "PresTag Coating Tool"
+    }
+}
