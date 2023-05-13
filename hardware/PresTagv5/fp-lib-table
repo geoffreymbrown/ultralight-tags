@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "bittag")(type "KiCad")(uri "${KIPRJMOD}/../tag_fp.pretty")(options "")(descr ""))
+  (lib (name "lib_fp")(type "KiCad")(uri "/home/geobrown/Research/abt-tag-paper/hardware/kicad_libraries/lib_fp.pretty")(options "")(descr ""))
+)
