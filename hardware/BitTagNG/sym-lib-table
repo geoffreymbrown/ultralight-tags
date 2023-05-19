@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "BitTagNG")(type "KiCad")(uri "${KIPRJMOD}/BitTagNG.kicad_sym")(options "")(descr ""))
+  (lib (name "adxl367")(type "KiCad")(uri "${KIPRJMOD}/adxl367.kicad_sym")(options "")(descr ""))
+)
