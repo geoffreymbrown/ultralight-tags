@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.15)
 
-find_program(kibot_EXECUTABLE kibot ENV KIBOT)
+find_program(kibot_EXECUTABLE kibot 
+             HINTS /Applications/KiCad/KiCad.app/Contents/Frameworks/Python.framework/Versions/3.8/bin/
+             NO_CACHE)
 
 function (add_pcb_outputs name)
 
