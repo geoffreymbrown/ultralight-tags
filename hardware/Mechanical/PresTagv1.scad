@@ -177,6 +177,10 @@ module makeBase() {
             translate([-4,0,-pogo_pin_height+0.4])
                  rotate(a=[0,180,-90])linear_extrude(0.5)	
                  text(text=version_string,size=2,halign="center");
+            
+            #translate([3,4.3,pogo_pin_height+1.6])
+                 linear_extrude(0.5)       
+                 text(text="*",size=0.75,halign="center");
 
              // thin battery end
   // battery

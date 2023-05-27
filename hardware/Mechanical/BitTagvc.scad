@@ -3,7 +3,7 @@ $fn = 120; // steps in generating circles
 makelid = true;
 makebase = true;
 
-version_string = "BitTagVC"; // imprinted in base and lid
+version_string = "BitTagVD"; // imprinted in base and lid
 
 // helper function
 // create a cube centered [x/2,y/2,0]
@@ -167,6 +167,9 @@ module makeBase() {
             translate([-4,0,-pogo_pin_height+0.4])
                  rotate(a=[0,180,-90])linear_extrude(0.5)	
                  text(text=version_string,size=2,halign="center");
+           translate([8,4.5,pcb_thick/2-0.4])
+                 linear_extrude(0.5)       
+                 text(text="*",size=3,halign="center");
 
              // thin battery end
   // battery
@@ -197,9 +200,12 @@ module makeLid(){
 		           pcb_width,3]);
         };
 	     // text
-  	     #translate([-1,0,2.5])
+  	     translate([-1,0,2.5])
 	     rotate(a=[0,0,-90])linear_extrude(0.6)
              text(text=version_string,size=2,halign="center",valign="center");
+         translate([3.5,1,2.5])
+                 linear_extrude(0.6)       
+                 text(text="*",size=3,halign="center");
     }; // difference end
 }
 
