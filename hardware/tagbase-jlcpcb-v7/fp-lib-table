@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "tagbase")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libraries/lib_fp.pretty")(options "")(descr ""))
+)
