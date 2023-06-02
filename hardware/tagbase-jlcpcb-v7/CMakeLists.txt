@@ -1,1 +1,1 @@
-add_pcb_outputs(tagbase-jlcpcb-v3)
+add_pcb_outputs(tagbase-jlcpcb-v7)
