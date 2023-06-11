@@ -3,7 +3,7 @@ $fn = 120; // steps in generating circles
 makelid = true;
 makebase = true;
 
-version_string = "BitTagVD"; // imprinted in base and lid
+version_string = "BitTagVE"; // imprinted in base and lid
 
 // helper function
 // create a cube centered [x/2,y/2,0]
@@ -29,7 +29,7 @@ pogo_box_width = 7;          // width of pogo pin group
 //
 pcb_min_thick = 0.4;                   // fiberglass thickness
 pcb_thick     = 4.0;                    // pcb clearance  (for sweeping space)
-pcb_clearance = 0.006*25.4;             // edge clearance (routing error)
+pcb_clearance = 0.004*25.4;             // edge clearance (routing error)
 pcb_len       = 13.5 + pcb_clearance*2;
 pcb_width     = 9 + pcb_clearance*2;
     // battery support lip, length is arbitrary since this is just
@@ -51,7 +51,7 @@ base_height      = pogo_pin_height + 2;//1.5;  // base holds 1.5mm board
 cut_depth        = 1.5;                    // clearance under board
 post_rad         = 3.0;                    // radius of post support
 post_hole_insert = 1.65;                   // clearance for 2-56 insert
-post_hole_screw  = 1.2;                    // clearance for 2-56 screw
+post_hole_screw  = 1.3;                    // clearance for 2-56 screw
 post_off         = -5.0;                   // offset from pogo pin
 post_dist        = 20.0;                   // distance between posts
 align_pin_off    = [-5.0,6.5];             // alignment pin offset
