@@ -1337,7 +1337,8 @@
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid ebdb4809-c4a6-4b15-a87a-ea8e0c3f7cb0)
   )
-  (text "Switch to AMS1117-3.3 for basic part" (at 142.24 39.37 0)
+  (text "Switch to AMS1117-3.3 for basic part\n\nNB Need either a schottky diode or a regulator with reverse current protection"
+    (at 142.24 39.37 0)
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid f431281d-cd00-46d4-9afc-c374f58366af)
   )
