@@ -1337,8 +1337,8 @@
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid ebdb4809-c4a6-4b15-a87a-ea8e0c3f7cb0)
   )
-  (text "Switch to AMS1117-3.3 for basic part\n\nNB Need either a schottky diode or a regulator with reverse current protection"
-    (at 142.24 39.37 0)
+  (text "Switch to MIC5225-3.3YM5-TR\nJLCPCB Part #\nC512101\nPackage\nSOT-23-5\n\nor\n\nAP7370-33SA-7\nJLCPCB Part #\nC3745233\nPackage\nSOT-23-3\nDescription\n300mA Fixed 3.3V~3.3V Positive 18V SOT-23-3 Linear Voltage Regulators (LDO) ROHS\n\nfor reverse current protection"
+    (at 156.21 58.42 0)
     (effects (font (size 1.524 1.524)) (justify left bottom))
     (uuid f431281d-cd00-46d4-9afc-c374f58366af)
   )
