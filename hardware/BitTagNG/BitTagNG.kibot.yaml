@@ -28,6 +28,9 @@ variants:
     variant: rotated
     pre_transform: _rot_footprint
 
+import:
+  - ../Kibot-config/PCBWay.kibot.yaml
+
 outputs:
 
   - name: 'gerbers'
@@ -74,22 +77,42 @@ outputs:
        polygon_mode: false
        metric_units: true
 
-  - name: 'csv-bom'
+  - name: "csv-bom"
     comment: "Bill of Materials in CSV format"
     type: bom
+    dir: Production
     options:
-      use_alt: true
+      use_alt: true 
+      columns: 
+        - field: References
+          name: Designator
+        - field: 'Quantity Per PCB'
+          name: Qty
+        - field: MFN
+          name: Manufacturer
+        - field: MPN
+          name: 'Mfg Part #'
+        - field: DISTPN
+          name:  'Digikey Part #'
+        - field: Description
+          name: Description/Value
+        - field: Footprint
+          name: Package/Footprint
       csv:
         hide_pcb_info: true
         hide_stats_info: true
-        quote_all: true
+        quote_all: false
+
+  - name: "Schematic-PDF"
+    comment: "Schematic as PDF"
+    type: pdf_sch_print
+
+  - name: 'render 3d'
+    comment: "Generate 3d rendering"
+    type: render_3d
 
   - name: 'step'
     comment: "Step file of board"
     type: step
     options:
       download: false
-
-  - name: "Schematic-PDF"
-    comment: "Schematic as PDF"
-    type: pdf_sch_print
