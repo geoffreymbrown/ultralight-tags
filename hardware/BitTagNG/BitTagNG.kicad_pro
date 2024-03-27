@@ -106,7 +106,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.1016,
         "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.254,
         "min_hole_to_hole": 0.254,
@@ -158,7 +158,10 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "multiple_net_names|825500|736600|96705a97-d934-4144-b681-718c46d5266f|229f8cc5-a9e9-4e49-9286-ba7863e32f48",
+      "pin_to_pin|1104900|1193800|ee3a2da2-2e86-4a7b-a751-ac5168e65dd7|ae6b9894-3f8c-4176-93e1-5fc446404e2e"
+    ],
     "meta": {
       "version": 0
     },
