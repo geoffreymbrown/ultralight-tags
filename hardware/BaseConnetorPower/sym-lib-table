@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Multicharger")(type "Legacy")(uri "${KIPRJMOD}/../kicad_libraries/lib_sch/BaseConnetorPower.lib")(options "")(descr ""))
+)
