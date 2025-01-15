@@ -2,8 +2,8 @@
 <export version="E">
   <design>
     <source>/home/geobrown/Research/ultralight-tags/hardware/BitTagNG/BitTagNG.kicad_sch</source>
-    <date>Fri Sep 22 17:16:27 2023</date>
-    <tool>Eeschema 6.0.7-f9a2dced07~116~ubuntu22.04.1</tool>
+    <date>Sun Mar 10 13:40:15 2024</date>
+    <tool>Eeschema 6.0.11-2627ca5db0~126~ubuntu22.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>BitTag with External Memory</title>
