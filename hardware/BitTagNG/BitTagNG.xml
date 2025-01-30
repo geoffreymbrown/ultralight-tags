@@ -2,8 +2,8 @@
 <export version="E">
   <design>
     <source>/home/geobrown/Research/ultralight-tags/hardware/BitTagNG/BitTagNG.kicad_sch</source>
-    <date>Fri Sep 22 17:16:27 2023</date>
-    <tool>Eeschema 6.0.7-f9a2dced07~116~ubuntu22.04.1</tool>
+    <date>Wed Mar 27 11:35:11 2024</date>
+    <tool>Eeschema 6.0.11-2627ca5db0~126~ubuntu22.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>BitTag with External Memory</title>
@@ -121,6 +121,23 @@
       <property name="Sheetfile" value="BitTagNG.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d6bf3277-9782-4435-961d-bf3071409685</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>47uf</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="DISTPN">478-11180-1-ND</field>
+        <field name="MFN">KYOCERA AVX</field>
+        <field name="MPN">06036D476MAT2A</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="DISTPN" value="478-11180-1-ND"/>
+      <property name="MFN" value="KYOCERA AVX"/>
+      <property name="MPN" value="06036D476MAT2A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="BitTagNG.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>940d7541-e2e1-4c90-ba2c-739cfbe2bab8</tstamps>
     </comp>
     <comp ref="C404">
       <value>22uf</value>
@@ -626,6 +643,7 @@
       <node ref="C501" pin="2" pintype="passive"/>
       <node ref="C502" pin="2" pintype="passive"/>
       <node ref="C503" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
       <node ref="Q501" pin="2" pinfunction="E" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="U1" pin="C3" pinfunction="GND" pintype="input"/>
@@ -673,6 +691,7 @@
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="C501" pin="1" pintype="passive"/>
       <node ref="C503" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
       <node ref="D401" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="U1" pin="B2" pinfunction="VCC" pintype="power_in"/>
       <node ref="U1" pin="D2" pinfunction="~{RESET}" pintype="input"/>
