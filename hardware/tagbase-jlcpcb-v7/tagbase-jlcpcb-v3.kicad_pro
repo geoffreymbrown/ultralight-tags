@@ -493,7 +493,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "tagbase-jlcpcb-v3.step",
       "svg": "",
       "vrml": ""
     },
