@@ -5,8 +5,8 @@
 	(uuid "e44ca67a-43be-444b-8652-f54825a2eb6f")
 	(paper "USLetter")
 	(title_block
-		(title "BitTag with External Memory")
-		(date "2021-09-26")
+		(title "BitTag with External Memory and LI2DW12")
+		(date "2025-02-19")
 		(company "IUCS")
 		(comment 1 "Geoffrey Brown")
 	)
@@ -3030,48 +3030,24 @@
 		(uuid "01c83342-fc9c-448f-b20c-64bc674c27d7")
 	)
 	(no_connect
-		(at 123.19 53.34)
-		(uuid "3ec01711-e3ff-4848-bdeb-fd777a2cd6c9")
-	)
-	(no_connect
-		(at 63.5 160.02)
-		(uuid "54a1b74a-22e7-42ee-939c-ddb6da0e87e7")
-	)
-	(no_connect
 		(at 153.67 91.44)
 		(uuid "560e63c4-2936-46e6-9844-2f37b43b15ea")
 	)
 	(no_connect
-		(at 87.63 91.44)
-		(uuid "5a1349c2-57e6-4dd1-9721-ee601fe9c57c")
+		(at 110.49 119.38)
+		(uuid "690c69ce-9a5d-4bd2-94e3-b2ea51a13bd0")
 	)
 	(no_connect
-		(at 87.63 88.9)
-		(uuid "6be37b8a-7fbd-4685-92b0-2350884b1a95")
-	)
-	(no_connect
-		(at 115.57 119.38)
-		(uuid "8bc11e48-c0b4-41ea-9370-ae50a416ad46")
-	)
-	(no_connect
-		(at 63.5 157.48)
-		(uuid "922be1f3-5c97-424b-8f33-475dc3cccd33")
+		(at 125.73 100.33)
+		(uuid "94dadaa6-db2e-4176-9ca2-6d3c39ab19f1")
 	)
 	(no_connect
 		(at 119.38 157.48)
 		(uuid "b3fbea94-f401-4997-a854-9c1870d8d651")
 	)
 	(no_connect
-		(at 120.65 119.38)
-		(uuid "ba1e6b30-ff46-4648-a020-9858645d0696")
-	)
-	(no_connect
 		(at 123.19 119.38)
 		(uuid "bc55882a-65bc-47d8-bc4f-0edb7ed76642")
-	)
-	(no_connect
-		(at 130.81 53.34)
-		(uuid "c1f0edc8-0ae2-4467-9114-f1267025f429")
 	)
 	(no_connect
 		(at 153.67 93.98)
@@ -3084,10 +3060,6 @@
 	(no_connect
 		(at 125.73 119.38)
 		(uuid "e129f22a-87dd-48b1-b300-21343a1fccdf")
-	)
-	(no_connect
-		(at 125.73 53.34)
-		(uuid "e6dab736-091e-47b7-8965-602c8ae51a6b")
 	)
 	(no_connect
 		(at 213.36 125.73)
@@ -4085,7 +4057,7 @@
 	)
 	(text "Note: PA15 and PB4 pulled up on reset !"
 		(exclude_from_sim no)
-		(at 130.81 49.53 0)
+		(at 96.012 34.544 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4138,6 +4110,16 @@
 		)
 		(uuid "b35dbbc0-9855-4415-b1c1-f69b18ffef25")
 	)
+	(label "WKUP4"
+		(at 63.5 165.1 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "069bd03a-8d4c-4929-99ab-711748a3f745")
+	)
 	(label "SDA"
 		(at 120.65 53.34 90)
 		(effects
@@ -4168,16 +4150,6 @@
 		)
 		(uuid "1622d7d8-313f-477c-a566-1c940c58e7a3")
 	)
-	(label "WKUP4"
-		(at 63.5 165.1 180)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right bottom)
-		)
-		(uuid "2088380f-7b42-409d-9183-424d37fd2683")
-	)
 	(label "clkout"
 		(at 213.36 123.19 180)
 		(effects
@@ -4198,7 +4170,7 @@
 		)
 		(uuid "31a6f922-a727-4121-806b-269702dc2af0")
 	)
-	(label "ACCEL_SDA"
+	(label "ACCEL_MOSI"
 		(at 63.5 162.56 180)
 		(effects
 			(font
@@ -4218,6 +4190,16 @@
 		)
 		(uuid "5878eea5-c3c8-4c7a-822e-7853bc87dcfe")
 	)
+	(label "ACCEL_CS"
+		(at 113.03 119.38 270)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "64841ef2-e1d8-4d0b-ac9a-6ce491800189")
+	)
 	(label "WKUP4"
 		(at 119.38 154.94 0)
 		(effects
@@ -4229,7 +4211,7 @@
 		(uuid "68d4b24e-27ce-4fe7-b83b-99c2aabe8fe6")
 	)
 	(label "AT25_MOSI"
-		(at 153.67 83.82 0)
+		(at 123.19 53.34 90)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4259,7 +4241,7 @@
 		(uuid "6f689dab-e040-4125-a272-0c1c273e6481")
 	)
 	(label "AT25_nCS"
-		(at 153.67 88.9 0)
+		(at 130.81 53.34 90)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4268,7 +4250,7 @@
 		)
 		(uuid "70b651b7-f8fc-48fe-85fb-0da3238594d1")
 	)
-	(label "ACCEL_SCL"
+	(label "ACCEL_SCK"
 		(at 63.5 154.94 180)
 		(effects
 			(font
@@ -4278,8 +4260,18 @@
 		)
 		(uuid "71f04bc1-190c-4018-bfc3-d70f9a5f0fca")
 	)
+	(label "ACCEL_MISO"
+		(at 118.11 119.38 270)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "7f0b6eda-bc48-4504-bbba-226d6939dc97")
+	)
 	(label "AT25_MISO"
-		(at 153.67 86.36 0)
+		(at 125.73 53.34 90)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4287,6 +4279,16 @@
 			(justify left bottom)
 		)
 		(uuid "9ddc875d-9dcf-4d74-97c6-7ca4c3425104")
+	)
+	(label "ACCEL_CS"
+		(at 63.5 157.48 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "a9780999-d630-4f33-b6c7-8137fb09d212")
 	)
 	(label "SCL"
 		(at 118.11 53.34 90)
@@ -4298,8 +4300,18 @@
 		)
 		(uuid "b08fda17-5f02-4987-97f5-81b4c5397c9c")
 	)
-	(label "ACCEL_SCL"
-		(at 118.11 119.38 270)
+	(label "ACCEL_MISO"
+		(at 63.5 160.02 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "b2a61606-935a-431c-aa52-2ffb257c1779")
+	)
+	(label "ACCEL_SCK"
+		(at 115.57 119.38 270)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4338,15 +4350,15 @@
 		)
 		(uuid "e0f6b195-e6f2-4fbe-af5a-62c874aad937")
 	)
-	(label "ACCEL_SDA"
-		(at 113.03 119.38 270)
+	(label "ACCEL_MOSI"
+		(at 120.65 119.38 270)
 		(effects
 			(font
 				(size 1.524 1.524)
 			)
 			(justify right bottom)
 		)
-		(uuid "e6b07f8d-4d3d-408f-86a6-4b20050641e9")
+		(uuid "f998a0b8-74e6-4a9b-b8f3-dc23597051a2")
 	)
 	(global_label "SWCLK"
 		(shape input)
@@ -7305,71 +7317,6 @@
 			(project ""
 				(path "/e44ca67a-43be-444b-8652-f54825a2eb6f"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 110.49 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00006075c6da")
-		(property "Reference" "#PWR0117"
-			(at 110.49 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 110.49 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f762e732-dc6a-4fb3-a80d-9af9c101a033")
-		)
-		(instances
-			(project ""
-				(path "/e44ca67a-43be-444b-8652-f54825a2eb6f"
-					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
