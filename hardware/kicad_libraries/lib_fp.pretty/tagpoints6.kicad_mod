@@ -1,18 +1,143 @@
-(module bittag:tagpoints6 (layer F.Cu) (tedit 5A955EAC)
-  (fp_text reference J201 (at 0.1 2.54) (layer F.SilkS) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value CONN_02X04 (at 0 -2.54) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_line (start -1.905 -1.27) (end 1.905 -1.27) (layer F.CrtYd) (width 0.1))
-  (fp_line (start 1.905 -1.27) (end 1.905 1.27) (layer F.CrtYd) (width 0.1))
-  (fp_line (start 1.905 1.27) (end -1.905 1.27) (layer F.CrtYd) (width 0.1))
-  (fp_line (start -1.905 1.27) (end -1.905 -1.27) (layer F.CrtYd) (width 0.1))
-  (pad 1 smd circle (at -1.27 0.635) (size 0.762 0.762) (layers F.Cu F.Mask))
-  (pad 3 smd circle (at 0 0.635) (size 0.762 0.762) (layers F.Cu F.Mask))
-  (pad 5 smd circle (at 1.27 0.635) (size 0.762 0.762) (layers F.Cu F.Mask))
-  (pad 6 smd circle (at 1.27 -0.635) (size 0.762 0.762) (layers F.Cu F.Mask))
-  (pad 4 smd circle (at 0 -0.635) (size 0.762 0.762) (layers F.Cu F.Mask))
-  (pad 2 smd circle (at -1.27 -0.635) (size 0.762 0.762) (layers F.Cu F.Mask))
+(footprint "tagpoints6"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "J201"
+		(at 0.1 2.54 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1e4d51a1-d483-4f59-b3c7-8385bc97a318")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CONN_02X04"
+		(at 0 -2.54 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f72e3e2-8d33-4fcf-9b2d-2fa9b5046d8b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7ed105f8-864e-404e-90af-e3d8a4d44414")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f22ef02b-9a75-4b5e-8a81-8f3696834b8f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a6859cd-99f4-42db-8258-9ea2313f2152")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.905 -1.27)
+		(end 1.905 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "77490bd5-97bb-475a-9f28-2735693fb53a")
+	)
+	(fp_line
+		(start -1.905 1.27)
+		(end -1.905 -1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0d467f82-b53c-4d2f-9a1e-d7b32fdd3336")
+	)
+	(fp_line
+		(start 1.905 -1.27)
+		(end 1.905 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f81c8cc4-3e5a-462a-958b-9c38dcca6f52")
+	)
+	(fp_line
+		(start 1.905 1.27)
+		(end -1.905 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "fc779970-ea4a-498c-bfad-b64d2f01b556")
+	)
+	(pad "1" smd circle
+		(at -1.27 0.635)
+		(size 0.762 0.762)
+		(layers "F.Cu" "F.Mask")
+		(uuid "3cbda561-208e-44ed-8f18-963383631739")
+	)
+	(pad "2" smd circle
+		(at -1.27 -0.635)
+		(size 0.762 0.762)
+		(layers "F.Cu" "F.Mask")
+		(uuid "8a8be70f-5caa-441a-a787-6985adcd91d3")
+	)
+	(pad "3" smd circle
+		(at 0 0.635)
+		(size 0.762 0.762)
+		(layers "F.Cu" "F.Mask")
+		(uuid "3be3b4c6-4a49-41b7-a1f1-bd1d4fdc1d0a")
+	)
+	(pad "4" smd circle
+		(at 0 -0.635)
+		(size 0.762 0.762)
+		(layers "F.Cu" "F.Mask")
+		(uuid "d289ab43-0f40-455a-9574-af46648479d3")
+	)
+	(pad "5" smd circle
+		(at 1.27 0.635)
+		(size 0.762 0.762)
+		(layers "F.Cu" "F.Mask")
+		(uuid "8883b4c0-b144-4751-b59c-1e22450b3bc7")
+	)
+	(pad "6" smd circle
+		(at 1.27 -0.635)
+		(size 0.762 0.762)
+		(layers "F.Cu" "F.Mask")
+		(uuid "23bea46c-f127-4dbf-bbab-bd097983fe08")
+	)
 )

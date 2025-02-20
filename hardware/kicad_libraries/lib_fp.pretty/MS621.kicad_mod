@@ -76,7 +76,7 @@
 		)
 	)
 	(fp_text user "-"
-		(at 0.4 2 90)
+		(at 0.4 1.9 90)
 		(layer "F.SilkS")
 		(uuid "75b7a0fe-9df8-4fed-ac75-c758a1504db0")
 		(effects
