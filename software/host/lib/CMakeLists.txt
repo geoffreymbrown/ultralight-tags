@@ -16,9 +16,10 @@ endif()
 
 
 
-
+if(!MSVC)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(libusb REQUIRED libusb-1.0)
+endif()
 find_package(libusb-1.0)
 cmake_print_variables(LIBUSB_INCLUDES)
 

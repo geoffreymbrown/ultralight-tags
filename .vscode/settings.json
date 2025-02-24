@@ -15,6 +15,7 @@
         "fstream": "cpp",
         "bitset": "c",
         "initializer_list": "c",
-        "utility": "c"
+        "utility": "c",
+        "mutex": "cpp"
     }
 }
