@@ -16,6 +16,8 @@
         "bitset": "c",
         "initializer_list": "c",
         "utility": "c",
-        "mutex": "cpp"
+        "cstdint": "cpp",
+        "format": "cpp",
+        "span": "cpp"
     }
 }

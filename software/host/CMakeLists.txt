@@ -8,7 +8,7 @@ set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 add_compile_definitions(QT_DISABLE_DEPRECATED_BEFORE=0x050F00)
 
 add_subdirectory(lib)
-add_subdirectory(cli)
+#add_subdirectory(cli)
 add_subdirectory(qtmon)
 add_subdirectory(btdataviz)
 
