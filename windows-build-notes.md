@@ -21,6 +21,8 @@ Install -
     * C:\ProgramData\chocolatey\bin
 
 
+cmake -G "Visual Studio 17 2022" -Ax64 --preset=default
+
 cmake -G "Visual Studio 17 2022" -Ax64 -DVCPKG_TARGET_TRIPLET="x64-windows-static" --preset=default -D CMAKE_PREFIX_PATH="d:/Qt/x64-static"
 
 Build -- 
