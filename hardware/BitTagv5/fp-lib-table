@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name bittag)(type KiCad)(uri ${KIPRJMOD}/../tag_fp.pretty)(options "")(descr ""))
-)

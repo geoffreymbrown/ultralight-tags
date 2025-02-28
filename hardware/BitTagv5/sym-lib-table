@@ -1,6 +1,0 @@
-(sym_lib_table
-  (lib (name "bittagv5")(type "Legacy")(uri "${KIPRJMOD}/../kicad_libraries/lib_sch/bittagv5.lib")(options "")(descr ""))
-  (lib (name "BitTag")(type "Legacy")(uri "${KIPRJMOD}/../lib_sch/BitTag.lib")(options "")(descr "")(disabled))
-  (lib (name "tag-rescue")(type "Legacy")(uri "${KIPRJMOD}/tag-rescue.lib")(options "")(descr "")(disabled))
-  (lib (name "BitTagv5-rescue")(type "Legacy")(uri "${KIPRJMOD}/BitTagv5-rescue.lib")(options "")(descr ""))
-)
