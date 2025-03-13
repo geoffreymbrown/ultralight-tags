@@ -1,6 +1,6 @@
 $fn = 120; // steps in generating circles
 
-makelid = true;
+//makelid = true;
 makebase = true;
 
 version_string = "BitTagVF"; // imprinted in base and lid
