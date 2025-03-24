@@ -9,6 +9,44 @@ const int databuf_size = sizeof(t_DataLog);
 static t_DataLog databuf NOINIT;
 volatile int sectors_erased NOINIT;
 
+// P137 in RM0394
+
+static void fast_msi(void){
+  // change to 24Mhz doesn't require VOS change
+  // Adjust Wait States
+
+  FLASH->ACR = (FLASH->ACR & ~(7)) | 3;
+
+  // Change MSI frequency P 197 RM0394
+
+  RCC->CR = (RCC->CR & ~(15<<4)) | (9<<4);
+
+  // Change TIM2 Prescaler
+
+  STM32_ST_TIM->PSC = STM32_ST_TIM->PSC * 12;
+
+}
+
+
+static void slow_msi(void){
+
+ 
+   // Restore MSI frequency P 197 RM0394
+
+   RCC->CR = (RCC->CR & ~(15<<4)) | (5<<4);
+
+  // Adjust Wait States
+
+  FLASH->ACR = FLASH->ACR & ~(7);
+
+  // Restore TIM2 Prescaler
+
+  STM32_ST_TIM->PSC = STM32_ST_TIM->PSC/12;
+
+}
+
+
+
 extern int encode_ack(void);
 
 static int countInternalBlocks(void){
@@ -84,25 +122,11 @@ enum LOGERR writeDataLog(uint16_t *data, int num)
     return LOGWRITE_FULL;
   }
 
-  int cnt;
+  int cnt = num*2;
   int addr = pState->external_blocks * 4;
 
   ExFlashPwrUp();
-  for (int i = 0; i < num; i++)
-  {
-    cnt = 2;
-    if (!ExFlashWrite(addr, (uint8_t *) &data[i], &cnt)) {
-       //ExFlashPwrDown();
-       //return LOGWRITE_ERROR;
-       /* ignore error */
-       /* what is right thing to do ? */
-    }
-    //SPI1->CR1 &= ~SPI_CR1_SPE;
-    stopMilliseconds(true,2);
-    //SPI1->CR1 |= SPI_CR1_SPE;
-    addr += 2;
-    //pState->external_blocks = addr/2;
-  }
+  ExFlashWrite(addr, (uint8_t *) data, &cnt);
   ExFlashPwrDown();
   
   return LOGWRITE_OK;
@@ -143,14 +167,18 @@ extern enum LOGERR writeDataHeader(t_DataHeader *head)
 
 int data_logAck(int index, Ack *ack)
 {
-
+  int ret;
+  chThdSetPriority(HIGHPRIO);
+  fast_msi();
   PresTagLog *data = &ack->payload.prestag_data_log;
   ack->err = Ack_Err_OK;
-
+  
   // read data
   ExFlashPwrUp();
   ExFlashRead(sizeof(databuf)*index, (uint8_t *) &databuf, sizeof(databuf));
   ExFlashPwrDown();
+
+  // create fake data
 
   if (vddHeader[index].epoch != -1)
   {
@@ -162,7 +190,6 @@ int data_logAck(int index, Ack *ack)
 
     for (int j = 0; j < DATALOG_SAMPLES; j++) // loop over samples
     {
-      // check for unwritten data
       if (databuf.data[j].pressure == -1)
         break;
       data->data[j].pressure = lpsPressure(databuf.data[j].pressure);
@@ -176,8 +203,10 @@ int data_logAck(int index, Ack *ack)
   }
 
   // encode the ack and return
-
-  return encode_ack();
+  ret = encode_ack();
+  slow_msi();
+  chThdSetPriority(NORMALPRIO);
+  return ret;
 }
 
 

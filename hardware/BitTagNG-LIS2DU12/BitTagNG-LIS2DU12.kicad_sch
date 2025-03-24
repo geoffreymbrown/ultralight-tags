@@ -2227,30 +2227,30 @@
 				)
 			)
 		)
-		(symbol "lis2dw12:LIS2DW12TR"
+		(symbol "lis2du12:LIS2DU12TR"
 			(pin_names
 				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U3"
-				(at 27.94 10.16 0)
+			(property "Reference" "U"
+				(at 30.48 10.16 0)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Value" "LIS2DW12TR"
-				(at 27.94 7.62 0)
+			(property "Value" "LIS2DU12TR"
+				(at 30.48 7.62 0)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" "AccelTag:LIS2DW12TR"
+			(property "Footprint" "LGA-12L_LIS2DU12_STM"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2260,7 +2260,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "LIS2DW12TR"
+			(property "Datasheet" "LIS2DU12TR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2287,7 +2287,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "LIS2DW12TR"
+			(property "ki_keywords" "LIS2DU12TR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2296,7 +2296,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LGA-12_2X2X0P7_STM LGA-12_2X2X0P7_STM-M LGA-12_2X2X0P7_STM-L"
+			(property "ki_fp_filters" "LGA-12L_LIS2DU12_STM LGA-12L_LIS2DU12_STM-M LGA-12L_LIS2DU12_STM-L"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2305,10 +2305,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "LIS2DW12TR_0_1"
+			(symbol "LIS2DU12TR_0_1"
 				(polyline
 					(pts
-						(xy 7.62 -17.78) (xy 48.26 -17.78)
+						(xy 7.62 -17.78) (xy 53.34 -17.78)
 					)
 					(stroke
 						(width 0.127)
@@ -2332,7 +2332,7 @@
 				)
 				(polyline
 					(pts
-						(xy 48.26 -17.78) (xy 48.26 5.08)
+						(xy 53.34 -17.78) (xy 53.34 5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -2344,7 +2344,7 @@
 				)
 				(polyline
 					(pts
-						(xy 48.26 5.08) (xy 7.62 5.08)
+						(xy 53.34 5.08) (xy 7.62 5.08)
 					)
 					(stroke
 						(width 0.127)
@@ -2354,7 +2354,7 @@
 						(type none)
 					)
 				)
-				(pin bidirectional line
+				(pin unspecified line
 					(at 0 0 0)
 					(length 7.62)
 					(name "SCL/SPC"
@@ -2373,9 +2373,9 @@
 					)
 				)
 				(pin power_in line
-					(at 55.88 -5.08 180)
+					(at 60.96 -5.08 180)
 					(length 7.62)
-					(name "VDDIO"
+					(name "VDD_IO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2390,8 +2390,8 @@
 						)
 					)
 				)
-				(pin output line
-					(at 55.88 -2.54 180)
+				(pin input line
+					(at 60.96 -2.54 180)
 					(length 7.62)
 					(name "INT2"
 						(effects
@@ -2408,8 +2408,8 @@
 						)
 					)
 				)
-				(pin output line
-					(at 55.88 0 180)
+				(pin input line
+					(at 60.96 0 180)
 					(length 7.62)
 					(name "INT1"
 						(effects
@@ -2426,7 +2426,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 0 -2.54 0)
 					(length 7.62)
 					(name "CS"
@@ -2444,7 +2444,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at 0 -5.08 0)
 					(length 7.62)
 					(name "SDO/SA0"
@@ -2480,6 +2480,24 @@
 						)
 					)
 				)
+				(pin no_connect line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_out line
 					(at 0 -12.7 0)
 					(length 7.62)
@@ -2499,7 +2517,7 @@
 					)
 				)
 				(pin power_out line
-					(at 55.88 -12.7 180)
+					(at 60.96 -12.7 180)
 					(length 7.62)
 					(name "RES"
 						(effects
@@ -2517,7 +2535,7 @@
 					)
 				)
 				(pin power_out line
-					(at 55.88 -10.16 180)
+					(at 60.96 -10.16 180)
 					(length 7.62)
 					(name "GND"
 						(effects
@@ -2535,7 +2553,7 @@
 					)
 				)
 				(pin power_in line
-					(at 55.88 -7.62 180)
+					(at 60.96 -7.62 180)
 					(length 7.62)
 					(name "VDD"
 						(effects
@@ -2545,26 +2563,6 @@
 						)
 					)
 					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "LIS2DW12TR_1_1"
-				(pin passive line
-					(at 0 -10.16 0)
-					(length 7.62)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2948,12 +2946,6 @@
 		(uuid "9602544e-5362-4c27-9d9b-c17da663af19")
 	)
 	(junction
-		(at 59.69 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9fa8a618-c037-43b9-8b65-e1260ad40455")
-	)
-	(junction
 		(at 245.11 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3064,7 +3056,7 @@
 		(uuid "94dadaa6-db2e-4176-9ca2-6d3c39ab19f1")
 	)
 	(no_connect
-		(at 63.5 160.02)
+		(at 58.42 160.02)
 		(uuid "a84b4deb-9860-4168-a130-b91019d86c59")
 	)
 	(no_connect
@@ -3171,7 +3163,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 167.64) (xy 59.69 167.64)
+			(xy 58.42 167.64) (xy 54.61 167.64)
 		)
 		(stroke
 			(width 0)
@@ -3198,16 +3190,6 @@
 			(type default)
 		)
 		(uuid "1c09175c-041b-4e22-8ee3-6ead3d8c7cc8")
-	)
-	(wire
-		(pts
-			(xy 63.5 165.1) (xy 59.69 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f3cce3b-ae8d-4caa-8867-bad4c61df5fd")
 	)
 	(wire
 		(pts
@@ -3891,16 +3873,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 165.1) (xy 59.69 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9bdbb19-2f72-436a-b473-81327b8916fb")
-	)
-	(wire
-		(pts
 			(xy 41.91 41.91) (xy 41.91 44.45)
 		)
 		(stroke
@@ -4041,7 +4013,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 167.64) (xy 59.69 171.45)
+			(xy 54.61 167.64) (xy 54.61 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4108,6 +4080,16 @@
 			(type default)
 		)
 		(uuid "ff3b4f3f-ae13-4687-b8c1-43902f0c2ca3")
+	)
+	(text "PA3 is not SCK\nPA0 is not SDO\nThis wiring is for bit-banged SPI"
+		(exclude_from_sim no)
+		(at 45.212 141.732 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "0c084609-f5e0-4dbb-8248-254b2bb110be")
 	)
 	(text "Note: PA15 and PB4 pulled up on reset !"
 		(exclude_from_sim no)
@@ -4225,7 +4207,7 @@
 		(uuid "31a6f922-a727-4121-806b-269702dc2af0")
 	)
 	(label "ACCEL_SDI_SDO"
-		(at 63.5 162.56 180)
+		(at 58.42 162.56 180)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4305,7 +4287,7 @@
 		(uuid "70b651b7-f8fc-48fe-85fb-0da3238594d1")
 	)
 	(label "ACCEL_SCK"
-		(at 63.5 154.94 180)
+		(at 58.42 154.94 180)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4335,7 +4317,7 @@
 		(uuid "9ddc875d-9dcf-4d74-97c6-7ca4c3425104")
 	)
 	(label "ACCEL_CS"
-		(at 63.5 157.48 180)
+		(at 58.42 157.48 180)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -7827,33 +7809,32 @@
 		)
 	)
 	(symbol
-		(lib_id "lis2dw12:LIS2DW12TR")
-		(at 63.5 154.94 0)
+		(lib_id "lis2du12:LIS2DU12TR")
+		(at 58.42 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9d00d6ea-aea0-4ac4-aea6-ef7a98fa028b")
 		(property "Reference" "U3"
-			(at 91.44 144.78 0)
+			(at 88.9 144.78 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "LIS2DW12TR"
-			(at 91.44 147.32 0)
+		(property "Value" "LIS2DU12TR"
+			(at 88.9 147.32 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "AccelTag:LIS2DW12TR"
-			(at 63.5 154.94 0)
+		(property "Footprint" "AccelTag:LGA-12L_LIS2DU12_STM"
+			(at 58.42 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7862,8 +7843,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "LIS2DW12TR"
-			(at 63.5 154.94 0)
+		(property "Datasheet" "LIS2DU12TR"
+			(at 58.42 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7873,7 +7854,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 154.94 0)
+			(at 58.42 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7928,7 +7909,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 171.45 0)
+		(at 54.61 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7936,7 +7917,7 @@
 		(dnp no)
 		(uuid "a3c15364-787e-48a7-995a-64c6da76b26c")
 		(property "Reference" "#PWR02"
-			(at 59.69 177.8 0)
+			(at 54.61 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7945,7 +7926,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 175.26 0)
+			(at 54.61 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7953,7 +7934,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 171.45 0)
+			(at 54.61 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7962,7 +7943,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 171.45 0)
+			(at 54.61 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7971,7 +7952,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 171.45 0)
+			(at 54.61 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
