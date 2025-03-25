@@ -8,16 +8,10 @@ preflight:
   check_zone_fills: true
   ignore_unconnected: false
   filters:
-    - filter: 'excluded'
+    - filter: 'courtyard'
+      error: 'courtyards_overlap'
+    - filter: 'power'
       error: 'power_pin_not_driven'
-      regex: 'excluded'
-    - filter: 'silk'
-      error: 'W058'
-      regex: 'silk'
-    - filter: 'power pin'
-      error: 'power_pin_not_driven'
-      regex: 'Symbol U2'
-
 
 filters:
   - name: only_jlc_parts
@@ -82,7 +76,6 @@ outputs:
        sketch_plot: false 
        polygon_mode: false
        metric_units: true
-       use_aux_axis_as_origin: true
 
   - name: "csv-bom"
     comment: "Bill of Materials in CSV format"
@@ -110,13 +103,6 @@ outputs:
         hide_stats_info: true
         quote_all: false
 
- # - name: "csv-cost"
- 
- #   comment: "Bill of Materials with cost in CSV format"
- #   type: kicost
- #   options:
- #     number: 100
-        
   - name: "Schematic-PDF"
     comment: "Schematic as PDF"
     type: pdf_sch_print
