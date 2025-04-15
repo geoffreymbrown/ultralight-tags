@@ -8,4 +8,5 @@
   (lib (name "stm32l432kc")(type "KiCad")(uri "${KIPRJMOD}/stm32l432kc.kicad_sym")(options "")(descr ""))
   (lib (name "PresTag")(type "KiCad")(uri "${KIPRJMOD}/PresTag.kicad_sym")(options "")(descr ""))
   (lib (name "ak09940a")(type "KiCad")(uri "${KIPRJMOD}/ak09940a.kicad_sym")(options "")(descr ""))
+  (lib (name "lis2du12tr")(type "KiCad")(uri "${KIPRJMOD}/LIS2DU12TR.kicad_sym")(options "")(descr ""))
 )

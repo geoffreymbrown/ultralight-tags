@@ -244,24 +244,9 @@
   },
   "erc": {
     "erc_exclusions": [
+      "lib_symbol_issues|1803400|1016000|b311ecc8-5749-4165-adfc-40441a859481|00000000-0000-0000-0000-000000000000|||",
       "lib_symbol_issues|889000|1320800|3e155b1b-6218-49d4-a7e6-79030a159e99|00000000-0000-0000-0000-000000000000|||",
-      "multiple_net_names|1536700|800100|8c514922-ffe1-4e37-a260-e807409f2e0d|25d163fb-9b5d-4327-8029-b298fecf958c|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "multiple_net_names|787400|1651000|447b78ba-73ce-4059-b1cd-6d0d7e158462|38088687-4d8b-4773-be70-5559122b65c9|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|1498600|1422400|286234d5-d364-472e-be7d-49e5af45bc79|0899445a-d5f1-4a34-a664-ecab0b5368ce|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|1498600|1447800|f9dee19c-9433-497a-838b-783ed710d063|0899445a-d5f1-4a34-a664-ecab0b5368ce|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|1498600|1447800|f9dee19c-9433-497a-838b-783ed710d063|286234d5-d364-472e-be7d-49e5af45bc79|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|889000|1320800|e52be72a-82ab-464d-a141-f23e0d897510|87d4fd08-5a48-407f-b609-4d05f5395e0f|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|889000|1346200|1cc35a27-1526-4c93-a40c-cbb782f14f06|9007838f-3d29-46ad-ba5b-96db5a520c84|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|889000|1447800|15a28aa0-0ad0-4ff8-8654-ca6434b63516|0899445a-d5f1-4a34-a664-ecab0b5368ce|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|889000|1447800|15a28aa0-0ad0-4ff8-8654-ca6434b63516|286234d5-d364-472e-be7d-49e5af45bc79|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|889000|1447800|15a28aa0-0ad0-4ff8-8654-ca6434b63516|f9dee19c-9433-497a-838b-783ed710d063|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|927100|241300|b593c656-dd66-4e34-91b5-0c77aac223b4|0899445a-d5f1-4a34-a664-ecab0b5368ce|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|927100|241300|b593c656-dd66-4e34-91b5-0c77aac223b4|15a28aa0-0ad0-4ff8-8654-ca6434b63516|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|927100|241300|b593c656-dd66-4e34-91b5-0c77aac223b4|286234d5-d364-472e-be7d-49e5af45bc79|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|927100|241300|b593c656-dd66-4e34-91b5-0c77aac223b4|f9dee19c-9433-497a-838b-783ed710d063|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|977900|1689100|7c138781-0179-4a23-b8d9-22530dffcf77|e52be72a-82ab-464d-a141-f23e0d897510|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "pin_to_pin|977900|1714500|7cf8b256-fbcc-4d86-8f9b-935d0eb6fd62|1cc35a27-1526-4c93-a40c-cbb782f14f06|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb",
-      "power_pin_not_driven|1803400|1117600|66898448-5783-4bdd-9a2b-bb2c6ff4b729|00000000-0000-0000-0000-000000000000|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|"
+      "multiple_net_names|355600|977900|38088687-4d8b-4773-be70-5559122b65c9|d03aa279-5dd2-4396-a5bd-00ef21c9cf35|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb|/77ed3941-d133-4aef-a9af-5a39322d14eb"
     ],
     "meta": {
       "version": 0
@@ -447,7 +432,7 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "ignore",
+      "endpoint_off_grid": "warning",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
@@ -463,7 +448,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -614,7 +599,7 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
           "show": true
@@ -638,7 +623,7 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
           "show": true
@@ -674,7 +659,7 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "MPN",
           "name": "MPN",
           "show": true

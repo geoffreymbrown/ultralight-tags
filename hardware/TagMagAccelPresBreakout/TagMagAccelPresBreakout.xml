@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/geobrown/Research/ultralight-tags/hardware/TagMagAccelPresBreakout/TagMagAccelPresBreakout.kicad_sch</source>
-    <date>2025-03-25T17:10:03-0400</date>
+    <date>2025-03-26T10:21:07-0400</date>
     <tool>Eeschema 8.0.9-8.0.9-0~ubuntu24.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -369,7 +369,6 @@
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="dnp"/>
       <property name="ki_keywords" value="mounting hole"/>
       <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -388,7 +387,6 @@
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="dnp"/>
       <property name="ki_keywords" value="mounting hole"/>
       <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -407,7 +405,6 @@
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="dnp"/>
       <property name="ki_keywords" value="mounting hole"/>
       <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -426,7 +423,6 @@
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <property name="dnp"/>
       <property name="ki_keywords" value="mounting hole"/>
       <property name="ki_fp_filters" value="MountingHole*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -443,7 +439,7 @@
       <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
-      <property name="dnp"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -463,7 +459,7 @@
       <property name="DNP" value="1"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
-      <property name="dnp"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -481,7 +477,7 @@
       <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
-      <property name="dnp"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -499,7 +495,7 @@
       <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
-      <property name="dnp"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -517,7 +513,7 @@
       <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
-      <property name="dnp"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -535,7 +531,7 @@
       <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
-      <property name="dnp"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_2x??_*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -558,7 +554,7 @@
       <property name="DNP" value="1"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
-      <property name="dnp"/>
+      <property name="exclude_from_bom"/>
       <property name="ki_keywords" value="connector"/>
       <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
@@ -631,18 +627,20 @@
     </comp>
     <comp ref="U2">
       <value>LIS2DU12TR</value>
-      <footprint>library:LGA-12L_LIS2DU12_STM</footprint>
+      <footprint>LGA-12L_LIS2DU12_STM</footprint>
       <datasheet>LIS2DU12TR</datasheet>
       <fields>
         <field name="MFN">STMicroelectronics</field>
         <field name="MPN">LIS2DU12TR</field>
-        <field name="Footprint">library:LGA-12L_LIS2DU12_STM</field>
+        <field name="DISTPN">497-LIS2DU12TRCT-ND</field>
+        <field name="Footprint">LGA-12L_LIS2DU12_STM</field>
         <field name="Datasheet">LIS2DU12TR</field>
         <field name="Description"/>
       </fields>
-      <libsource lib="lis2du12" part="LIS2DU12TR" description=""/>
+      <libsource lib="lis2du12tr" part="LIS2DU12TR" description=""/>
       <property name="MFN" value="STMicroelectronics"/>
       <property name="MPN" value="LIS2DU12TR"/>
+      <property name="DISTPN" value="497-LIS2DU12TRCT-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
       <property name="ki_keywords" value="LIS2DU12TR"/>
@@ -678,6 +676,7 @@
       <fields>
         <field name="MFN">Asahi Kasei</field>
         <field name="MPN">AK09940A</field>
+        <field name="DISTPN">974-AK09940ACT-ND</field>
         <field name="Footprint">library:AK09940a</field>
         <field name="Datasheet">AK09940A</field>
         <field name="Description"/>
@@ -685,6 +684,7 @@
       <libsource lib="ak09940a" part="AK09940A" description=""/>
       <property name="MFN" value="Asahi Kasei"/>
       <property name="MPN" value="AK09940A"/>
+      <property name="DISTPN" value="974-AK09940ACT-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
       <property name="ki_keywords" value="AK09940A"/>
@@ -700,6 +700,7 @@
       <fields>
         <field name="MFN">Texas Instruments</field>
         <field name="MPN">TPS7A2018PDQNR</field>
+        <field name="DISTPN">296-TPS7A2018PDQNRCT-ND</field>
         <field name="Footprint">Package_SON:Texas_X2SON-4_1x1mm_P0.65mm</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps7a20.pdf</field>
         <field name="Description">300 mA Low Dropout Voltage Regulator, Fixed Output, 1.6..6.0Vin, Low-Noise (7μV RMS), 6.5μA IQ LDO, X2SON-5</field>
@@ -707,6 +708,7 @@
       <libsource lib="Regulator_Linear" part="TPS7A20xxxDQN" description="300 mA Low Dropout Voltage Regulator, Fixed Output, 1.6..6.0Vin, Low-Noise (7μV RMS), 6.5μA IQ LDO, X2SON-5"/>
       <property name="MFN" value="Texas Instruments"/>
       <property name="MPN" value="TPS7A2018PDQNR"/>
+      <property name="DISTPN" value="296-TPS7A2018PDQNRCT-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="TagMagAccelPresBreakout.kicad_sch"/>
       <property name="ki_keywords" value="Single Output LDO Texas-Instruments"/>
@@ -1038,20 +1040,23 @@
         <fp>LGA11_1p6x1p6x0p58_AKM</fp>
       </footprints>
       <fields>
-        <field name="Reference">U</field>
+        <field name="Reference">U4</field>
         <field name="Value">AK09940A</field>
         <field name="Footprint">LGA11_1p6x1p6x0p58_AKM</field>
         <field name="Datasheet">AK09940A</field>
         <field name="Description"/>
+        <field name="MFN">Asahi Kasei</field>
+        <field name="MPN">AK09940A</field>
+        <field name="DISTPN">974-AK09940ACT-ND</field>
       </fields>
       <pins>
         <pin num="A1" name="DRDY/TRG" type="bidirectional"/>
         <pin num="A2" name="CSB" type="input"/>
         <pin num="A3" name="SCL/SK" type="input"/>
         <pin num="A4" name="SDA/SI" type="bidirectional"/>
-        <pin num="B1" name="VDD" type="power_in"/>
+        <pin num="B1" name="VDD" type="input"/>
         <pin num="B4" name="SO" type="output"/>
-        <pin num="C1" name="VSS" type="power_out"/>
+        <pin num="C1" name="VSS" type="power_in"/>
         <pin num="C4" name="VOD" type="power_in"/>
         <pin num="D1" name="CAD0" type="input"/>
         <pin num="D2" name="CAD1" type="input"/>
@@ -1081,7 +1086,7 @@
         <pin num="G5" name="NC" type="no_connect"/>
       </pins>
     </libpart>
-    <libpart lib="lis2du12" part="LIS2DU12TR">
+    <libpart lib="lis2du12tr" part="LIS2DU12TR">
       <docs>LIS2DU12TR</docs>
       <footprints>
         <fp>LGA-12L_LIS2DU12_STM</fp>
@@ -1089,21 +1094,24 @@
         <fp>LGA-12L_LIS2DU12_STM-L</fp>
       </footprints>
       <fields>
-        <field name="Reference">U</field>
+        <field name="Reference">U2</field>
         <field name="Value">LIS2DU12TR</field>
         <field name="Footprint">LGA-12L_LIS2DU12_STM</field>
         <field name="Datasheet">LIS2DU12TR</field>
         <field name="Description"/>
+        <field name="MFN">STMicroelectronics</field>
+        <field name="MPN">LIS2DU12TR</field>
+        <field name="DISTPN">497-LIS2DU12TRCT-ND</field>
       </fields>
       <pins>
-        <pin num="1" name="SCL/SPC" type="unspecified"/>
-        <pin num="2" name="CS" type="unspecified"/>
+        <pin num="1" name="SCL/SPC" type="input"/>
+        <pin num="2" name="CS" type="input"/>
         <pin num="3" name="SDO/SA0" type="output"/>
         <pin num="4" name="SDA/SDI/SDO" type="bidirectional"/>
         <pin num="5" name="NC" type="no_connect"/>
-        <pin num="6" name="GND" type="power_out"/>
-        <pin num="7" name="RES" type="power_out"/>
-        <pin num="8" name="GND" type="power_out"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="RES" type="power_in"/>
+        <pin num="8" name="GND" type="power_in"/>
         <pin num="9" name="VDD" type="power_in"/>
         <pin num="10" name="VDD_IO" type="power_in"/>
         <pin num="11" name="INT2" type="input"/>
@@ -1163,6 +1171,9 @@
     <library logical="at25xe">
       <uri>/home/geobrown/Research/ultralight-tags/hardware/TagMagAccelPresBreakout/at25xe.kicad_sym</uri>
     </library>
+    <library logical="lis2du12tr">
+      <uri>/home/geobrown/Research/ultralight-tags/hardware/TagMagAccelPresBreakout/LIS2DU12TR.kicad_sym</uri>
+    </library>
     <library logical="lps27">
       <uri>/home/geobrown/Research/ultralight-tags/hardware/TagMagAccelPresBreakout/lps27.kicad_sym</uri>
     </library>
@@ -1175,123 +1186,154 @@
       <node ref="U4" pin="C4" pinfunction="VOD" pintype="power_in"/>
       <node ref="U5" pin="1" pinfunction="OUT" pintype="power_out"/>
     </net>
-    <net code="2" name="/AK_CS">
+    <net code="2" name="+2V5">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C101" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C404" pin="1" pintype="passive"/>
+      <node ref="C501" pin="1" pintype="passive"/>
+      <node ref="C503" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="D401" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U1" pin="B2" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U1" pin="D2" pinfunction="~{RESET}" pintype="input"/>
+      <node ref="U2" pin="10" pinfunction="VDD_IO" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U302" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U302" pin="17" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U302" pin="5" pinfunction="VDDA/VREF+" pintype="power_in"/>
+      <node ref="U5" pin="4" pinfunction="IN" pintype="power_in"/>
+      <node ref="U501" pin="7" pinfunction="VDD" pintype="input"/>
+    </net>
+    <net code="3" name="/AK_CS">
       <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U302" pin="15" pinfunction="PB1" pintype="bidirectional"/>
       <node ref="U4" pin="A2" pinfunction="CSB" pintype="input"/>
     </net>
-    <net code="3" name="/AK_PWR">
+    <net code="4" name="/AK_PWR">
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="J6" pin="8" pinfunction="Pin_8" pintype="passive"/>
       <node ref="U302" pin="22" pinfunction="PA12" pintype="bidirectional"/>
-      <node ref="U4" pin="B1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U4" pin="B1" pinfunction="VDD" pintype="input"/>
       <node ref="U5" pin="3" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="4" name="/AK_RSTN">
+    <net code="5" name="/AK_RSTN">
       <node ref="J6" pin="7" pinfunction="Pin_7" pintype="passive"/>
       <node ref="U302" pin="21" pinfunction="PA11" pintype="bidirectional"/>
       <node ref="U4" pin="D4" pinfunction="RSTN" pintype="input"/>
     </net>
-    <net code="5" name="/AK_USART1_CK">
+    <net code="6" name="/AK_USART1_CK">
       <node ref="J6" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="U302" pin="18" pinfunction="PA8" pintype="bidirectional"/>
       <node ref="U4" pin="A3" pinfunction="SCL/SK" pintype="input"/>
     </net>
-    <net code="6" name="/AK_USART1_RX">
+    <net code="7" name="/AK_USART1_RX">
       <node ref="J6" pin="6" pinfunction="Pin_6" pintype="passive"/>
       <node ref="U302" pin="20" pinfunction="PA10" pintype="bidirectional"/>
       <node ref="U4" pin="B4" pinfunction="SO" pintype="output"/>
     </net>
-    <net code="7" name="/AK_USART1_TX">
+    <net code="8" name="/AK_USART1_TX">
       <node ref="J6" pin="5" pinfunction="Pin_5" pintype="passive"/>
       <node ref="U302" pin="19" pinfunction="PA9" pintype="bidirectional"/>
       <node ref="U4" pin="A4" pinfunction="SDA/SI" pintype="bidirectional"/>
     </net>
-    <net code="8" name="/AT25_MISO">
+    <net code="9" name="/AT25_MISO">
       <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="U1" pin="D4" pinfunction="SO" pintype="output"/>
       <node ref="U302" pin="27" pinfunction="PB4" pintype="bidirectional"/>
     </net>
-    <net code="9" name="/AT25_MOSI">
+    <net code="10" name="/AT25_MOSI">
       <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U1" pin="E3" pinfunction="SI" pintype="input"/>
       <node ref="U302" pin="28" pinfunction="PB5" pintype="bidirectional"/>
     </net>
-    <net code="10" name="/AT25_SCK">
+    <net code="11" name="/AT25_SCK">
       <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
       <node ref="U1" pin="F2" pinfunction="SCK" pintype="input"/>
       <node ref="U302" pin="26" pinfunction="PB3" pintype="bidirectional"/>
     </net>
-    <net code="11" name="/AT25_nCS">
+    <net code="12" name="/AT25_nCS">
       <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="U1" pin="B4" pinfunction="nCS" pintype="input"/>
       <node ref="U302" pin="25" pinfunction="PA15" pintype="bidirectional"/>
     </net>
-    <net code="12" name="/LIS_CS">
+    <net code="13" name="/LIS_CS">
       <node ref="J4" pin="4" pinfunction="Pin_4" pintype="passive"/>
-      <node ref="U2" pin="2" pinfunction="CS" pintype="unspecified"/>
+      <node ref="U2" pin="2" pinfunction="CS" pintype="input"/>
       <node ref="U302" pin="14" pinfunction="PB0" pintype="bidirectional"/>
     </net>
-    <net code="13" name="/LIS_INT1">
+    <net code="14" name="/LIS_INT1">
       <node ref="J4" pin="6" pinfunction="Pin_6" pintype="passive"/>
       <node ref="U2" pin="12" pinfunction="INT1" pintype="input"/>
       <node ref="U302" pin="6" pinfunction="PA0" pintype="bidirectional"/>
     </net>
-    <net code="14" name="/LIS_MISO">
+    <net code="15" name="/LIS_MISO">
       <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="SDO/SA0" pintype="output"/>
       <node ref="U302" pin="12" pinfunction="PA6" pintype="bidirectional"/>
     </net>
-    <net code="15" name="/LIS_MOSI">
+    <net code="16" name="/LIS_MOSI">
       <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U2" pin="4" pinfunction="SDA/SDI/SDO" pintype="bidirectional"/>
       <node ref="U302" pin="13" pinfunction="PA7" pintype="bidirectional"/>
     </net>
-    <net code="16" name="/LIS_SCK">
+    <net code="17" name="/LIS_SCK">
       <node ref="J4" pin="5" pinfunction="Pin_5" pintype="passive"/>
-      <node ref="U2" pin="1" pinfunction="SCL/SPC" pintype="unspecified"/>
+      <node ref="U2" pin="1" pinfunction="SCL/SPC" pintype="input"/>
       <node ref="U302" pin="11" pinfunction="PA5" pintype="bidirectional"/>
     </net>
-    <net code="17" name="/LPS_CS">
+    <net code="18" name="/LPS_CS">
       <node ref="J5" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="U3" pin="6" pinfunction="CS" pintype="input"/>
       <node ref="U302" pin="3" pinfunction="PC15" pintype="bidirectional"/>
     </net>
-    <net code="18" name="/LPS_PWR">
+    <net code="19" name="/LPS_PWR">
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="VDD_IO" pintype="passive"/>
       <node ref="U3" pin="10" pinfunction="VDD" pintype="input"/>
       <node ref="U302" pin="7" pinfunction="PA1" pintype="bidirectional"/>
     </net>
-    <net code="19" name="/LPS_RX">
+    <net code="20" name="/LPS_RX">
       <node ref="J5" pin="5" pinfunction="Pin_5" pintype="passive"/>
       <node ref="U3" pin="5" pinfunction="SDO/SA0" pintype="output"/>
       <node ref="U302" pin="8" pinfunction="PA2" pintype="bidirectional"/>
     </net>
-    <net code="20" name="/LPS_SCK">
+    <net code="21" name="/LPS_SCK">
       <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U3" pin="2" pinfunction="SCL/SPC" pintype="input"/>
       <node ref="U302" pin="10" pinfunction="PA4" pintype="bidirectional"/>
     </net>
-    <net code="21" name="/LPS_TX">
+    <net code="22" name="/LPS_TX">
       <node ref="J5" pin="6" pinfunction="Pin_6" pintype="passive"/>
       <node ref="U3" pin="4" pinfunction="SDA/SDI/SDO" pintype="input"/>
       <node ref="U302" pin="9" pinfunction="PA3" pintype="passive"/>
     </net>
-    <net code="22" name="/RTC_SCL">
+    <net code="23" name="/RST">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="Q501" pin="1" pinfunction="B" pintype="input"/>
+    </net>
+    <net code="24" name="/RTC_SCL">
       <node ref="U302" pin="30" pinfunction="PB7" pintype="bidirectional"/>
       <node ref="U501" pin="3" pinfunction="SCL" pintype="input"/>
     </net>
-    <net code="23" name="/RTC_SDA">
+    <net code="25" name="/RTC_SDA">
       <node ref="U302" pin="29" pinfunction="PB6" pintype="bidirectional"/>
       <node ref="U501" pin="4" pinfunction="SDA" pintype="input"/>
     </net>
-    <net code="24" name="/clkout">
+    <net code="26" name="/VBAT">
+      <node ref="D401" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J401" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="27" name="/clkout">
       <node ref="U302" pin="2" pinfunction="PC14" pintype="bidirectional"/>
       <node ref="U501" pin="1" pinfunction="CLKOUT" pintype="input"/>
     </net>
-    <net code="25" name="GND">
+    <net code="28" name="GND">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C101" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
@@ -1315,9 +1357,9 @@
       <node ref="Q501" pin="2" pinfunction="E" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
       <node ref="U1" pin="C3" pinfunction="GND" pintype="power_in"/>
-      <node ref="U2" pin="6" pinfunction="GND" pintype="power_out"/>
-      <node ref="U2" pin="7" pinfunction="RES" pintype="power_out"/>
-      <node ref="U2" pin="8" pinfunction="GND" pintype="power_out"/>
+      <node ref="U2" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="7" pinfunction="RES" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="GND" pintype="power_in"/>
       <node ref="U3" pin="11" pinfunction="GND" pintype="power_in"/>
       <node ref="U3" pin="3" pinfunction="RES" pintype="passive"/>
       <node ref="U3" pin="8" pinfunction="GND" pintype="power_in"/>
@@ -1326,7 +1368,7 @@
       <node ref="U302" pin="31" pinfunction="BOOT0" pintype="input"/>
       <node ref="U302" pin="32" pinfunction="VSS" pintype="power_in"/>
       <node ref="U302" pin="33" pinfunction="GND" pintype="power_in"/>
-      <node ref="U4" pin="C1" pinfunction="VSS" pintype="power_out"/>
+      <node ref="U4" pin="C1" pinfunction="VSS" pintype="power_in"/>
       <node ref="U4" pin="D1" pinfunction="CAD0" pintype="input"/>
       <node ref="U4" pin="D2" pinfunction="CAD1" pintype="input"/>
       <node ref="U5" pin="2" pinfunction="GND" pintype="power_in"/>
@@ -1334,55 +1376,24 @@
       <node ref="U501" pin="5" pinfunction="GND" pintype="input"/>
       <node ref="U501" pin="8" pinfunction="EVI" pintype="input"/>
     </net>
-    <net code="26" name="Net-(Q501-C)">
+    <net code="29" name="Net-(Q501-C)">
       <node ref="C502" pin="1" pintype="passive"/>
       <node ref="Q501" pin="3" pinfunction="C" pintype="passive"/>
       <node ref="U302" pin="4" pinfunction="~{NRST}" pintype="bidirectional"/>
     </net>
-    <net code="27" name="Net-(U501-VBACK)">
+    <net code="30" name="Net-(U501-VBACK)">
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="U501" pin="6" pinfunction="VBACK" pintype="input"/>
     </net>
-    <net code="28" name="RST">
-      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
-      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
-      <node ref="Q501" pin="1" pinfunction="B" pintype="input"/>
-    </net>
-    <net code="29" name="SWCLK">
+    <net code="31" name="SWCLK">
       <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U302" pin="24" pinfunction="PA14" pintype="bidirectional"/>
     </net>
-    <net code="30" name="SWDIO">
+    <net code="32" name="SWDIO">
       <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
       <node ref="U302" pin="23" pinfunction="PA13" pintype="bidirectional"/>
-    </net>
-    <net code="31" name="VBAT">
-      <node ref="D401" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
-      <node ref="J401" pin="1" pinfunction="Pin_1" pintype="passive"/>
-    </net>
-    <net code="32" name="VIN">
-      <node ref="C1" pin="1" pintype="passive"/>
-      <node ref="C101" pin="1" pintype="passive"/>
-      <node ref="C2" pin="1" pintype="passive"/>
-      <node ref="C4" pin="1" pintype="passive"/>
-      <node ref="C404" pin="1" pintype="passive"/>
-      <node ref="C501" pin="1" pintype="passive"/>
-      <node ref="C503" pin="1" pintype="passive"/>
-      <node ref="C8" pin="1" pintype="passive"/>
-      <node ref="D401" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
-      <node ref="U1" pin="B2" pinfunction="VCC" pintype="power_in"/>
-      <node ref="U1" pin="D2" pinfunction="~{RESET}" pintype="input"/>
-      <node ref="U2" pin="10" pinfunction="VDD_IO" pintype="power_in"/>
-      <node ref="U2" pin="9" pinfunction="VDD" pintype="power_in"/>
-      <node ref="U302" pin="1" pinfunction="VDD" pintype="power_in"/>
-      <node ref="U302" pin="17" pinfunction="VDD" pintype="power_in"/>
-      <node ref="U302" pin="5" pinfunction="VDDA/VREF+" pintype="power_in"/>
-      <node ref="U5" pin="4" pinfunction="IN" pintype="power_in"/>
-      <node ref="U501" pin="7" pinfunction="VDD" pintype="input"/>
     </net>
     <net code="33" name="unconnected-(U1-NC-PadA1)">
       <node ref="U1" pin="A1" pinfunction="NC" pintype="no_connect"/>
