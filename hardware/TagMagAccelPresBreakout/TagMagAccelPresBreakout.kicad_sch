@@ -7804,6 +7804,17 @@
 		)
 		(uuid "39e497e2-7316-45c2-8575-998501aa662f")
 	)
+	(text "WARNING -- POWER LINES REVERSED on\nAK09940A"
+		(exclude_from_sim no)
+		(at 210.82 123.825 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(color 255 25 71 1)
+			)
+		)
+		(uuid "3e63aee2-6d24-453a-8859-1e15b19d0e0f")
+	)
 	(text "Note LPS_RX/LPS_TX swapped -- must be configured in software"
 		(exclude_from_sim no)
 		(at 162.306 16.256 0)

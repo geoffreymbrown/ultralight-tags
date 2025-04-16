@@ -2251,7 +2251,7 @@
 				)
 			)
 			(property "Footprint" "LGA-12L_LIS2DU12_STM"
-				(at 0 0 0)
+				(at -1.27 11.684 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2261,7 +2261,7 @@
 				)
 			)
 			(property "Datasheet" "LIS2DU12TR"
-				(at 0 0 0)
+				(at 0.508 7.874 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2354,42 +2354,6 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 7.62)
-					(name "SCL/SPC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 60.96 -5.08 180)
-					(length 7.62)
-					(name "VDD_IO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at 60.96 -2.54 180)
 					(length 7.62)
@@ -2419,24 +2383,6 @@
 						)
 					)
 					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "CS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2480,78 +2426,6 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 0 -10.16 0)
-					(length 7.62)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 0 -12.7 0)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 60.96 -12.7 180)
-					(length 7.62)
-					(name "RES"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 60.96 -10.16 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 60.96 -7.62 180)
 					(length 7.62)
@@ -2571,12 +2445,140 @@
 					)
 				)
 			)
+			(symbol "LIS2DU12TR_1_1"
+				(pin input line
+					(at 0 0 0)
+					(length 7.62)
+					(name "SCL/SPC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 60.96 -5.08 180)
+					(length 7.62)
+					(name "VDD_IO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 60.96 -12.7 180)
+					(length 7.62)
+					(name "RES"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 60.96 -10.16 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
 		)
 		(symbol "power:+2V5"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2674,8 +2676,8 @@
 			(symbol "+2V5_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+2V5"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2694,9 +2696,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2770,8 +2772,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2853,7 +2855,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3032,10 +3034,6 @@
 		(uuid "03efaaad-6255-453a-918c-83a3f0d8fbf1")
 	)
 	(no_connect
-		(at 113.03 119.38)
-		(uuid "13e9652f-49e2-4968-a305-a8efb2237e4e")
-	)
-	(no_connect
 		(at 118.11 119.38)
 		(uuid "239fe7f0-2aad-4e29-bcf3-2fcc175cf0ad")
 	)
@@ -3050,14 +3048,6 @@
 	(no_connect
 		(at 153.67 86.36)
 		(uuid "84c4e7ae-4775-4968-8896-1f3ab2010d7a")
-	)
-	(no_connect
-		(at 125.73 100.33)
-		(uuid "94dadaa6-db2e-4176-9ca2-6d3c39ab19f1")
-	)
-	(no_connect
-		(at 58.42 160.02)
-		(uuid "a84b4deb-9860-4168-a130-b91019d86c59")
 	)
 	(no_connect
 		(at 119.38 157.48)
@@ -4081,16 +4071,6 @@
 		)
 		(uuid "ff3b4f3f-ae13-4687-b8c1-43902f0c2ca3")
 	)
-	(text "PA3 is not SCK\nPA0 is not SDO\nThis wiring is for bit-banged SPI"
-		(exclude_from_sim no)
-		(at 45.212 141.732 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-		)
-		(uuid "0c084609-f5e0-4dbb-8248-254b2bb110be")
-	)
 	(text "Note: PA15 and PB4 pulled up on reset !"
 		(exclude_from_sim no)
 		(at 96.012 34.544 0)
@@ -4135,17 +4115,6 @@
 		)
 		(uuid "9ec08a01-c427-429b-ad9c-f5f2142bcc5c")
 	)
-	(text "Connect wkup1, wkup4 to enable wakeup on both edges"
-		(exclude_from_sim no)
-		(at 35.56 120.65 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "b35dbbc0-9855-4415-b1c1-f69b18ffef25")
-	)
 	(text "\nPA4 -- LPTIM2_OUT\nPA8 -- LPTIM2_OUT\n\nparts with LPTIM2 active in STOP2\n\nSTM32L422KBU6\nSTM32L412KBU6"
 		(exclude_from_sim no)
 		(at 166.624 135.89 0)
@@ -4155,6 +4124,16 @@
 			)
 		)
 		(uuid "baf6127c-e2b3-482b-aee0-de49ecd48302")
+	)
+	(label "USART2_CK"
+		(at 113.03 119.38 270)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "089d30b7-9a1b-4f41-98fd-344b160fcbc5")
 	)
 	(label "SDA"
 		(at 120.65 53.34 90)
@@ -4196,8 +4175,8 @@
 		)
 		(uuid "2c577145-8239-44ed-94da-ba5bd06ca703")
 	)
-	(label "WKUP4"
-		(at 83.82 93.98 180)
+	(label "WKUP1"
+		(at 87.63 88.9 180)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4206,8 +4185,8 @@
 		)
 		(uuid "31a6f922-a727-4121-806b-269702dc2af0")
 	)
-	(label "ACCEL_SDI_SDO"
-		(at 58.42 162.56 180)
+	(label "USART2_RX"
+		(at 58.42 160.02 180)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -4236,7 +4215,7 @@
 		)
 		(uuid "64841ef2-e1d8-4d0b-ac9a-6ce491800189")
 	)
-	(label "WKUP4"
+	(label "WKUP1"
 		(at 119.38 154.94 0)
 		(effects
 			(font
@@ -4245,6 +4224,16 @@
 			(justify left bottom)
 		)
 		(uuid "68d4b24e-27ce-4fe7-b83b-99c2aabe8fe6")
+	)
+	(label "WKUP1"
+		(at 58.42 165.1 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "6b04189b-e61d-41d9-94e4-61dc64154e54")
 	)
 	(label "AT25_MOSI"
 		(at 123.19 53.34 90)
@@ -4286,7 +4275,7 @@
 		)
 		(uuid "70b651b7-f8fc-48fe-85fb-0da3238594d1")
 	)
-	(label "ACCEL_SCK"
+	(label "USART2_CK"
 		(at 58.42 154.94 180)
 		(effects
 			(font
@@ -4296,15 +4285,15 @@
 		)
 		(uuid "71f04bc1-190c-4018-bfc3-d70f9a5f0fca")
 	)
-	(label "ACCEL_SDI_SDO"
-		(at 87.63 88.9 180)
+	(label "USART2_TX"
+		(at 83.82 93.98 180)
 		(effects
 			(font
 				(size 1.524 1.524)
 			)
 			(justify right bottom)
 		)
-		(uuid "7f0b6eda-bc48-4504-bbba-226d6939dc97")
+		(uuid "86ed03b7-dd5e-43c3-8eab-537d509409e6")
 	)
 	(label "AT25_MISO"
 		(at 125.73 53.34 90)
@@ -4336,16 +4325,6 @@
 		)
 		(uuid "b08fda17-5f02-4987-97f5-81b4c5397c9c")
 	)
-	(label "ACCEL_SCK"
-		(at 110.49 119.38 270)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right bottom)
-		)
-		(uuid "b3abe33b-7c87-4673-b9bb-a64d9e81922b")
-	)
 	(label "AT25_SCK"
 		(at 128.27 53.34 90)
 		(effects
@@ -4375,6 +4354,26 @@
 			(justify right bottom)
 		)
 		(uuid "e0f6b195-e6f2-4fbe-af5a-62c874aad937")
+	)
+	(label "USART2_RX"
+		(at 110.49 119.38 270)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "e2118b33-072c-45e5-be27-8a983eb25988")
+	)
+	(label "USART2_TX"
+		(at 58.42 162.56 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "f8576bcf-1b53-4be0-95ea-732be355a7a8")
 	)
 	(global_label "SWCLK"
 		(shape input)
@@ -5484,7 +5483,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 41.91 44.45 0)
 			(effects
 				(font
@@ -5549,7 +5548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 68.58 104.14 0)
 			(effects
 				(font
@@ -5614,7 +5613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 128.27 121.92 0)
 			(effects
 				(font
@@ -5679,7 +5678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
 			(at 82.55 73.66 0)
 			(effects
 				(font
@@ -5744,7 +5743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
 			(at 179.07 95.25 0)
 			(effects
 				(font
@@ -5809,7 +5808,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 104.14 52.07 0)
 			(effects
 				(font
@@ -6141,7 +6140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 205.74 34.29 0)
 			(effects
 				(font
@@ -6206,7 +6205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 256.54 140.97 0)
 			(effects
 				(font
@@ -6271,7 +6270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
 			(at 256.54 123.19 0)
 			(effects
 				(font
@@ -6336,7 +6335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
 			(at 245.11 22.86 0)
 			(effects
 				(font
@@ -6392,7 +6391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 232.41 22.86 0)
 			(effects
 				(font
@@ -6401,7 +6400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 232.41 22.86 0)
 			(effects
 				(font
@@ -6466,7 +6465,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 245.11 45.72 0)
 			(effects
 				(font
@@ -6834,7 +6833,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
 			(at 74.93 29.21 0)
 			(effects
 				(font
@@ -7496,7 +7495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 179.07 104.14 0)
 			(effects
 				(font
@@ -7561,7 +7560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 138.43 185.42 0)
 			(effects
 				(font
@@ -7626,7 +7625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 123.19 171.45 0)
 			(effects
 				(font
@@ -7691,7 +7690,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
 			(at 135.89 153.67 0)
 			(effects
 				(font
@@ -7833,7 +7832,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AccelTag:LGA-12L_LIS2DU12_STM"
+		(property "Footprint" "LGA-12L_LIS2DU12_STM"
 			(at 58.42 154.94 0)
 			(effects
 				(font
@@ -7951,7 +7950,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 54.61 171.45 0)
 			(effects
 				(font
@@ -8016,7 +8015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 243.84 140.97 0)
 			(effects
 				(font
