@@ -5,8 +5,8 @@
 	(uuid "dc006d87-46a7-47a2-9c65-845f7016dec0")
 	(paper "A")
 	(title_block
-		(title "Tag Breakout Board Steval Dauguter")
-		(date "2020-10-24")
+		(title "Compass Tag Breakout")
+		(date "2025-04-25")
 	)
 	(lib_symbols
 		(symbol "AK09940a:AK09940A"
@@ -3171,7 +3171,7 @@
 		)
 		(uuid "27cf37cb-90a5-443b-a3ee-019a81129eb2")
 	)
-	(label "AK_MISO"
+	(label "AK_MOSI"
 		(at 140.97 86.36 180)
 		(effects
 			(font
@@ -3181,7 +3181,7 @@
 		)
 		(uuid "3315d932-3368-44a4-9748-4d2abafdfd8a")
 	)
-	(label "AK_MOSI"
+	(label "AK_MISO"
 		(at 199.39 91.44 0)
 		(effects
 			(font
