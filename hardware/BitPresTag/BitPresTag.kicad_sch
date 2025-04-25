@@ -5,10 +5,11 @@
 	(uuid "e44ca67a-43be-444b-8652-f54825a2eb6f")
 	(paper "USLetter")
 	(title_block
-		(title "BitTag with External Memory and LI2DW12")
-		(date "2025-02-19")
+		(title "BitTag with External Memory and LPS27")
+		(date "2025-04-25")
 		(company "IUCS")
 		(comment 1 "Geoffrey Brown")
+		(comment 3 "checked pinouts 4/25/25")
 	)
 	(lib_symbols
 		(symbol "BitTagNG:RV-3028-C7-AccelTag"
@@ -3532,6 +3533,12 @@
 		(uuid "48851a73-94ed-439f-9467-bb0a9392bc6d")
 	)
 	(junction
+		(at 26.67 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50661817-5501-47f0-91b2-e064a445f64a")
+	)
+	(junction
 		(at 245.11 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5045,7 +5052,7 @@
 		)
 		(uuid "7cea0bb1-7734-474e-9b1a-c13e5db517cf")
 	)
-	(label "LPS_SCK"
+	(label "LPS_CS"
 		(at 87.63 91.44 180)
 		(effects
 			(font
@@ -5195,7 +5202,7 @@
 		)
 		(uuid "fbdc1e52-57da-4d56-8248-34ce73dfcb4c")
 	)
-	(label "LPS_CS"
+	(label "LPS_SCK"
 		(at 113.03 119.38 270)
 		(effects
 			(font
@@ -8346,6 +8353,71 @@
 			(project "BitPresTag"
 				(path "/e44ca67a-43be-444b-8652-f54825a2eb6f"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+2V5")
+		(at 26.67 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2dcf6339-1766-4082-be4b-ecefca0ec6bc")
+		(property "Reference" "#PWR8"
+			(at 26.67 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+2V5"
+			(at 27.051 144.1958 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 26.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c72e3095-dc83-412c-b227-045af3bd2d9c")
+		)
+		(instances
+			(project "BitPresTag"
+				(path "/e44ca67a-43be-444b-8652-f54825a2eb6f"
+					(reference "#PWR8")
 					(unit 1)
 				)
 			)

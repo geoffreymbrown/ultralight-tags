@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.1,
-          "height": 1.1,
-          "width": 1.1
+          "drill": 0.0,
+          "height": 0.5,
+          "width": 2.3
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -123,21 +123,21 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.1016,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
-        "min_hole_clearance": 0.254,
-        "min_hole_to_hole": 0.254,
-        "min_microvia_diameter": 0.2,
-        "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_copper_edge_clearance": 0.075,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
+        "min_microvia_diameter": 0.0,
+        "min_microvia_drill": 0.0,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.1016,
-        "min_via_annular_width": 0.1016,
-        "min_via_diameter": 0.4572,
+        "min_through_hole_diameter": 0.2794,
+        "min_track_width": 0.1524,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.6,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -186,14 +186,7 @@
       ],
       "track_widths": [
         0.0,
-        0.1016,
-        0.127,
-        0.1524,
-        0.2032,
-        0.254,
-        0.3048,
-        0.508,
-        0.762
+        0.3048
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -225,18 +218,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.4064,
-          "drill": 0.2032
-        },
-        {
-          "diameter": 0.4572,
-          "drill": 0.254
-        },
-        {
-          "diameter": 0.61,
-          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false,
@@ -258,11 +239,10 @@
   },
   "erc": {
     "erc_exclusions": [
-      "lib_symbol_issues|2070100|914400|186cdef7-88ef-4c20-8728-6e8240a0fdc7|00000000-0000-0000-0000-000000000000|||",
-      "lib_symbol_issues|508000|1485900|720c78dc-170e-4e3f-b13f-d2db5f4f5920|00000000-0000-0000-0000-000000000000|||",
-      "multiple_net_names|1790700|952500|8c72ed56-c31b-40e1-811e-fadfefa85caf|990dfa00-34eb-4ca2-80fc-45ce58046d83|/e44ca67a-43be-444b-8652-f54825a2eb6f|/e44ca67a-43be-444b-8652-f54825a2eb6f|/e44ca67a-43be-444b-8652-f54825a2eb6f",
-      "multiple_net_names|825500|736600|8c72ed56-c31b-40e1-811e-fadfefa85caf|229f8cc5-a9e9-4e49-9286-ba7863e32f48|/e44ca67a-43be-444b-8652-f54825a2eb6f|/e44ca67a-43be-444b-8652-f54825a2eb6f|/e44ca67a-43be-444b-8652-f54825a2eb6f",
-      "pin_to_pin|508000|1511300|4fe2f692-c03c-4c8d-8df9-8844c21d9a9b|ae6b9894-3f8c-4176-93e1-5fc446404e2e|/e44ca67a-43be-444b-8652-f54825a2eb6f|/e44ca67a-43be-444b-8652-f54825a2eb6f|/e44ca67a-43be-444b-8652-f54825a2eb6f"
+      "lib_symbol_issues|1600200|1181100|4e115ce4-5597-402b-a80d-2f9f1e4b6b6f|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|1600200|635000|071f406d-2749-4060-bc8d-c4a45a19c0ed|00000000-0000-0000-0000-000000000000|||",
+      "lib_symbol_issues|495300|1270000|00000000-0000-0000-0000-00005f9c4db7|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|1447800|749300|be56663a-b8af-4bfe-8da1-7edd337ecd23|00000000-0000-0000-0000-000000000000|/dc006d87-46a7-47a2-9c65-845f7016dec0|/dc006d87-46a7-47a2-9c65-845f7016dec0|"
     ],
     "meta": {
       "version": 0
@@ -479,7 +459,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "BitPresTag.kicad_pro",
+    "filename": "BitPresTagBreakout.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -491,82 +471,48 @@
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.51,
-        "microvia_drill": 0.13,
+        "microvia_diameter": 0.6096,
+        "microvia_drill": 0.3048,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1016,
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
+        "via_diameter": 0.6096,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.1524,
+        "clearance": 0.254,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.51,
-        "microvia_drill": 0.13,
-        "name": "MEDIUM",
+        "microvia_diameter": 0.6096,
+        "microvia_drill": 0.3048,
+        "name": "large",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1524,
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
+        "track_width": 0.254,
+        "via_diameter": 0.7112,
+        "via_drill": 0.3556,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.13,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.51,
-        "microvia_drill": 0.13,
-        "name": "MIN",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.13,
-        "via_diameter": 0.74,
-        "via_drill": 0.3302,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2032,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.51,
-        "microvia_drill": 0.13,
-        "name": "WIDE",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2032,
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.13,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.51,
-        "microvia_drill": 0.13,
+        "microvia_diameter": 0.6096,
+        "microvia_drill": 0.3048,
         "name": "small",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.13,
-        "via_diameter": 0.74,
-        "via_drill": 0.3302,
+        "track_width": 0.127,
+        "via_diameter": 0.6604,
+        "via_drill": 0.3048,
         "wire_width": 6
       }
     ],
@@ -581,7 +527,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "tag-breakout-jlcpcb.net",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
@@ -643,11 +589,53 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DISTPN",
+          "name": "DISTPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MFN",
+          "name": "MFN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Macrofab",
+          "name": "Macrofab",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -656,7 +644,7 @@
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
-      "default_text_size": 60.0,
+      "default_text_size": 50.0,
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
@@ -702,7 +690,7 @@
   },
   "sheets": [
     [
-      "e44ca67a-43be-444b-8652-f54825a2eb6f",
+      "dc006d87-46a7-47a2-9c65-845f7016dec0",
       "Root"
     ]
   ],
