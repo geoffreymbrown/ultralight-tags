@@ -35,20 +35,22 @@
 				)
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-				(at 0 -7.62 0)
+				(at 0.635 -13.335 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ts5a3159a.pdf"
-				(at 0 0 0)
+				(at 0.635 -11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
@@ -81,8 +83,8 @@
 			)
 			(symbol "TS5A3159ADBVR_1_1"
 				(rectangle
-					(start -3.81 1.905)
-					(end 3.81 -7.62)
+					(start -3.81 4.445)
+					(end 3.81 -4.445)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -92,7 +94,7 @@
 					)
 				)
 				(circle
-					(center -2.159 -2.54)
+					(center -2.159 0)
 					(radius 0.508)
 					(stroke
 						(width 0.254)
@@ -104,7 +106,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 -2.54) (xy -2.794 -2.54)
+						(xy -5.08 0) (xy -2.794 0)
 					)
 					(stroke
 						(width 0)
@@ -116,7 +118,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.651 -2.413) (xy 2.54 -0.635)
+						(xy -1.651 0.127) (xy 2.54 1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -128,67 +130,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -7.62) (xy 0 -7.112)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -6.858) (xy 0 -6.604)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -6.35) (xy 0 -6.096)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.842) (xy 0 -5.588)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.334) (xy 0 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -4.826) (xy 0 -4.572)
+						(xy 0 -5.08) (xy 0 -4.572)
 					)
 					(stroke
 						(width 0)
@@ -260,7 +202,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.286) (xy 0 -2.032)
+						(xy 0 -1.778) (xy 0 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -272,7 +214,7 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -5.08) (xy 2.794 -5.08)
+						(xy 0 -1.27) (xy 0 -1.016)
 					)
 					(stroke
 						(width 0)
@@ -284,7 +226,67 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 0) (xy 2.794 0)
+						(xy 0 -0.762) (xy 0 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.254) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.254) (xy 0 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.254) (xy 0 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 2.794 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 2.794 2.54)
 					)
 					(stroke
 						(width 0)
@@ -295,7 +297,7 @@
 					)
 				)
 				(circle
-					(center 2.159 -5.08)
+					(center 2.159 -2.54)
 					(radius 0.508)
 					(stroke
 						(width 0.254)
@@ -306,7 +308,7 @@
 					)
 				)
 				(circle
-					(center 2.159 0)
+					(center 2.159 2.54)
 					(radius 0.508)
 					(stroke
 						(width 0.254)
@@ -317,7 +319,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -5.08 180)
+					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -335,7 +337,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
+					(at 7.62 2.54 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -353,7 +355,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -2.54 0)
+					(at -7.62 0 0)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -371,7 +373,7 @@
 					)
 				)
 				(pin input line
-					(at 0 -10.16 90)
+					(at 0 -7.62 90)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -2734,7 +2736,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:MCP1703A-3302_SOT23"
+		(symbol "Regulator_Linear:XC6206PxxxMR"
 			(pin_names
 				(offset 0.254)
 			)
@@ -2749,7 +2751,7 @@
 					)
 				)
 			)
-			(property "Value" "MCP1703A-3302_SOT23"
+			(property "Value" "XC6206PxxxMR"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -2758,25 +2760,17 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 0 5.08 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+				(at 0 5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Low Quiescent Current LDO Regulator, 3.3V, 250mA, Vin<=16V, SOT-23"
+			(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2785,7 +2779,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "REGULATOR LDO"
+			(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2794,7 +2788,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_keywords" "Torex LDO Voltage Regulator Fixed Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2803,10 +2797,19 @@
 					(hide yes)
 				)
 			)
-			(symbol "MCP1703A-3302_SOT23_0_1"
+			(property "ki_fp_filters" "SOT?23?3*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XC6206PxxxMR_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2816,7 +2819,7 @@
 					)
 				)
 			)
-			(symbol "MCP1703A-3302_SOT23_1_1"
+			(symbol "XC6206PxxxMR_1_1"
 				(pin power_in line
 					(at 0 -7.62 90)
 					(length 2.54)
@@ -3373,9 +3376,9 @@
 		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3423,7 +3426,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3473,8 +3476,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3493,9 +3496,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3543,7 +3546,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3593,8 +3596,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3613,9 +3616,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3663,7 +3666,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3689,8 +3692,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3707,11 +3710,107 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "power:VDDA"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3725,7 +3824,7 @@
 				)
 			)
 			(property "Value" "VDDA"
-				(at 0 3.81 0)
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3759,7 +3858,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3809,8 +3908,8 @@
 			(symbol "VDDA_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "VDDA"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3887,6 +3986,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "53d2bcd8-5566-440a-948e-2ad564d758d4")
+	)
+	(junction
+		(at 41.91 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5453f37d-bf28-43f3-aada-28f0c0d79536")
 	)
 	(junction
 		(at 170.18 121.92)
@@ -3975,16 +4080,12 @@
 		(uuid "117e72b2-5ca2-4077-83a4-45d4fa266a04")
 	)
 	(no_connect
-		(at 229.87 90.17)
+		(at 220.345 97.79)
 		(uuid "12d2c734-d1ee-446a-9606-4acfe2177339")
 	)
 	(no_connect
 		(at 110.49 172.72)
 		(uuid "29d81448-602e-40c5-8409-fbf525523f2f")
-	)
-	(no_connect
-		(at 184.15 95.25)
-		(uuid "329e48cc-1e77-412b-b000-d706540a1eb6")
 	)
 	(no_connect
 		(at 110.49 175.26)
@@ -3999,6 +4100,10 @@
 		(uuid "4e45ba9f-aacf-4a51-bb14-2238ed750d9f")
 	)
 	(no_connect
+		(at 184.15 85.09)
+		(uuid "509fe15f-1f6d-4004-97de-633b1b9dcc62")
+	)
+	(no_connect
 		(at 184.15 80.01)
 		(uuid "5d9b3503-fb02-4997-85ad-808aedb0f9b8")
 	)
@@ -4007,12 +4112,12 @@
 		(uuid "638fa541-73ca-408d-98a7-c142e58c0981")
 	)
 	(no_connect
-		(at 184.15 100.33)
-		(uuid "6c582866-63cf-4e0b-94db-ab5bacdb7ec1")
-	)
-	(no_connect
 		(at 158.75 113.03)
 		(uuid "75647f5f-f654-475d-94cf-9d074a3cb11b")
+	)
+	(no_connect
+		(at 184.15 97.79)
+		(uuid "7a1831a6-4c01-46a3-a141-efbf237efec2")
 	)
 	(no_connect
 		(at 184.15 82.55)
@@ -4023,12 +4128,12 @@
 		(uuid "890c8ca8-76ff-41ff-9fe1-e521ec406a7c")
 	)
 	(no_connect
-		(at 158.75 92.71)
-		(uuid "9a4222ae-bb22-42c4-a86b-57c7bb2142ea")
+		(at 184.15 87.63)
+		(uuid "8a151242-3296-48b5-b1d5-be97fc430218")
 	)
 	(no_connect
-		(at 184.15 97.79)
-		(uuid "c745dc25-b9a3-41f1-9bb0-a03f6de8533c")
+		(at 158.75 92.71)
+		(uuid "9a4222ae-bb22-42c4-a86b-57c7bb2142ea")
 	)
 	(no_connect
 		(at 158.75 97.79)
@@ -4066,7 +4171,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 80.01) (xy 222.25 80.01)
+			(xy 206.375 87.63) (xy 212.725 87.63)
 		)
 		(stroke
 			(width 0)
@@ -4156,7 +4261,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 87.63) (xy 214.63 87.63)
+			(xy 203.835 95.25) (xy 205.105 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4193,16 +4298,6 @@
 			(type default)
 		)
 		(uuid "1c4177cf-226a-4bbe-8789-bb79e4db4d5f")
-	)
-	(wire
-		(pts
-			(xy 215.9 85.09) (xy 215.9 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f6ced0c-e534-437d-bdad-79ce14f6167a")
 	)
 	(wire
 		(pts
@@ -4243,16 +4338,6 @@
 			(type default)
 		)
 		(uuid "2872948e-588f-4a64-8ccb-a23c606e82e4")
-	)
-	(wire
-		(pts
-			(xy 184.15 87.63) (xy 205.74 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "368a231e-9e86-4b09-831f-500a71a99145")
 	)
 	(wire
 		(pts
@@ -4336,7 +4421,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 29.21) (xy 46.99 29.21)
+			(xy 38.1 29.21) (xy 41.91 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4353,6 +4438,16 @@
 			(type default)
 		)
 		(uuid "4c851e70-c41c-455d-8a10-bbeedadbf3ac")
+	)
+	(wire
+		(pts
+			(xy 184.15 100.33) (xy 187.96 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4db8bc8f-b202-4685-8542-008fd870ed05")
 	)
 	(wire
 		(pts
@@ -4463,6 +4558,16 @@
 			(type default)
 		)
 		(uuid "67655927-eabf-48cd-9853-b2e8edd58b6c")
+	)
+	(wire
+		(pts
+			(xy 41.91 29.21) (xy 46.99 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "692bf61d-d176-4403-9ab3-728ad57922db")
 	)
 	(wire
 		(pts
@@ -4616,6 +4721,16 @@
 	)
 	(wire
 		(pts
+			(xy 206.375 87.63) (xy 206.375 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ec6673a-1d02-4b14-8db1-651ad7a3ad83")
+	)
+	(wire
+		(pts
 			(xy 44.45 93.98) (xy 48.26 93.98)
 		)
 		(stroke
@@ -4716,6 +4831,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 95.25) (xy 196.215 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e2fb526-ed90-477e-8d90-a64d746d2e47")
+	)
+	(wire
+		(pts
 			(xy 54.61 40.64) (xy 54.61 41.91)
 		)
 		(stroke
@@ -4726,16 +4851,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 85.09) (xy 215.9 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a09328c8-a425-4b78-ba6e-36835e073312")
-	)
-	(wire
-		(pts
 			(xy 144.78 132.08) (xy 144.78 134.62)
 		)
 		(stroke
@@ -4743,6 +4858,16 @@
 			(type default)
 		)
 		(uuid "a0edeea7-e4c2-4528-a66c-cad7565dbce1")
+	)
+	(wire
+		(pts
+			(xy 184.15 92.71) (xy 206.375 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1810740-3817-412d-b79d-749fd2ce72f9")
 	)
 	(wire
 		(pts
@@ -4783,16 +4908,6 @@
 			(type default)
 		)
 		(uuid "a537939d-c0bd-4559-b92b-7cd4479c5037")
-	)
-	(wire
-		(pts
-			(xy 184.15 92.71) (xy 194.31 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a664dd93-ff68-469b-a5ff-0ec23b068554")
 	)
 	(wire
 		(pts
@@ -5440,7 +5555,7 @@
 	)
 	(global_label "TAG_SWDIO"
 		(shape input)
-		(at 229.87 85.09 0)
+		(at 220.345 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5450,7 +5565,7 @@
 		)
 		(uuid "322c0625-0ae3-431d-b91b-dcc818c5380d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 244.8587 85.09 0)
+			(at 235.3337 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5550,7 +5665,7 @@
 	)
 	(global_label "PWR_IN_MIRROR"
 		(shape input)
-		(at 194.31 92.71 0)
+		(at 187.96 100.33 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5560,7 +5675,7 @@
 		)
 		(uuid "67b5ebdf-d5b0-4eaf-881a-4ef91bc10358")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 211.6996 92.71 0)
+			(at 205.3496 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5767,7 +5882,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 245.11 52.07 0)
 			(effects
 				(font
@@ -5933,7 +6048,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 144.78 144.78 0)
 			(effects
 				(font
@@ -6103,7 +6218,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 228.6 39.37 0)
 			(effects
 				(font
@@ -6126,7 +6241,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 209.55 87.63 90)
+		(at 200.025 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6134,15 +6249,15 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b673196")
 		(property "Reference" "R106"
-			(at 214.63 88.9 90)
+			(at 205.105 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100"
-			(at 209.55 87.63 90)
+		(property "Value" "200"
+			(at 200.025 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6150,7 +6265,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 209.55 89.408 90)
+			(at 200.025 97.028 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6159,7 +6274,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 87.63 0)
+			(at 200.025 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6168,7 +6283,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 209.55 87.63 0)
+			(at 200.025 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6176,8 +6291,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22775"
-			(at 306.07 180.34 0)
+		(property "LCSC" "C8218 "
+			(at 296.545 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6186,7 +6301,7 @@
 			)
 		)
 		(property "MFN" "Uniroyal Elec."
-			(at 306.07 180.34 0)
+			(at 296.545 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6195,7 +6310,7 @@
 			)
 		)
 		(property "MPN" "0603WAF1000T5E"
-			(at 306.07 180.34 0)
+			(at 296.545 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6204,7 +6319,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 209.55 87.63 0)
+			(at 200.025 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6374,7 +6489,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 194.31 53.34 0)
 			(effects
 				(font
@@ -6437,7 +6552,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 176.53 69.85 0)
 			(effects
 				(font
@@ -6502,7 +6617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
 			(at 171.45 69.85 0)
 			(effects
 				(font
@@ -6668,7 +6783,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 194.31 24.13 0)
 			(effects
 				(font
@@ -6835,7 +6950,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 54.61 41.91 0)
 			(effects
 				(font
@@ -7005,7 +7120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"VDDA\""
 			(at 87.63 24.13 0)
 			(effects
 				(font
@@ -7068,7 +7183,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 93.98 180.34 0)
 			(effects
 				(font
@@ -7131,7 +7246,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 93.98 166.37 0)
 			(effects
 				(font
@@ -7195,7 +7310,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 64.77 184.15 0)
 			(effects
 				(font
@@ -7475,7 +7590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 132.08 144.78 0)
 			(effects
 				(font
@@ -7599,7 +7714,7 @@
 	)
 	(symbol
 		(lib_id "Analog_Switch:TS5A3159ADBVR")
-		(at 222.25 90.17 0)
+		(at 212.725 95.25 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7608,7 +7723,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005edb1f8c")
 		(property "Reference" "U2"
-			(at 222.25 93.98 0)
+			(at 212.725 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7616,7 +7731,7 @@
 			)
 		)
 		(property "Value" "TS5A3159ADBVR"
-			(at 222.25 96.2914 0)
+			(at 212.725 101.3714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7624,7 +7739,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 222.25 82.55 0)
+			(at 212.725 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7633,7 +7748,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ts5a3159a.pdf"
-			(at 222.25 90.17 0)
+			(at 212.725 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7641,8 +7756,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 222.25 90.17 0)
+		(property "Description" "Single SPDT Analog Switch, 1.65-V to 5.5-V Single-Supply Operation, 1Ohm Ron, SOT-23-6"
+			(at 212.725 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7651,7 +7766,7 @@
 			)
 		)
 		(property "MFN" "TI"
-			(at 222.25 90.17 0)
+			(at 212.725 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7660,7 +7775,7 @@
 			)
 		)
 		(property "MPN" "TS5A3159ADBVR"
-			(at 222.25 90.17 0)
+			(at 212.725 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7669,7 +7784,7 @@
 			)
 		)
 		(property "LCSC" "C128405"
-			(at 222.25 90.17 0)
+			(at 212.725 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7678,7 +7793,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 222.25 90.17 0)
+			(at 212.725 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7758,7 +7873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single SPDT Analog Switch, 1.65-V to 5.5-V Single-Supply Operation, 1Ohm Ron, SOT-23-6"
 			(at 187.96 39.37 0)
 			(effects
 				(font
@@ -7831,7 +7946,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:MCP1703A-3302_SOT23")
+		(lib_id "Regulator_Linear:XC6206PxxxMR")
 		(at 54.61 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7855,8 +7970,18 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 54.61 24.13 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 54.61 23.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
+			(at 54.61 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7864,16 +7989,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf"
-			(at 54.61 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
+		(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
 			(at 54.61 29.21 0)
 			(effects
 				(font
@@ -8083,7 +8199,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 81.28 24.13 0)
 			(effects
 				(font
@@ -8146,7 +8262,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 87.63 41.91 0)
 			(effects
 				(font
@@ -8304,7 +8420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 40.64 147.32 0)
 			(effects
 				(font
@@ -8474,7 +8590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 38.1 81.28 0)
 			(effects
 				(font
@@ -8497,7 +8613,7 @@
 	)
 	(symbol
 		(lib_id "Analog_Switch:TS5A3159ADBVR")
-		(at 48.26 82.55 0)
+		(at 48.26 85.09 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8506,7 +8622,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005efd17b9")
 		(property "Reference" "U4"
-			(at 48.26 78.74 0)
+			(at 48.26 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8514,7 +8630,7 @@
 			)
 		)
 		(property "Value" "TS5A3159ADBVR"
-			(at 48.26 76.4286 0)
+			(at 48.26 78.9686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8523,7 +8639,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 48.26 90.17 0)
+			(at 48.26 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8532,7 +8648,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ts5a3159a.pdf"
-			(at 48.26 82.55 0)
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8540,8 +8656,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 48.26 82.55 0)
+		(property "Description" "Single SPDT Analog Switch, 1.65-V to 5.5-V Single-Supply Operation, 1Ohm Ron, SOT-23-6"
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8550,7 +8666,7 @@
 			)
 		)
 		(property "MFN" "TI"
-			(at 48.26 82.55 0)
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8559,7 +8675,7 @@
 			)
 		)
 		(property "MPN" "TS5A3159ADBVR"
-			(at 48.26 82.55 0)
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8568,7 +8684,7 @@
 			)
 		)
 		(property "LCSC" "C128405"
-			(at 48.26 82.55 0)
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8577,7 +8693,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 48.26 82.55 0)
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8658,7 +8774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single SPDT Analog Switch, 1.65-V to 5.5-V Single-Supply Operation, 1Ohm Ron, SOT-23-6"
 			(at 200.66 39.37 0)
 			(effects
 				(font
@@ -8948,7 +9064,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 166.37 69.85 0)
 			(effects
 				(font
@@ -9011,7 +9127,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 170.18 123.19 0)
 			(effects
 				(font
@@ -9154,7 +9270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 246.38 27.94 0)
 			(effects
 				(font
@@ -9642,7 +9758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 114.3 144.78 0)
 			(effects
 				(font
@@ -10000,7 +10116,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 48.26 102.87 0)
 			(effects
 				(font
@@ -10406,6 +10522,72 @@
 			(project "tag-breakout-l432v1"
 				(path "/2d561ecb-394a-4bb7-a154-94e4285b4f36"
 					(reference "J104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 41.91 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3134a04-ee07-4f0c-9a54-f342130a2e78")
+		(property "Reference" "#FLG1"
+			(at 41.91 27.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 41.91 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 41.91 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03ccbf8e-7009-4673-9986-d3bf1d98e78f")
+		)
+		(instances
+			(project ""
+				(path "/2d561ecb-394a-4bb7-a154-94e4285b4f36"
+					(reference "#FLG1")
 					(unit 1)
 				)
 			)

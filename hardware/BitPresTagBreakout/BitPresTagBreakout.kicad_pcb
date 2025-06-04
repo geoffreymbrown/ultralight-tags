@@ -203,7 +203,7 @@
 		(path "/00000000-0000-0000-0000-00005f9c4db7")
 		(sheetname "Root")
 		(sheetfile "BitPresTagBreakout.kicad_sch")
-		(attr smd)
+		(attr smd dnp)
 		(fp_line
 			(start 2.76 3.21)
 			(end 2.76 2.465)
@@ -585,6 +585,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ff081a5c-f680-4ae3-8f7f-9909066de5cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C3253631"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "119756e3-9acc-4010-887a-165311d39fb4")
 			(effects
 				(font
 					(size 1 1)
@@ -2504,6 +2517,19 @@
 				)
 			)
 		)
+		(property "LCSC" "C181047"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "deb56807-86ed-4192-9240-5be015d3199d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f81bd9d8-18b1-4f47-8eca-0ed7252c725c")
 		(sheetname "Root")
@@ -2725,7 +2751,7 @@
 				)
 			)
 		)
-		(property "MFN" ""
+		(property "MFN" "Murata"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2751,12 +2777,25 @@
 				)
 			)
 		)
-		(property "MPN" "CL05F104ZO5NNNC"
+		(property "MPN" "GRM033C81E104KE14D"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "65ca63d6-c15b-4438-93f2-a9b8d90caa0b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C181047"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "39193907-13d7-43fa-9b55-48d863c4af89")
 			(effects
 				(font
 					(size 1 1)
@@ -3000,6 +3039,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "07b7694d-ed28-487b-a537-35f2f8b5e7a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C192252"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7816aabf-5150-4f30-a3cf-55bfa54002d6")
 			(effects
 				(font
 					(size 1 1)
@@ -4415,7 +4467,7 @@
 		(layer "Edge.Cuts")
 		(uuid "e70895ad-7591-404b-b2a7-6aa744844206")
 	)
-	(gr_text "Geoffrey Brown\n4/17/2025"
+	(gr_text "Geoffrey Brown\n6/3/2025"
 		(at 130.59 112.98 0)
 		(layer "B.SilkS")
 		(uuid "00000000-0000-0000-0000-00005c519b57")
