@@ -20,6 +20,14 @@ filters:
       - column: 'LCSC'
         regex: '^C\d+'
 
+  - name: fix_rotation
+    comment: 'Adjust rotation for JLC'
+    type: rot_footprint
+    negative_bottom: false
+    mirror_bottom: true
+    rotations:
+      - ["taglibrary:LGA-12L_LIS2DU12_STM", -180.0]
+
 variants:
   - name: rotated
     comment: 'Just a place holder for the rotation filter'
