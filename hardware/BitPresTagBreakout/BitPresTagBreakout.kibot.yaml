@@ -76,6 +76,7 @@ outputs:
   - name: "drill-file"
     comment: "Generate Drill file"
     type: excellon
+    dir: gerberdir
 
   - name: 'jlc-bom'
     comment: "BoM for JLC"
