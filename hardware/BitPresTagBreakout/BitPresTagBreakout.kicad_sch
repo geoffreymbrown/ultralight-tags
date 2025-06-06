@@ -2958,7 +2958,7 @@
 		(uuid "167ee03a-bb6c-406f-ad0d-b2f20bf3d149")
 	)
 	(label "rtc_sda"
-		(at 37.465 64.77 180)
+		(at 38.1 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3108,7 +3108,7 @@
 		(uuid "7d021f87-6d02-44ee-a221-b726765051ae")
 	)
 	(label "rtc_scl"
-		(at 37.465 62.23 180)
+		(at 38.1 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3138,7 +3138,7 @@
 		(uuid "95469e34-93c7-4fbc-9387-866c3191b6b9")
 	)
 	(label "PB8"
-		(at 37.465 67.31 180)
+		(at 38.1 67.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3368,7 +3368,7 @@
 		(uuid "de6dbbc9-0400-46bc-b033-7ff5a2f133bf")
 	)
 	(label "PB9"
-		(at 37.465 69.85 180)
+		(at 38.1 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
