@@ -3970,12 +3970,6 @@
 		(uuid "41a65a6f-844f-4eff-8495-4db7d7e04c75")
 	)
 	(junction
-		(at 194.31 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4929227f-e608-467c-9873-a9730b435917")
-	)
-	(junction
 		(at 48.26 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4048,10 +4042,10 @@
 		(uuid "97eeb354-f8ae-49cc-9d30-e2fec5caea3c")
 	)
 	(junction
-		(at 194.31 26.67)
+		(at 207.01 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c5d4cf01-ab91-49c2-a2f0-fb80a62ce755")
+		(uuid "c323c570-130c-4bea-9b51-c44f8cd07b62")
 	)
 	(junction
 		(at 96.52 85.09)
@@ -4080,7 +4074,7 @@
 		(uuid "117e72b2-5ca2-4077-83a4-45d4fa266a04")
 	)
 	(no_connect
-		(at 220.98 97.79)
+		(at 184.15 100.33)
 		(uuid "12d2c734-d1ee-446a-9606-4acfe2177339")
 	)
 	(no_connect
@@ -4092,7 +4086,7 @@
 		(uuid "43479f1a-42b6-4540-91ac-fb31fe5cc5e7")
 	)
 	(no_connect
-		(at 158.75 100.33)
+		(at 184.15 102.87)
 		(uuid "472e5418-7e3a-4b41-9132-d610d984df78")
 	)
 	(no_connect
@@ -4171,16 +4165,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 87.63) (xy 213.36 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09f8c0e9-0a54-4889-abe6-9e123ed7c6c7")
-	)
-	(wire
-		(pts
 			(xy 68.58 40.64) (xy 68.58 38.1)
 		)
 		(stroke
@@ -4251,17 +4235,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 52.07) (xy 194.31 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12854099-0177-4f97-9dc9-eefceec0c0c5")
-	)
-	(wire
-		(pts
-			(xy 204.47 95.25) (xy 205.74 95.25)
+			(xy 204.47 95.25) (xy 207.01 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4278,16 +4252,6 @@
 			(type default)
 		)
 		(uuid "188c41e2-264b-417e-ad8a-917333fcaa20")
-	)
-	(wire
-		(pts
-			(xy 194.31 52.07) (xy 200.66 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bfe9eee-25b2-4968-b4bb-4d4400a886d9")
 	)
 	(wire
 		(pts
@@ -4441,16 +4405,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 100.33) (xy 187.96 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4db8bc8f-b202-4685-8542-008fd870ed05")
-	)
-	(wire
-		(pts
 			(xy 171.45 120.65) (xy 171.45 121.92)
 		)
 		(stroke
@@ -4508,16 +4462,6 @@
 			(type default)
 		)
 		(uuid "61eab9eb-9b04-423a-ac48-af197405bfa0")
-	)
-	(wire
-		(pts
-			(xy 194.31 26.67) (xy 200.66 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63632f70-063b-4b46-8c90-c9d3a66cd1d7")
 	)
 	(wire
 		(pts
@@ -4671,16 +4615,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 26.67) (xy 194.31 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c3a302e-3534-4899-b84f-aba7972e1b6d")
-	)
-	(wire
-		(pts
 			(xy 171.45 69.85) (xy 171.45 72.39)
 		)
 		(stroke
@@ -4718,16 +4652,6 @@
 			(type default)
 		)
 		(uuid "7ded4589-ddba-418f-9d4c-5257a4aa124e")
-	)
-	(wire
-		(pts
-			(xy 207.01 87.63) (xy 207.01 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ec6673a-1d02-4b14-8db1-651ad7a3ad83")
 	)
 	(wire
 		(pts
@@ -4788,6 +4712,16 @@
 			(type default)
 		)
 		(uuid "961962e4-fe0b-45fd-b4e7-ea3d54e0fcc6")
+	)
+	(wire
+		(pts
+			(xy 207.01 92.71) (xy 210.82 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97daac87-1b2d-487e-8462-0146ef93d799")
 	)
 	(wire
 		(pts
@@ -4908,6 +4842,16 @@
 			(type default)
 		)
 		(uuid "a537939d-c0bd-4559-b92b-7cd4479c5037")
+	)
+	(wire
+		(pts
+			(xy 154.94 99.06) (xy 157.48 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7f66e83-b2c5-4aab-87dd-2b2b2a7c80b5")
 	)
 	(wire
 		(pts
@@ -5101,6 +5045,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 99.06) (xy 157.48 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca1ddc5f-df57-4ee2-ac65-cba4c69a1a4e")
+	)
+	(wire
+		(pts
 			(xy 107.95 29.21) (xy 107.95 30.48)
 		)
 		(stroke
@@ -5198,6 +5152,16 @@
 			(type default)
 		)
 		(uuid "d8a828d8-cba8-4002-b2d6-84a348c0e3b6")
+	)
+	(wire
+		(pts
+			(xy 157.48 100.33) (xy 158.75 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db40f8ef-dcfd-4979-baec-f3e452718ffd")
 	)
 	(wire
 		(pts
@@ -5331,6 +5295,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 95.25) (xy 207.01 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fad97c9f-2809-42ba-af90-ddfae5debd36")
+	)
+	(wire
+		(pts
 			(xy 87.63 29.21) (xy 87.63 30.48)
 		)
 		(stroke
@@ -5338,26 +5312,6 @@
 			(type default)
 		)
 		(uuid "fef17b65-92a4-40af-b1fb-ea44f8d339bf")
-	)
-	(text "Check the use of pwr_in_mirror -- may need different pin for adc"
-		(exclude_from_sim no)
-		(at 207.264 127.508 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "07d301c8-1b61-49ae-b51e-2caba6b6cad5")
-	)
-	(text "control of swd is wrong.   MISO/MOSI not connected correctly.  Enable pin is wrong"
-		(exclude_from_sim no)
-		(at 230.378 85.344 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "fa016f87-e2b7-48be-a7a3-54bc81e04e16")
 	)
 	(label "UART_TX"
 		(at 243.84 24.13 0)
@@ -5575,7 +5529,7 @@
 	)
 	(global_label "TAG_SWDIO"
 		(shape input)
-		(at 220.98 92.71 0)
+		(at 210.82 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5585,7 +5539,7 @@
 		)
 		(uuid "322c0625-0ae3-431d-b91b-dcc818c5380d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 235.9687 92.71 0)
+			(at 225.8087 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5685,22 +5639,22 @@
 	)
 	(global_label "PWR_IN_MIRROR"
 		(shape input)
-		(at 187.96 100.33 0)
+		(at 154.94 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "67b5ebdf-d5b0-4eaf-881a-4ef91bc10358")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 205.3496 100.33 0)
+			(at 137.5504 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5745,28 +5699,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "EXT_PWR"
-		(shape input)
-		(at 184.15 102.87 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "94adc554-9f82-4519-b641-f305a3af720b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.7661 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -7733,239 +7665,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Analog_Switch:TS5A3159ADBVR")
-		(at 213.36 95.25 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005edb1f8c")
-		(property "Reference" "U2"
-			(at 213.36 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TS5A3159ADBVR"
-			(at 213.36 101.3714 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 213.36 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ts5a3159a.pdf"
-			(at 213.36 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single SPDT Analog Switch, 1.65-V to 5.5-V Single-Supply Operation, 1Ohm Ron, SOT-23-6"
-			(at 213.36 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "TI"
-			(at 213.36 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TS5A3159ADBVR"
-			(at 213.36 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C128405"
-			(at 213.36 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" ""
-			(at 213.36 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f82dda9f-5f1f-4a74-adff-c65e126e0aea")
-		)
-		(pin "3"
-			(uuid "ff917125-8101-4ede-abc0-89c5fe6af360")
-		)
-		(pin "4"
-			(uuid "7cc328bb-dd04-4365-9fc4-b5bda525f035")
-		)
-		(pin "6"
-			(uuid "d5629fe2-5180-4c08-9eac-fc68958f37df")
-		)
-		(pin "2"
-			(uuid "1fb33bc8-5df6-4893-aab6-7ff15012557c")
-		)
-		(pin "5"
-			(uuid "7d85d9aa-6056-4fd8-9dda-277c3c3237eb")
-		)
-		(instances
-			(project ""
-				(path "/2d561ecb-394a-4bb7-a154-94e4285b4f36"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Analog_Switch:TS5A3159ADBVR")
-		(at 187.96 39.37 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005edb2180")
-		(property "Reference" "U2"
-			(at 186.69 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TS5A3159ADBVR"
-			(at 187.96 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 187.96 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ts5a3159a.pdf"
-			(at 187.96 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single SPDT Analog Switch, 1.65-V to 5.5-V Single-Supply Operation, 1Ohm Ron, SOT-23-6"
-			(at 187.96 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C128405"
-			(at 187.96 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" ""
-			(at 187.96 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "TI"
-			(at 187.96 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TS5A3159ADBVR"
-			(at 187.96 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9d1b12f2-856c-4eb5-813d-31c5c38240eb")
-		)
-		(pin "3"
-			(uuid "20461e7a-9214-4587-b75b-096a94006317")
-		)
-		(pin "4"
-			(uuid "98f9cd40-706c-4bbb-80af-48d5bb5cd14f")
-		)
-		(pin "6"
-			(uuid "320553cc-efcd-40dc-9ea2-13b4cbc426cf")
-		)
-		(pin "2"
-			(uuid "c15e487c-004f-40ee-9a18-cf3cf9f8bd50")
-		)
-		(pin "5"
-			(uuid "d4e18632-c59c-4e99-a8f8-30b77be3f02d")
-		)
-		(instances
-			(project ""
-				(path "/2d561ecb-394a-4bb7-a154-94e4285b4f36"
-					(reference "U2")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Regulator_Linear:XC6206PxxxMR")
 		(at 54.61 29.21 0)
 		(unit 1)
@@ -8750,7 +8449,7 @@
 	)
 	(symbol
 		(lib_id "Analog_Switch:TS5A3159ADBVR")
-		(at 200.66 39.37 0)
+		(at 194.31 39.37 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8758,7 +8457,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005efd1c38")
 		(property "Reference" "U4"
-			(at 198.12 40.64 0)
+			(at 191.77 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8767,7 +8466,7 @@
 			)
 		)
 		(property "Value" "TS5A3159ADBVR"
-			(at 180.34 41.91 0)
+			(at 173.99 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8777,7 +8476,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 200.66 46.99 0)
+			(at 194.31 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8786,7 +8485,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ts5a3159a.pdf"
-			(at 200.66 39.37 0)
+			(at 194.31 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8795,7 +8494,7 @@
 			)
 		)
 		(property "Description" "Single SPDT Analog Switch, 1.65-V to 5.5-V Single-Supply Operation, 1Ohm Ron, SOT-23-6"
-			(at 200.66 39.37 0)
+			(at 194.31 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8804,7 +8503,7 @@
 			)
 		)
 		(property "LCSC" "C128405"
-			(at 200.66 39.37 0)
+			(at 194.31 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8813,7 +8512,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 200.66 39.37 0)
+			(at 194.31 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8822,7 +8521,7 @@
 			)
 		)
 		(property "MFN" "TI"
-			(at 200.66 39.37 0)
+			(at 194.31 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8831,7 +8530,7 @@
 			)
 		)
 		(property "MPN" "TS5A3159ADBVR"
-			(at 200.66 39.37 0)
+			(at 194.31 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)

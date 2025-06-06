@@ -32,6 +32,8 @@
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(aux_axis_origin 104 121)
+		(grid_origin 104 121)
 		(pcbplotparams
 			(layerselection 0x00010fc_ffffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
@@ -579,7 +581,7 @@
 				)
 			)
 		)
-		(property "MPN" "LPS27HHTWTR"
+		(property "MPN" "LPS27HHWTR"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -592,7 +594,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3253631"
+		(property "LCSC" "C3010792"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1550,7 +1552,7 @@
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 1 "GND")
 			(pinfunction "GND")
-			(pintype "power_in")
+			(pintype "input")
 			(uuid "66606a14-4399-43da-b1fa-31ab0b3004f9")
 		)
 		(pad "9" smd rect
@@ -1559,7 +1561,7 @@
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 1 "GND")
 			(pinfunction "GND")
-			(pintype "power_in")
+			(pintype "input")
 			(uuid "6b5cb26a-2263-4792-9a5d-684e74282a40")
 		)
 		(pad "10" smd rect
@@ -1577,7 +1579,7 @@
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 1 "GND")
 			(pinfunction "GND")
-			(pintype "power_in")
+			(pintype "input")
 			(uuid "4323ac0b-ea94-4dff-b59f-efb40a214819")
 		)
 		(model "${KIPRJMOD}/../kicad_libraries/3d_models/lps27.step"

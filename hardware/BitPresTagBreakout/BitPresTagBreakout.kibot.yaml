@@ -10,7 +10,7 @@ preflight:
   filters:
     - filter: 'power_pin'
       error: 'power_pin_not_driven'
-      regex: 'Symbol U1'
+      regex: 'Symbol #PWR'
 
 filters:
   - name: only_jlc_parts

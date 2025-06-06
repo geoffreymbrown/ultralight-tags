@@ -1376,7 +1376,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U2"
+			(property "Reference" "U3"
 				(at 20.955 7.2898 0)
 				(effects
 					(font
@@ -1392,7 +1392,7 @@
 					)
 				)
 			)
-			(property "Footprint" "lib_fp:LPS27HHWTR"
+			(property "Footprint" "taglibrary:LPS27HHWTR"
 				(at 20.955 8.255 0)
 				(effects
 					(font
@@ -1418,7 +1418,7 @@
 					(hide yes)
 				)
 			)
-			(property "DISTPN" "497-LPS27HHWCT-ND"
+			(property "DISTPN" "497-LPS27HHTWCT-ND"
 				(at -1.27 5.08 0)
 				(effects
 					(font
@@ -1438,6 +1438,15 @@
 			)
 			(property "MPN" "LPS27HHWTR"
 				(at -1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C3010792"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1510,7 +1519,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin input line
 					(at 41.91 0 180)
 					(length 7.62)
 					(name "GND"
@@ -1636,7 +1645,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin input line
 					(at 41.91 -7.62 180)
 					(length 7.62)
 					(name "GND"
@@ -1654,7 +1663,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin input line
 					(at 41.91 -5.08 180)
 					(length 7.62)
 					(name "GND"
@@ -2090,6 +2099,12 @@
 		(uuid "2b711ca1-1144-42ca-b9bb-b8dfeb036e33")
 	)
 	(junction
+		(at 195.58 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52991659-b8de-4f14-b02c-f7a7a0aca660")
+	)
+	(junction
 		(at 49.53 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2309,6 +2324,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 68.58) (xy 144.78 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b98a56d-4784-4534-9d52-ed7a09257679")
+	)
+	(wire
+		(pts
 			(xy 57.15 92.71) (xy 64.77 92.71)
 		)
 		(stroke
@@ -2356,16 +2381,6 @@
 			(type default)
 		)
 		(uuid "45cd1d8a-b42f-4d25-9d53-304dbf7fefe1")
-	)
-	(wire
-		(pts
-			(xy 144.78 68.58) (xy 144.78 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46f9e801-082d-45df-b013-4109553f49b1")
 	)
 	(wire
 		(pts
@@ -2516,6 +2531,16 @@
 			(type default)
 		)
 		(uuid "75a02558-b082-499a-a7f9-16f52e55018d")
+	)
+	(wire
+		(pts
+			(xy 144.78 68.58) (xy 144.78 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78392453-6bfc-4d21-8c2e-2d4efa3a06e7")
 	)
 	(wire
 		(pts
@@ -2769,16 +2794,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 68.58) (xy 144.78 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c77f3f40-625b-4ef6-b4cc-fb7b9fd7c354")
-	)
-	(wire
-		(pts
 			(xy 135.89 118.11) (xy 135.89 120.65)
 		)
 		(stroke
@@ -2876,6 +2891,16 @@
 			(type default)
 		)
 		(uuid "febd71d2-66c7-4208-95bb-76331d8590b5")
+	)
+	(text "Note: using lower cost lps27 with less accurate\ntemperature sensor for this board."
+		(exclude_from_sim no)
+		(at 179.07 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0c65fb54-cb78-4285-86c5-a8b0ede351a1")
 	)
 	(text "PA0-WKUP1\nPA5-ACCEL_SCK\nPA6-ACCEL_MISO\nPA7-ACCEL_MOSI\nPB1-ACCEL_nCS"
 		(exclude_from_sim no)
@@ -4192,7 +4217,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LPS27HHTWTR"
+		(property "MPN" "LPS27HHWTR"
 			(at 158.75 60.96 0)
 			(effects
 				(font
@@ -4201,7 +4226,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C3253631"
+		(property "LCSC" "C3010792"
 			(at 160.02 63.5 0)
 			(effects
 				(font
@@ -4573,6 +4598,72 @@
 			(project "BitPresTagBreakout"
 				(path "/dc006d87-46a7-47a2-9c65-845f7016dec0"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 195.58 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "941e227d-64c3-4a94-8869-def493397ef6")
+		(property "Reference" "#FLG2"
+			(at 195.58 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 195.58 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 195.58 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "256a446d-22b3-4d0e-8854-eac2bf077231")
+		)
+		(instances
+			(project ""
+				(path "/dc006d87-46a7-47a2-9c65-845f7016dec0"
+					(reference "#FLG2")
 					(unit 1)
 				)
 			)
@@ -4995,7 +5086,7 @@
 	(symbol
 		(lib_name "GND_10")
 		(lib_id "power:GND")
-		(at 144.78 74.93 0)
+		(at 144.78 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5003,7 +5094,7 @@
 		(dnp no)
 		(uuid "d436fee5-a070-4174-a008-46c5ce2ca2fd")
 		(property "Reference" "#PWR1"
-			(at 144.78 81.28 0)
+			(at 144.78 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5012,7 +5103,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 78.74 0)
+			(at 144.78 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5020,7 +5111,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 74.93 0)
+			(at 144.78 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5029,7 +5120,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 74.93 0)
+			(at 144.78 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5038,7 +5129,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 74.93 0)
+			(at 144.78 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
