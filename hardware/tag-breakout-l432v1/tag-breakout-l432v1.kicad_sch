@@ -5339,6 +5339,26 @@
 		)
 		(uuid "fef17b65-92a4-40af-b1fb-ea44f8d339bf")
 	)
+	(text "Check the use of pwr_in_mirror -- may need different pin for adc"
+		(exclude_from_sim no)
+		(at 207.264 127.508 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "07d301c8-1b61-49ae-b51e-2caba6b6cad5")
+	)
+	(text "control of swd is wrong.   MISO/MOSI not connected correctly.  Enable pin is wrong"
+		(exclude_from_sim no)
+		(at 230.378 85.344 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fa016f87-e2b7-48be-a7a3-54bc81e04e16")
+	)
 	(label "UART_TX"
 		(at 243.84 24.13 0)
 		(effects
