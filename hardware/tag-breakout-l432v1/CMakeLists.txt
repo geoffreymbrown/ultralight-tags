@@ -1,1 +1,1 @@
-add_pcb_outputs(tag-breakout-v2)
+add_pcb_outputs(tag-breakout-l432v1)
