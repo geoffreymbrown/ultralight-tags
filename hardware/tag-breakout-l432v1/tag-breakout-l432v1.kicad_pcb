@@ -32,6 +32,8 @@
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(aux_axis_origin 101.6 124.4)
+		(grid_origin 101.6 124.4)
 		(pcbplotparams
 			(layerselection 0x00010fc_ffffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
@@ -7938,7 +7940,7 @@
 				)
 			)
 		)
-		(property "MPN" "19-217/GHC-YR1S2/3T"
+		(property "MPN" "P0603P1N46G12 "
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7951,7 +7953,7 @@
 				)
 			)
 		)
-		(property "LCSC" " C72043"
+		(property "LCSC" "C5123548"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7964,7 +7966,7 @@
 				)
 			)
 		)
-		(property "MFN" "Everlight Elec"
+		(property "MFN" "Silverlight"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")

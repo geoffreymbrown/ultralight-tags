@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>/home/geobrown/Research/ultralight-tags/hardware/tag-breakout-l432v1/tag-breakout-l432v1.kicad_sch</source>
-    <date>2025-06-09T09:40:04-0400</date>
+    <date>2025-06-09T15:32:22-0400</date>
     <tool>Eeschema 8.0.9-8.0.9-0~ubuntu24.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Tag Breakout Board with stlink</title>
+        <title>Tag Breakout Board with stm32l432k</title>
         <company/>
         <rev/>
-        <date>2020-10-18</date>
+        <date>2025-06-09</date>
         <source>tag-breakout-l432v1.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -191,9 +191,9 @@
       <footprint>LED_SMD:LED_0603_1608Metric</footprint>
       <fields>
         <field name="Macrofab">MF-LED-0603-GREEN</field>
-        <field name="MPN">19-217/GHC-YR1S2/3T</field>
-        <field name="LCSC"> C72043</field>
-        <field name="MFN">Everlight Elec</field>
+        <field name="MPN">P0603P1N46G12 </field>
+        <field name="LCSC">C5123548</field>
+        <field name="MFN">Silverlight</field>
         <field name="Digikey"/>
         <field name="Footprint">LED_SMD:LED_0603_1608Metric</field>
         <field name="Datasheet"/>
@@ -201,9 +201,9 @@
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <property name="Macrofab" value="MF-LED-0603-GREEN"/>
-      <property name="MPN" value="19-217/GHC-YR1S2/3T"/>
-      <property name="LCSC" value=" C72043"/>
-      <property name="MFN" value="Everlight Elec"/>
+      <property name="MPN" value="P0603P1N46G12 "/>
+      <property name="LCSC" value="C5123548"/>
+      <property name="MFN" value="Silverlight"/>
       <property name="Digikey" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="tag-breakout-l432v1.kicad_sch"/>

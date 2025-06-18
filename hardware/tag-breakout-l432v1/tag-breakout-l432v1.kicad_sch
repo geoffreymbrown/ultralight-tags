@@ -9423,7 +9423,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "19-217/GHC-YR1S2/3T"
+		(property "MPN" "P0603P1N46G12 "
 			(at 114.3 129.54 0)
 			(effects
 				(font
@@ -9432,7 +9432,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" " C72043"
+		(property "LCSC" "C5123548"
 			(at 283.21 170.18 0)
 			(effects
 				(font
@@ -9441,7 +9441,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Everlight Elec"
+		(property "MFN" "Silverlight"
 			(at 283.21 170.18 0)
 			(effects
 				(font
