@@ -3727,10 +3727,6 @@
 		(uuid "84c4e7ae-4775-4968-8896-1f3ab2010d7a")
 	)
 	(no_connect
-		(at 31.115 119.38)
-		(uuid "9ec18b25-bd95-4110-8a5e-91858b61e067")
-	)
-	(no_connect
 		(at 119.38 157.48)
 		(uuid "b3fbea94-f401-4997-a854-9c1870d8d651")
 	)
@@ -3741,10 +3737,6 @@
 	(no_connect
 		(at 87.63 81.28)
 		(uuid "d6f741c9-b323-4165-a539-76a3b503b52f")
-	)
-	(no_connect
-		(at 153.67 88.9)
-		(uuid "dd66e494-79d7-42ac-8df8-291f7369184a")
 	)
 	(no_connect
 		(at 213.36 125.73)
@@ -5294,6 +5286,16 @@
 		)
 		(uuid "86ed03b7-dd5e-43c3-8eab-537d509409e6")
 	)
+	(label "AK_DRDY"
+		(at 153.67 88.9 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "93a9e8c5-35fe-4517-abc4-c2af5a95492c")
+	)
 	(label "AK_CK"
 		(at 115.57 119.38 270)
 		(effects
@@ -5433,6 +5435,16 @@
 			(justify right bottom)
 		)
 		(uuid "e67b6e1e-0837-4530-91de-75cba46a6c57")
+	)
+	(label "AK_DRDY"
+		(at 31.115 119.38 180)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "e9f0a8ba-05e8-4040-8e40-5b589b4863b7")
 	)
 	(label "AK_MISO"
 		(at 86.995 132.08 0)
