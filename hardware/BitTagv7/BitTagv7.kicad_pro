@@ -516,10 +516,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "../../../../",
-      "plot": "",
+      "plot": "../Mechanical/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../Mechanical/BitTagv7.step",
       "svg": "",
       "vrml": ""
     },

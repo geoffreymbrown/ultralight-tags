@@ -38,14 +38,14 @@ pogo_box_width = 7;          // width of pogo pin group
 pcb_min_thick = 0.4;                   // fiberglass thickness
 pcb_thick     = 2.0;                    // pcb clearance  (for sweeping space)
 pcb_clearance = 0.002*25.4;             // edge clearance (routing error)
-pcb_len       = 13.5 + pcb_clearance*2;
+pcb_len       = 14 + pcb_clearance*2;
 pcb_width     = 9 + pcb_clearance*2;
     // battery support lip, length is arbitrary since this is just
     // to punch a hole
 lip_len   = 4;                    
 lip_width = 4 + pcb_clearance*2;
 lip_rad   = 0.5 + pcb_clearance;
-lid_height = 2;
+lid_height = 3.5;
 
 cutclear = 1.5; // horizontal space around cutout under pcb (/2 on each edge) 
 pogo_center = [4.385, 0.0];   // offset from board center of pogo pins
@@ -55,7 +55,7 @@ pogo_center = [4.385, 0.0];   // offset from board center of pogo pins
 //
 
 base_width       = pcb_width + 5.0;
-base_len         = pcb_len + 12;
+base_len         = pcb_len + 14;
 base_height      = 4;//1.5;  // base holds 1.5mm board
 cut_depth        = 1;                    // clearance under board
 post_rad         = 2.0;                    // radius of post support
@@ -75,7 +75,7 @@ module makePCBn() {
 
 module makePCB(height) {
    centerCube(pcb_len,pcb_width,height);
-   translate([pcb_len/2.0+2,0,0])cylinder(r=5,h=height);
+   translate([pcb_len/2.0+3,0,0])cylinder(r=5,h=height+2);
 }
 
 module makePCBx() {
@@ -146,7 +146,7 @@ module makeBase() {
                 union(){
                     //centerCube(base_len,base_width,base_height);
                     roundedcube([base_len,base_width,base_height],true,0.8,"z");
-                    translate([0,0,0.2])centerCube(8,base_width+3,1);
+                    translate([0,0,0.85])centerCube(6,base_width+3,1);
                     //makeCrossBar(base_height,base_height,post_hole_insert);
                     translate([-9,0,-2])makeCrossBar(base_height/2,base_height/2,post_hole_insert);
                     translate([ 10,0,-2])makeCrossBar(base_height/2,base_height/2,post_hole_insert);
@@ -175,12 +175,12 @@ module makeLid(){
 	translate([0,0,lid_height/2])
 	        difference(){union(){
                 roundedcube([base_len,base_width,lid_height],true,0.8,"z");
-                translate([0,0,-lid_height/2])centerCube(8,base_width+5.3,lid_height);
+                translate([0,0,-lid_height/2])centerCube(5,base_width+5.3,lid_height);
                 //translate([0,0,-lid_height/2-1])centerCube(base_len+2,8,lid_height+1);
                
                 // snaps
-                translate([-2,-9.7,-0.5])snap(4);
-                rotate([0,0,180])translate([-2,-9.7,-0.4])snap(4);
+                translate([-2.5,-9.7,-0.5])snap(5);
+                rotate([0,0,180])translate([-2.5,-9.7,-0.5])snap(5);
             };
              // text
                  translate([-1,0,lid_height/2-0.5])
@@ -194,19 +194,22 @@ module makeLid(){
 }
 
 if (makebase) 
-     translate(makelid?[0,0,0]:[0,0,base_height])difference() {
-     makeBase();
-     translate([-3,0,-base_height/2-.75])makePCB(5);
+{
+      translate(makelid?[0,0,0]:[0,0,base_height])difference() {
+        makeBase();
+        #translate([-3,0,-base_height+1.25])makePCB(3);
    };
-   
+
+}
+
    
   //makePCB(3.5);
 
 if (makelid) 
-     // color("green",0.25)
-     rotate(makebase?[0,0,0]:[180,0,0])translate(makebase?[0,0,10]:[0,0,-lid_height])difference() {
+    
+     rotate(makebase?[0,0,0]:[180,0,0])translate(makebase?[0,0,0]:[0,0,-lid_height])difference() {
      makeLid();
-     translate([-3,0,-base_height/2-1.75])makePCB(5);
+     translate([-3,0,-base_height+1.25])makePCB(3);
    }
    
 
