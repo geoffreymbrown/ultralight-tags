@@ -15,9 +15,9 @@ module centerCube(x,y,z) {
 //
 // Parameters for test pins
 // 
-pogo_pin_height = 6.27-0.9;  // Pin height at pcb
-pogo_box_len = 3.2;          // length of pogo pin group
-pogo_box_width = 7;          // width of pogo pin group
+//pogo_pin_height = 6.27-0.9;  // Pin height at pcb
+//pogo_box_len = 3.2;          // length of pogo pin group
+//pogo_box_width = 7;          // width of pogo pin group
 
 //screw_rad = 1.0;
 
