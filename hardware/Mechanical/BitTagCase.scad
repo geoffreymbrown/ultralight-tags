@@ -5,7 +5,7 @@ $fn = 120; // steps in generating circles
 // select parts
 
 makelid = true;
-makebase = false;
+makebase = true;
 
 version_string = "BTCase"; // imprinted in base and lid
 
@@ -125,7 +125,7 @@ module makeLid(){
                 //translate([0,0,-lid_height/2-1])centerCube(base_len+2,8,lid_height+1);
                
                 // snaps
-                #translate([-2.5,-8.5,-0.3])snap(5);
+                translate([-2.5,-8.5,-0.3])snap(5);
                 rotate([0,0,180])translate([-2.5,-8.5,-0.3])snap(5);
             };
              // text
@@ -154,7 +154,7 @@ if (makebase)
 
 if (makelid) 
     
-     color("green")rotate(makebase?[0,0,0]:[180,0,0])translate(makebase?[0,0,0]:[0,0,-lid_height])difference() {
+     color("green")rotate(makebase?[0,0,0]:[180,0,0])translate(makebase?[0,0,10]:[0,0,-lid_height])difference() {
      makeLid();
      translate([-3,0,-base_height+1.25])makePCB(3);
    }
