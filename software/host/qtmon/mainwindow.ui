@@ -6,16 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1011</width>
-    <height>996</height>
+    <width>718</width>
+    <height>826</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>NanoLogger Monitor</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="1">
+   <layout class="QVBoxLayout" name="verticalLayout_9">
+    <item>
      <layout class="QHBoxLayout" name="horizontalLayout_7">
       <item>
        <widget class="QTabWidget" name="mainTabWidget">
@@ -41,13 +41,16 @@
          <property name="toolTip">
           <string>Tag status and (some) controls</string>
          </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
          <attribute name="title">
           <string>Tag State</string>
          </attribute>
          <widget class="QWidget" name="widget_3" native="true">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>20</x>
             <y>10</y>
             <width>640</width>
             <height>677</height>
@@ -85,32 +88,6 @@
                    </property>
                   </widget>
                  </item>
-                 <item row="0" column="1">
-                  <widget class="QLineEdit" name="State">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                     <horstretch>1</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
-                   <property name="toolTip">
-                    <string>Run &quot;state&quot; of attached tag</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                   </property>
-                   <property name="readOnly">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="0">
-                  <widget class="QLabel" name="ClockError">
-                   <property name="text">
-                    <string>Clock Error</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="1" column="1">
                   <layout class="QHBoxLayout" name="horizontalLayout_10">
                    <item>
@@ -144,10 +121,59 @@
                    </item>
                   </layout>
                  </item>
+                 <item row="4" column="1">
+                  <widget class="QLineEdit" name="info_testStatus">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                     <horstretch>2</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="ClockError">
+                   <property name="text">
+                    <string>Clock Error</string>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="3" column="0">
                   <widget class="QLabel" name="Voltage">
                    <property name="text">
                     <string>Voltage</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_selftest">
+                   <property name="text">
+                    <string>Test Status</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLineEdit" name="State">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                     <horstretch>1</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="toolTip">
+                    <string>Run &quot;state&quot; of attached tag</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
                    </property>
                   </widget>
                  </item>
@@ -173,7 +199,7 @@
                    </property>
                   </widget>
                  </item>
-                 <item row="5" column="1">
+                 <item row="6" column="1">
                   <spacer name="verticalSpacer_2">
                    <property name="orientation">
                     <enum>Qt::Vertical</enum>
@@ -185,29 +211,6 @@
                     </size>
                    </property>
                   </spacer>
-                 </item>
-                 <item row="4" column="1">
-                  <widget class="QLineEdit" name="info_testStatus">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                     <horstretch>2</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                   </property>
-                   <property name="readOnly">
-                    <bool>true</bool>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="4" column="0">
-                  <widget class="QLabel" name="label_selftest">
-                   <property name="text">
-                    <string>Test Status</string>
-                   </property>
-                  </widget>
                  </item>
                 </layout>
                </widget>
@@ -274,6 +277,16 @@
                    </property>
                    <property name="text">
                     <string>Test</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="calibrateButton">
+                   <property name="toolTip">
+                    <string extracomment="Enter state for reading sensors"/>
+                   </property>
+                   <property name="text">
+                    <string>Calibrate</string>
                    </property>
                   </widget>
                  </item>
@@ -650,7 +663,7 @@
                  <item>
                   <widget class="QGroupBox" name="InternalLog">
                    <property name="title">
-                    <string>Internal Log </string>
+                    <string>Logs</string>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_17">
                     <item>
@@ -704,7 +717,7 @@
                  <item>
                   <widget class="QGroupBox" name="ExternalLog">
                    <property name="title">
-                    <string>External Log </string>
+                    <string>External Data</string>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout">
                     <item>
@@ -766,7 +779,7 @@
                   </spacer>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="internalDownloadButton">
+                  <widget class="QPushButton" name="tagLogSaveButton">
                    <property name="toolTip">
                     <string>Download data to file</string>
                    </property>
@@ -797,35 +810,21 @@
           </layout>
          </widget>
         </widget>
-        <widget class="QWidget" name="configTab">
-         <property name="enabled">
+        <widget class="ConfigTab" name="configtab">
+         <property name="autoFillBackground">
           <bool>true</bool>
-         </property>
-         <property name="toolTip">
-          <string>Tag configurating settings and programming</string>
          </property>
          <attribute name="title">
-          <string>Configure</string>
+          <string>Configuration</string>
          </attribute>
-         <layout class="QGridLayout" name="gridLayout_2"/>
         </widget>
-        <widget class="QWidget" name="logTab">
-         <property name="enabled">
+        <widget class="LogWindow" name="errorTab">
+         <property name="autoFillBackground">
           <bool>true</bool>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="toolTip">
-          <string>Log of apppication messages (information and error)</string>
          </property>
          <attribute name="title">
           <string>Error Log</string>
          </attribute>
-         <layout class="QHBoxLayout" name="horizontalLayout_16"/>
         </widget>
        </widget>
       </item>
@@ -838,8 +837,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1011</width>
-     <height>24</height>
+     <width>718</width>
+     <height>23</height>
     </rect>
    </property>
   </widget>
@@ -854,6 +853,20 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ConfigTab</class>
+   <extends>QWidget</extends>
+   <header>configtab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LogWindow</class>
+   <extends>QWidget</extends>
+   <header>logwindow.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -10,12 +10,13 @@
 #include <pb_decode.h>
 #include <pb_encode.h>
 #include <stdint.h>
-#include <string.h>
+#include <strings.h>
 
 #define MAJOR_VERSION "1"
 #define MINOR_VERSION "0"
 
 extern int data_logAck(int index, Ack *ack);
+extern int calibration_logAck(Ack *ack);
 extern const Config defaultConfig;
 extern const uint32_t protobuf_size;
 extern uint8_t ProtoBuf[];
@@ -72,7 +73,7 @@ int encode_ack(void)
 
 // Message Generators
 
-static int errAck(Ack_Err err)
+int errAck(Ack_Err err)
 {
   ack.err = err;
   ack.which_payload = 0;
@@ -116,7 +117,11 @@ static int statusAck(void)
   ack.payload.status.test_status = pState->test_result;
   ack.payload.status.voltage = vdd100 * 0.01f;
   ack.payload.status.temperature = temp10 * 0.1f;
-
+#ifdef EXTERNAL_FLASH
+  ack.payload.status.sectors_erased = sectors_erased;
+#else
+  ack.payload.status.sectors_erased = 0;
+#endif
   epoch = GetTimeUnixSec(&millis);
   epoch = epoch * 1000 + millis;
   ack.payload.status.millis = epoch;
@@ -162,6 +167,15 @@ static int infoAck(void)
   STR_COPY(InfoStrings[HASH_STR], ack.payload.info.githash);
   STR_COPY(InfoStrings[BUILDTM_STR], ack.payload.info.build_time);
   STR_COPY(InfoStrings[SOURCE_STR], ack.payload.info.source_path);
+#ifdef QTMONITOR_VERSION
+  ack.payload.info.qtmonitor_min_version = QTMONITOR_VERSION;
+#else
+  ack.payload.info.qtmonitor_min_version = 1.5;
+#endif
+#ifdef SENSOR_CONSTANTS
+  ack.payload.info.accelconstant = ACCEL_CONSTANT;
+  ack.payload.info.magconstant = MAG_CONSTANT;
+#endif
   return encode_ack();
 }
 
@@ -281,6 +295,20 @@ int proto_eval(int len)
     }
     // Unimplemented request
 
+#ifdef SENSOR_CALIBRATION
+  case Req_calibrate_tag:
+    chEvtSignal(tpMain, EVT_CALIBRATE);
+    return errAck(Ack_OK);
+  case Req_caldata_tag:
+    return  calibration_logAck(&ack);
+
+#endif
+#ifdef CALIBRATION_CONSTANTS
+  case Req_write_calibration_tag:
+    return write_calibration(&req.payload.write_calibration);
+  case Req_read_calibration_tag:
+    return read_calibration(req.payload.read_calibration, &ack);
+#endif
   default:
     return errAck(Ack_Err_PERM);
   }

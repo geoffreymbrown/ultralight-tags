@@ -5,6 +5,7 @@
 #include "ADXL367.h"
 #include "config.h"
 #include "persistent.h"
+//#include "lis2du12.h"
 
 // synchronization variables
 
@@ -112,6 +113,10 @@ void deviceInit(int force)
     accelSpiOff();
 #endif
 
+#if defined(USE_LIS2DU12)
+    accelDeinit();
+#endif
+
     // turn off all alarms
 
     disableAllAlarms();
@@ -127,7 +132,7 @@ void deviceInit(int force)
 
 t_resetCause getResetCause(uint32_t rstFlags)
 {
-  t_resetCause resetCause = resetPower; // default case
+  t_resetCause resetCause = resetException; // default case
 
   // note that the reset flags are cleared only  after we've processed
   // things.  That way, bad things are sticky
@@ -140,6 +145,7 @@ t_resetCause getResetCause(uint32_t rstFlags)
 
     if (pState->valid == false)
     {
+      resetCause = resetPower; 
       break;
     }
 

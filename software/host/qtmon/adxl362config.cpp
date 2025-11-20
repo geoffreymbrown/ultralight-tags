@@ -57,10 +57,6 @@ Adxl362Config::Adxl362Config(QWidget *parent) : QWidget(parent)
 {
   vbox_ = new QVBoxLayout();
   setLayout(vbox_);
-}
-
-void Adxl362Config::Attach(const Config &config)
-{
 
   // Build the interface
 
@@ -130,15 +126,22 @@ void Adxl362Config::Attach(const Config &config)
 
   connect(sample_rate_, &PBEnumGroup::idClicked, this,
           &Adxl362Config::on_adxlfreq_clicked);
+}
 
-  SetConfig(config);
+bool Adxl362Config::Attach(Tag &tag)
+{
+   return true;
+   //return SetConfig(config);
 }
 
 Adxl362Config::~Adxl362Config(){}
 
-void Adxl362Config::GetConfig(Config &config)
+bool Adxl362Config::GetConfig(Config &config)
 {
   // Parameters common to all tags
+
+  if (!active)
+    return true;
 
   int id;
   Adxl362 adxl(config.adxl362());
@@ -165,6 +168,7 @@ void Adxl362Config::GetConfig(Config &config)
 
   switch (config.tag_type()) {
     case BITTAG:
+    case BITPRESTAG:
       id = filter_->checkedId();
       if (Adxl362_Aa_IsValid(id)) {
           adxl.set_filter((Adxl362_Aa)id);
@@ -177,6 +181,7 @@ void Adxl362Config::GetConfig(Config &config)
       adxl.set_inactive_sec(inactive_->value());
       adxl.set_act_thresh_g(act_thresh_->value());
       break;
+    /*
     case ACCELTAG:
       id = channels_->checkedId();
       if ( Adxl367Channel_IsValid(id)) {
@@ -187,14 +192,18 @@ void Adxl362Config::GetConfig(Config &config)
         adxl.set_data_format((Adxl362_Adxl367DataFormat)id);
       }
       break;
+    */
+    default:
+      return false;
   }
 
   // set config to result
 
   config.set_allocated_adxl362(new Adxl362(adxl));
+  return true;
 }
 
-void Adxl362Config::SetConfig(const Config &config)
+bool Adxl362Config::SetConfig(const Config &config)
 {
   // save accel type -- should be deprecated
 
@@ -214,6 +223,7 @@ void Adxl362Config::SetConfig(const Config &config)
 
   switch(config.tag_type()) {
     case BITTAG:
+    case BITPRESTAG:
       filter_->setCheckedId((int)adxl.filter());
       filter_->setVisible(true);
       sample_rate_->setCheckedId((int)adxl.freq());
@@ -225,6 +235,7 @@ void Adxl362Config::SetConfig(const Config &config)
       sample_rate_->setCheckedId((int)adxl.freq());
       range_->setCheckedId((int)adxl.range());
       break;
+    /*
     case ACCELTAGNG:
       sample_rate_->setCheckedId((int)adxl.freq());
       range_->setCheckedId((int)adxl.range());
@@ -233,6 +244,11 @@ void Adxl362Config::SetConfig(const Config &config)
       channels_->setVisible(true);
       channels_->setCheckedId((int)adxl.channels());
       spinners_->setVisible(false);
+    */
+    default:
+      setVisible(false);
+      //active = false;
+      return true;
   }
 
   // set legal range of spin boxes
@@ -247,9 +263,12 @@ void Adxl362Config::SetConfig(const Config &config)
   // adxl362 threshold
 
   act_thresh_->setValue(static_cast<double>(adxl.act_thresh_g()));
-  if (config.tag_type() == BITTAG){
+  if ((config.tag_type() == BITTAG) || (config.tag_type() == BITPRESTAG)){
      inact_thresh_->setValue(static_cast<double>(adxl.inact_thresh_g()));
   }
+  active = true;
+  setVisible(true);
+  return true;
 }
 
 // ADXL Range Buttons

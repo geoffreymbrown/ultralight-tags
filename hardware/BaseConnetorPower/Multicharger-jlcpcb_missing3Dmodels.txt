@@ -1,0 +1,29 @@
+### Missing 3D models - created on 2023-06-05 11:34
+### Printed by checking_3D_models plugin
+Board file: /home/geobrown/Research/ultralight-tags/hardware/Multicharger-jlcpcb/Multicharger-jlcpcb.kicad_pcb
+3D missing models written to:
+/home/geobrown/Research/ultralight-tags/hardware/Multicharger-jlcpcb/Multicharger-jlcpcb_missing3Dmodels.txt
+-------
+('U106', '/usr/share/kicad/3dmodels/Package_TO_SOT_SMD.3dshapes/SOT-23-3.wrl')
+('U101', '${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.wrl')
+('C101', '${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl')
+('C106', '${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl')
+('C107', '${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl')
+('D101', '${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl')
+('D102', '${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl')
+('D103', '${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl')
+('J104', '${KISYS3DMOD}/Connector_USB.3dshapes/USB_Mini-B_Lumberg_2486_01_Horizontal.wrl')
+('R1', '${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl')
+('R102', '${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl')
+('R103', '${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl')
+('R104', '${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl')
+('R105', '${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl')
+('J101', '${KISYS3DMOD}/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.wrl')
+('J102', '${KISYS3DMOD}/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.wrl')
+('R106', '${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl')
+('D104', '${KISYS3DMOD}/Diode_SMD.3dshapes/D_0402_1005Metric.wrl')
+('R107', '${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl')
+('R101', '${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl')
+-------
+NUM of 3D missing models:20
+checked extensions ['.stp', '.step', '.stpZ']

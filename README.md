@@ -2,23 +2,30 @@
 See [Documentation](https://geoffreymbrown.github.io/ultralight-tags/) to explore this project and for complete build instructions.
 
 
-
-
 # building with OS X
 
 
+cmake  -DQt6_DIR=/Users/geobrown/Qt/6.5.3/macos  ~/Research/ultralight-tags 
+
 Make sure to add Qt-version/bin (or current version) to your path so that the various find_program tools work (esp macdeployqt)
 
-Macdeploy isn't properly automated so [unless you're using static builds of qt, libusb, protobuf]
+(use your signing authority)
 
-macdeployqt path_to/btviz.app
-macdeployqt path_to/qtmonitor.app
-macdeployqt paty_to/tag-test.app
+macdeployqt bin/btviz.app -codesign="Indiana University"
+macdeployqt bin/qtmonitor.app -codesign="Indiana University (5J69S77A7G)"
+macdeployqt bin/tag-test.app -codesign="Indiana University"
+        
+To verify
 
+codesign --verify --deep --verbose xyz.app
 
 Then build the dmg file
 
 cpack -G DragNDrop
+
+
+No longer building qt -- using distributed version
+-------------
 
 Building QT
 
@@ -42,16 +49,22 @@ you have my deepest sympathy
 ## For building host software    
 
 * install vcpkg -- within vcpkg:
-  * install protobuf:x64-window-static
-  * install qt5:x64-windows-static
+  * install protobuf --- vcpkg.exe install protobuf --triplet=x64-windows-static
+  * install qt:x64-windows-static
   * install libusb:x64-windows-static
   * install ms-angle:x64-windows-static
 * install nanopb binary  -- unpack in root_dir/nanopb ;   using the binary version is more reliable than using the source version
 
+**Note** cmake now understands vcpkg so the direct installation within vcpkg is no longer needed.   Instead there are json files in the ultralight-tags directory that cmake uses in install vcpkg files.
+
 ### Configure main build
 
+cmake -DVCPKG_TARGET_TRIPLET="x64-mingw-static" -G "MinGW Makefiles" -DCMAKE_TOOLCHAIN_FILE="d:/vcpkg/scripts/buildsystems/vcpkg.cmake" c:/Users/geobrown/ultralight-tags
+
+**Note** cmake has trouble on windows finding Qt.  The workaround is to use qt-cmake from the qt installation.
+
 ```
-cmake -G "Visual Studio 16 2019" -Ax64 -DVCPKG_TARGET_TRIPLET="x64-windows-static" -DCMAKE_TOOLCHAIN_FILE="c:/users/geobrown/vcpkg/scripts/buildsystems/vcpkg.cmake" ..
+qt-cmake -B Build -S c:\users\geobrown\ultralight-tags --preset default -G "Visual Studio 17 2022"
 ```
 
 ### Build release/debug

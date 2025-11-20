@@ -126,18 +126,42 @@ enum Sleep StateMachine(void)
       }
     }
 
-    if (pState->state == TagState_RUNNING || 
-        pState->state == TagState_HIBERNATING)
+    // hand reset conditions for hibernating and running separately
+
+     if (pState->state == TagState_HIBERNATING)
+    {
+      // goto error
+  
+        switch (pState->resetCause)
+        {
+          // need to distinguish hibernating from running
+          case resetSleep:
+          case resetStandby:
+          case resetShutdown:
+          case resetException:
+            return Hibernating(T_CONT, State_EVENT_OK);
+          case resetBrownout:
+            return Hibernating(T_INIT, State_EVENT_BROWNOUT);
+          default:
+            return Aborted(T_INIT, State_EVENT_POWERFAIL);
+        }
+  
+    }
+
+    if (pState->state == TagState_RUNNING)
     {
       // goto error
       switch (pState->resetCause)
       {
-      case resetPower:
-        return Running(T_ERROR, State_EVENT_POWERFAIL);
-      case resetBrownout:
-        return Running(T_INIT, State_EVENT_BROWNOUT);
-      default:
-        return Running(T_ERROR, State_EVENT_UNKNOWN);
+        case resetSleep:
+        case resetStandby:
+        case resetShutdown:
+        case resetException:
+          return Running(T_CONT, State_EVENT_OK);
+        case resetBrownout:
+          return Running(T_INIT, State_EVENT_BROWNOUT);
+        default:
+          return Aborted(T_INIT, State_EVENT_POWERFAIL);
       }
     }
   }
@@ -167,6 +191,10 @@ enum Sleep StateMachine(void)
     {
       return Finished(T_INIT, State_EVENT_STOPCMD);
     }
+    if (pState->state == TagState_CALIBRATE)
+    {
+      return Idle(T_INIT, State_EVENT_OK);
+    }
   }
   if (events & EVT_RESET)
   {
@@ -178,10 +206,22 @@ enum Sleep StateMachine(void)
     }
   }
 
+  #ifdef SENSOR_CALIBRATION
+  if (events & EVT_CALIBRATE)
+  {
+    if (pState->state == TagState_IDLE)
+    {
+      return Calibrating(T_INIT, State_EVENT_OK);
+    }
+  }
+  #endif
+
   // eval state
 
   switch (pState->state)
   {
+  case TagState_TEST:
+    return SelfTest(T_CONT, State_EVENT_OK);
   case TagState_IDLE:
     return Idle(T_CONT, State_EVENT_OK);
   case TagState_CONFIGURED:
@@ -196,6 +236,13 @@ enum Sleep StateMachine(void)
     return Aborted(T_CONT, State_EVENT_OK);
   case TagState_sRESET:
     return Reset(T_CONT, State_EVENT_OK);
+  case TagState_EXCEPTION:
+    return Aborted(T_INIT, State_EVENT_EXCEPTION);
+#ifdef SENSOR_CALIBRATION
+  case TagState_CALIBRATE:
+    return Calibrating(T_CONT, State_EVENT_OK);
+#endif
+
   default:
     // this is an error case and should never reach here
     return Aborted(T_INIT, State_EVENT_UNKNOWN);
@@ -219,7 +266,7 @@ static enum Sleep Reset(enum StateTrans t, State_Event reason)
 
   // clean up the persistent state -- External First !
 #ifdef EXTERNAL_FLASH
-  eraseExternalBlock();
+  eraseExternal();
 #endif
   erasePersistent();
 
@@ -264,9 +311,9 @@ enum Sleep Configured(enum StateTrans t, State_Event reason)
   }
   else
   {
-    if (sconfig.start < 0) // sanity check !
-      return Aborted(T_INIT, State_EVENT_UNKNOWN);
-    if (timestamp >= sconfig.start) // look at stored value --
+    //if (sconfig.start < 0) // sanity check !
+   //   return Aborted(T_INIT, State_EVENT_STARTTIM);
+    //if (timestamp >= sconfig.start) // look at stored value --
       return Running(T_INIT, State_EVENT_STARTTIM);
   }
   return SHUTDOWN;
@@ -286,6 +333,9 @@ enum Sleep Hibernating(enum StateTrans t, State_Event reason)
     accelSpiOn();
     ADXL367_SoftwareReset();
     accelSpiOff();
+#endif
+#if defined(USE_LIS2DU12)
+    accelDeinit();
 #endif
     pState->state = TagState_HIBERNATING;
     recordState(reason);
@@ -350,3 +400,6 @@ static enum Sleep SelfTest(enum StateTrans t, State_Event reason)
   }
   return Idle(T_INIT, State_EVENT_OK);
 }
+
+
+

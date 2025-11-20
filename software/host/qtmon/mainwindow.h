@@ -3,13 +3,17 @@
 
 #include <QMainWindow>
 #include <QTimer>
-#include "tag.pb.h"
+#include <QPromise>
+#include "tagclass.h"
+#include "schedule.h"
+#include "ui_mainwindow.h"
 
 class QWidget;
 class QTextEdit;
 class QGroupBox;
 class ConfigTab;
-class Tag;
+
+
 
 extern QTextEdit *s_textEdit;
 class LogScreen;
@@ -29,19 +33,9 @@ public:
 
 signals:
 
-  void StateUpdate(TagState state); 
-  //void TagAttach(const Config &config);
-  //void TagDetach();
-
-private:
-
-  // log tab events
- 
-  void on_LogConfigButton_clicked();    // log current configuration (from UI)
-  void on_LogTagConfigButton_clicked(); // log current tag configuration
-  
-  void SetConfigFromTag();
-  void Start();
+  void StateUpdate(TagState state);
+  void SectorsErased(int);
+  void IdleState(void);
 
 private slots:
 
@@ -60,26 +54,25 @@ private slots:
  
   void on_eraseButton_clicked();    // reset tag flash
   void on_testButton_clicked();     // run tag self-test
+  void on_calibrateButton_clicked(); // enter calibration state
 
-  void on_Attach_clicked();
-  void on_Detach_clicked();
+  void on_Attach_clicked();         // attach to tag
+  void on_Detach_clicked();         // detach from tag
 
   // data events
 
-  void on_internalDownloadButton_clicked(); // download data
-  //void on_externalDownloadButton_clicked();
+  void on_tagLogSaveButton_clicked(); // download data from tag
 
- 
+  
 
 private:
   Tag tag;
-  TagType tt = TagType::TAG_UNSPECIFIED;
-  Ui::MainWindow *ui = nullptr;
+  Ui::MainWindow ui;
   QTimer timer;
   TagState current_state = STATE_UNSPECIFIED;
-  ConfigTab *configtab_;
-  LogScreen *logtab;
-protected:
+  const float version = 2.0;
+  int external_flash_size = 0;
+  int sector_size = 4096;
 };
 
 #endif // MAINWINDOW_H

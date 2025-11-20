@@ -12,15 +12,23 @@ set(CMAKE_FIND_ROOT
 #set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 
 add_subdirectory(software)
+if (NOT WIN32)
 add_subdirectory(hardware)
 add_subdirectory(docs)
+endif()
 
 set(CPACK_PACKAGE_NAME "UltralightTags")
-set(CPACK_PACKAGE_VENDOR "cs.indiana.edu")
-set(CPACK_PACKAGE_VERSION "1.1.0")
-set(CPACK_PACKAGE_VERSION_MAJOR 1)
+set(CPACK_PACKAGE_VENDOR "cs.iu.edu")
+set(CPACK_PACKAGE_VERSION "2.0.0")
+set(CPACK_PACKAGE_VERSION_MAJOR 2)
 set(CPACK_PACKAGE_VERSION_MINOR 1)
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Ultralight Tags Host Tools")
+
+if(FALSE)
+set(CPACK_BUNDLE_APPLE_CERT_APP "Developer ID Application: Indiana University (5J69S77A7G)")
+set(CMAKE_XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY "Apple Development")
+set(CMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM "5J69S77A7G")
+endif()
 
 
 

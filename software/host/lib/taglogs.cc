@@ -10,6 +10,9 @@
 #include <tag.pb.h>
 #include <tagdata.pb.h>
 //#include <host.pb.h>
+
+#include "linkadapt.h"
+#include "tagmonitor.h"
 #include <tagclass.h>
 #include <taglogs.h>
 #include <log.h>
@@ -247,6 +250,38 @@ static int dumpTagLog(std::ostream &out, const PresTagLog &log,
   return 1;
 }
 
+
+static int dumpTagLog(std::ostream &out, const BitPresTagLog &log,
+                      enum TagLogOutput format)
+{
+  const int bucket_number = 5;
+  const int bucket_bits = 6;
+  int64_t timestamp = log.epoch();
+  out << "# BitPresTag" << std::endl;
+  out << timestamp << ",";
+  out << "V:" << log.voltage() << std::endl;
+  //out << ",TC:" << log.temperature() << std::endl;
+
+  for (auto const &entry : log.data())
+  { 
+    timestamp += 60;
+    // Output activity data
+    for (int i = 0; i < bucket_number; i++) {
+      out << timestamp << ",MIN:";
+      int count = ((entry.activity()) >> (i*bucket_bits)) & ((1 << bucket_bits) - 1);
+      out << (count *100.0/60.0) << std::endl;
+      
+    }
+    //out << "A:0x" << std::hex << entry.activity() << std::dec << std::endl;
+    out << timestamp << ",";
+    out << "P:" << entry.pressure() << std::endl;
+    out << timestamp << ",";
+    out << "T:" << entry.temperature() << std::endl;
+    //timestamp += 60;
+  }
+  return 1;
+}
+
 static int dumpTagLog(std::ostream &out, const BitTagNgLog &log,
                       enum TagLogOutput format)
 {
@@ -277,6 +312,7 @@ static int dumpTagLog(std::ostream &out, const BitTagNgLog &log,
   return 1;
 }
 
+/*
 static int dumpTagLog(std::ostream &out, const LuxTagLog &log,
                       uint32_t period,
                       enum TagLogOutput format)
@@ -365,6 +401,7 @@ static int dumpTagLog(std::ostream &out, const Config &config,
 
   return 1;
 }
+  */
 
 int dumpTagLog(std::ostream &out,
                const Ack &log,
@@ -387,35 +424,17 @@ int dumpTagLog(std::ostream &out,
       return dumpTagLog(out, log.bittag_ng_data_log(), format);
     }
     break;
-  case ACCELTAG:
-    if (log.has_acceltag_data_log())
-    {
-      return dumpTagLog(out, log.acceltag_data_log(), config.period(), format);
-    }
-    break;
   case PRESTAG:
     if (log.has_prestag_data_log())
     {
       return dumpTagLog(out, log.prestag_data_log(), config.period(), format);
     }
     break;
-  case LUXTAG:
-    if (log.has_luxtag_data_log())
+  case BITPRESTAG:
+    if (log.has_bitprestag_data_log())
     {
-      return dumpTagLog(out, log.luxtag_data_log(), config.period(), format);
-    }
-    break;
-  case GEOTAG:
-    if (log.has_geotag_data_log())
-    {
-      return dumpTagLog(out, log.geotag_data_log());
-    }
-    break;
-  case ACCELTAGNG:
-    if (log.has_acceltag_ng_data_log())
-    {
-      return dumpTagLog(out, config, log.acceltag_ng_data_log());
-    }
+       return dumpTagLog(out, log.bitprestag_data_log(), format);
+    } 
     break;
   default:
     return -1;

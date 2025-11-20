@@ -38,7 +38,7 @@ int lps27_SetReg(enum LPS27_Reg reg, unsigned char *val, int num)
 #endif
 
 #if defined(LPS_SPI) && defined(USE_LPS27)
-static inline void spiSendPolled(uint32_t n, uint8_t *buf)
+static inline void SendPolled(uint32_t n, uint8_t *buf)
 {
   volatile uint8_t *spidr = (volatile uint8_t *)&SPI1->DR;
   while (n--)
@@ -50,7 +50,7 @@ static inline void spiSendPolled(uint32_t n, uint8_t *buf)
   }
 }
 
-static inline void spiReceivePolled(uint32_t n, uint8_t *buf)
+static inline void ReceivePolled(uint32_t n, uint8_t *buf)
 {
   volatile uint8_t *spidr = (volatile uint8_t *)&SPI1->DR;
   while (n--)
@@ -62,13 +62,43 @@ static inline void spiReceivePolled(uint32_t n, uint8_t *buf)
   }
 }
 
+#endif
+
+#if defined(LPS_USART) && defined(USE_LPS27)
+static inline void SendPolled(uint32_t n, uint8_t *buf)
+{
+  volatile uint8_t *tdr = (volatile uint8_t *)&USART2->TDR;
+  volatile uint8_t *rdr = (volatile uint8_t *)&USART2->RDR;
+  while (n--)
+  {
+    *tdr = *buf++;
+    while ((USART2->ISR & USART_ISR_RXNE) == 0)
+      ;
+    *rdr;
+  }
+}
+
+static inline void ReceivePolled(uint32_t n, uint8_t *buf)
+{
+  volatile uint8_t *tdr = (volatile uint8_t *)&USART2->TDR;
+  volatile uint8_t *rdr = (volatile uint8_t *)&USART2->RDR;
+  while (n--)
+  {
+    *tdr = 0xff;
+     while ((USART2->ISR & USART_ISR_RXNE) == 0)
+      ;
+    *buf++ = *rdr;
+  }
+}
+#endif
+
 void lps27_SetReg(enum LPS27_Reg reg, uint8_t *val, int num)
 {
   unsigned char buffer = ((uint8_t)reg);
 
   palClearLine(LINE_STEVAL_CS);
-  spiSendPolled(1, &buffer);
-  spiSendPolled(num, val);
+  SendPolled(1, &buffer);
+  SendPolled(num, val);
   palSetLine(LINE_STEVAL_CS);
 }
 
@@ -76,14 +106,14 @@ void lps27_GetReg(enum LPS27_Reg reg, uint8_t *val, int num)
 {
   unsigned char buffer = 0x80 | ((uint8_t)reg);
   palClearLine(LINE_STEVAL_CS);
-  spiSendPolled(1, &buffer);
-  spiReceivePolled(num, val);
+  SendPolled(1, &buffer);
+  ReceivePolled(num, val);
   palSetLine(LINE_STEVAL_CS);
 }
 
-#endif
+#
 
-static inline void sleep(int ms) {
+static inline void sleepMS(int ms) {
 #if defined(LPS_SPI)
  //    SPI1->CR1 &= ~SPI_CR1_SPE;
  stopMilliseconds(true,ms);
@@ -95,7 +125,7 @@ static inline void sleep(int ms) {
 #if defined(USE_LPS27)
 
 float lpsPressure(int16_t pressure) {
-  return pressure/32.0f;
+  return pressure/16.0f;
 }
 
 float lpsTemperature(int16_t temperature){
@@ -105,61 +135,59 @@ float lpsTemperature(int16_t temperature){
 
 bool lpsGetPressureTemp(int16_t *pressure, int16_t *temperature)
 {
-  {
-    // buffer to capture pressure/temperature;
-    /*
-    struct
-    {
-      uint32_t pressure;
-      int16_t temperature;
-    } buf;
-    */
-    uint8_t buf[5];
-    uint8_t tmp;
-    lpsOn();
-    sleep(10);
-    uint8_t cmd;;
-#if defined(LPS_LOW_POWER)
-    cmd = LPS27_CTRL_REG2_ONE_SHOT |
-          LPS27_CTRL_REG2_IF_ADD_INC;
-#else
-    cmd = LPS27_CTRL_REG2_ONE_SHOT |
-          LPS27_CTRL_REG2_LOW_NOISE_EN |
-          LPS27_CTRL_REG2_IF_ADD_INC;
-#endif
-    lps27_SetReg(LPS27_CTRL_REG2, &cmd, 1);
-     
-    // wait for data
+ 
+  uint8_t status;
+  uint8_t cmd[2];
 
-#if defined(LPS_LOW_POWER)
-     sleep(25);
-#else
-     sleep(35);
-#endif
+  // default return values
 
-    lps27_GetReg(LPS27_STATUS, &tmp, 1);
-    lps27_GetReg(LPS27_PRESS_OUT_XL, buf, 5);
-    lpsOff();
+  *pressure = SHRT_MIN;
+  *temperature = SHRT_MIN;
 
-    *pressure = ((int32_t) ((buf[2] << 24) | (buf[1]<<16) | buf[0] << 8))>>15;
-    // keep as much accuracy as feasible
-    *temperature = (int16_t) ((buf[4]<<8) | ((buf[3])));
-    if (!(tmp & 1))
-      *pressure = 0;
-    if (!(tmp & 2))
-      *temperature = SHRT_MIN;
-    return (tmp & 3) == 3;
+  lpsOn();      // powered through gpio
+  sleepMS(10);  // 10ms power up
+
+  // set BDU and configure one shot
+
+  cmd[0] = LPS27_CTRL_REG1_BDU;
+  cmd[1] = LPS27_CTRL_REG2_ONE_SHOT |
+           LPS27_CTRL_REG2_LOW_NOISE_EN |
+           LPS27_CTRL_REG2_IF_ADD_INC;
+
+  // write CTRL_REG1 and CTRL_REG2 to start one shot
+  
+  lps27_SetReg(LPS27_CTRL_REG1, cmd, 2);
+    
+  // wait for data
+
+  for (int i = 0; i < 6; i++) {
+    sleepMS(15);
+    lps27_GetReg(LPS27_STATUS, &status, 1);
+    if ((status & 3) == 3)
+      break;
   }
-  return false;
+  
+  if (status == 3) // don't capture if overrun
+  {
+    lps27_GetReg(LPS27_PRESS_OUT_L, (uint8_t *) pressure, 2);
+    lps27_GetReg(LPS27_TEMP_OUT_L, (uint8_t *) temperature, 2);
+  }
+  lpsOff();
+  return status == 3;
 }
 
 bool lpsTest(void)
 {
   uint8_t who;
+  uint16_t temperature,pressure;
+  bool status;
   lpsOn();
   chThdSleepMilliseconds(10);
   lps27_GetReg(LPS27_WHO_AM_I, &who, 1);
   lpsOff();
-  return who == LPS27_WHO_AM_I_VALUE;
+  status = lpsGetPressureTemp(&pressure, &temperature);
+
+
+  return (who == LPS27_WHO_AM_I_VALUE) && status;
 }
 #endif

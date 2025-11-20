@@ -109,7 +109,7 @@ void lpsOff(void)
 
 #endif
 
-#if defined(USE_ADXL362) || defined(USE_ADXL367)
+#if defined(USE_ADXL362) || defined(USE_ADXL367) || defined(USE_LIS2DU12)
 void accelSpiOn()
 {
   /* grab the mutex */

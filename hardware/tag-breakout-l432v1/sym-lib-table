@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "tagbreakout-jlcpcb-v2-rescue")(type "Legacy")(uri "${KIPRJMOD}/tagbreakout-jlcpcb-v2-rescue.lib")(options "")(descr "")(disabled))
+  (lib (name "tag-breakout-v2-rescue")(type "Legacy")(uri "${KIPRJMOD}/tag-breakout-l432v1-rescue.lib")(options "")(descr "")(disabled))
+  (lib (name "tag-library")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libraries/lib_sch/bittagv7.kicad_sym")(options "")(descr ""))
+  (lib (name "stm32f0")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libraries/lib_sch/MCU_ST_STM32F0.kicad_sym")(options "")(descr ""))
+)

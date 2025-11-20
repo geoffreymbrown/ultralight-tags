@@ -1,1 +1,0 @@
-add_pcb_outputs(BitTagv5)

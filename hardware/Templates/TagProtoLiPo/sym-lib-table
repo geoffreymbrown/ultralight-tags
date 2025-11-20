@@ -1,0 +1,12 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "at25xe")(type "KiCad")(uri "${KIPRJMOD}/at25xe.kicad_sym")(options "")(descr ""))
+  (lib (name "lps27-old")(type "Legacy")(uri "${KIPRJMOD}/lps27.lib")(options "")(descr "")(disabled))
+  (lib (name "parts")(type "KiCad")(uri "${KIPRJMOD}/parts.kicad_sym")(options "")(descr ""))
+  (lib (name "PresTag-v3-rescue")(type "KiCad")(uri "${KIPRJMOD}/PresTag-v3-rescue.kicad_sym")(options "")(descr "")(disabled))
+  (lib (name "lps27")(type "KiCad")(uri "${KIPRJMOD}/lps27.kicad_sym")(options "")(descr ""))
+  (lib (name "stm32l432kc")(type "KiCad")(uri "${KIPRJMOD}/stm32l432kc.kicad_sym")(options "")(descr ""))
+  (lib (name "PresTag")(type "KiCad")(uri "${KIPRJMOD}/PresTag.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS7A02")(type "KiCad")(uri "${KIPRJMOD}/TPS7A02.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS7A02_DQN")(type "KiCad")(uri "${KIPRJMOD}/TPS7A0225PDQNR.kicad_sym")(options "")(descr ""))
+)

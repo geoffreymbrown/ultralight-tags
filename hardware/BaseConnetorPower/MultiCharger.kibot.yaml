@@ -1,0 +1,61 @@
+kibot:
+   version: 1
+
+preflight:
+  run_erc: true
+  update_xml: false
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: false
+  filters:
+    - filter: 'Drilled holes too close'
+      error: '51'
+      regex: 'Pad of J103'
+
+
+import:
+  - ../Kibot-config/PCBWay.kibot.yaml
+
+outputs:
+
+  - name: "outline-dxf"
+    comment: "DXF outline file"
+    type: dxf
+    dir: Drawings
+    layers:
+       - 'Edge.Cuts'
+    options:
+       sketch_plot: false 
+       polygon_mode: false
+       metric_units: true
+
+  - name: 'csv-bom'
+    comment: "Bill of Materials in CSV format"
+    type: bom
+    dir: Production
+    options:
+      use_alt: true 
+      columns: 
+        - field: References
+          name: Designator
+        - field: 'Quantity Per PCB'
+          name: Qty
+        - field: MFN
+          name: Manufacturer
+        - field: MPN
+          name: 'Mfg Part #'
+        - field: Digikey
+          name:  'Digikey Part #'
+        - field: Description
+          name: Description/Value
+        - field: Footprint
+          name: Package/Footprint
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+        quote_all: false
+
+  - name: "Schematic-PDF"
+    comment: "Schematic as PDF"
+    type: pdf_sch_print
+    dir: Drawings

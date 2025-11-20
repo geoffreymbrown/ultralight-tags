@@ -1,21 +1,112 @@
-(module bittag:MS621 (layer F.Cu) (tedit 5B6B659B)
-  (fp_text reference J401 (at 0 2.9) (layer F.SilkS) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value CONN_01X02 (at 0 -3.2) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text user + (at 0.3 -2) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text user - (at 0.4 2 90) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (pad 1 smd rect (at 0 -0.85) (size 2 1) (layers F.Cu F.Mask))
-  (pad 2 smd rect (at 0 0.85) (size 2 1) (layers F.Cu F.Mask))
-  (model ${KISYS3DMOD}/Battery.3dshapes/BatteryHolder_Seiko_MS621F.step
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "MS621"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "J401"
+		(at 0 2.9 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "62f08413-893e-4643-bcd7-8b7f8a51ac1d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CONN_01X02"
+		(at 0 -3.2 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "80269fdc-d4a9-48b1-9ce3-34e9db275e7d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c99ff05f-e75e-4206-ac75-e549afbb4c9b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "76907f8c-5131-4554-ab5a-c192d837204c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "52693cfb-3b29-459e-8a25-71ac51399e38")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "+"
+		(at 0.3 -2 0)
+		(layer "F.SilkS")
+		(uuid "12210615-daf1-44b5-bf66-72ef2f203dd2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "-"
+		(at 0.4 1.9 90)
+		(layer "F.SilkS")
+		(uuid "75b7a0fe-9df8-4fed-ac75-c758a1504db0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -0.85)
+		(size 2 1)
+		(layers "F.Cu" "F.Mask")
+		(uuid "2e161266-c123-4e25-8ba0-fdb44ebead14")
+	)
+	(pad "2" smd rect
+		(at 0 0.85)
+		(size 2 1)
+		(layers "F.Cu" "F.Mask")
+		(uuid "502fd502-5244-4ed2-8baf-6635779e7938")
+	)
+	(model "${KISYS3DMOD}/Battery.3dshapes/BatteryHolder_Seiko_MS621F.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

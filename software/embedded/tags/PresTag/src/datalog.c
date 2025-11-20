@@ -7,6 +7,45 @@
 
 const int databuf_size = sizeof(t_DataLog);
 static t_DataLog databuf NOINIT;
+volatile int sectors_erased NOINIT;
+
+// P137 in RM0394
+
+static void fast_msi(void){
+  // change to 24Mhz doesn't require VOS change
+  // Adjust Wait States
+
+  FLASH->ACR = (FLASH->ACR & ~(7)) | 3;
+
+  // Change MSI frequency P 197 RM0394
+
+  RCC->CR = (RCC->CR & ~(15<<4)) | (9<<4);
+
+  // Change TIM2 Prescaler
+
+  STM32_ST_TIM->PSC = STM32_ST_TIM->PSC * 12;
+
+}
+
+
+static void slow_msi(void){
+
+ 
+   // Restore MSI frequency P 197 RM0394
+
+   RCC->CR = (RCC->CR & ~(15<<4)) | (5<<4);
+
+  // Adjust Wait States
+
+  FLASH->ACR = FLASH->ACR & ~(7);
+
+  // Restore TIM2 Prescaler
+
+  STM32_ST_TIM->PSC = STM32_ST_TIM->PSC/12;
+
+}
+
+
 
 extern int encode_ack(void);
 
@@ -24,47 +63,43 @@ static int countInternalBlocks(void){
   return count;
 }
 
-void eraseExternalBlock(){
+static bool eraseExternalSector(int sector){
   int32_t addr;
-  int sectors; 
-  
+  uint8_t buf[256];
+
   // round up to full sector
 
-  addr = pState->external_blocks*2;
+  if (sector < 0 || sector >= EXT_FLASH_SIZE/4096)
+    return false;
 
-  ExFlashPwrUp();  
-  ExFlashSectorErase(addr);
-  ExFlashPwrDown();
-  pState->external_blocks = (addr>>12)*2048;
+  addr = sector*4096;
+
+  // read a buffer
+  ExFlashRead(addr, buf, 256);
+  for (int i = 0; i < 256; i++) {
+      if (buf[i] != 255) {
+        ExFlashSectorErase(addr);
+        return true;
+      }
+  }
+  return false;
 }
 
 void eraseExternal()
 {
-  int32_t addr;
-  int32_t size;
-
-  // compute blocks
-
-  int sectors; 
-  restoreLog();
-
-  // round up to full sector
-  
-  sectors = (pState->external_blocks*2+4095)/4096;
-  pState->external_blocks = sectors*4096/2;
-
+  sectors_erased = 0;
   ExFlashPwrUp();  
-  size = EXT_FLASH_SIZE;
-  while (sectors>0) {
-   
-    addr = sectors * 4096;
-    if (addr < size*1024) {
-        ExFlashSectorErase(addr);
-    }
-    sectors -= 1;
-    pState->external_blocks = sectors*4096/2;
+  for (int i = 0; i < EXT_FLASH_SIZE/4096; i++) {
+    // check them all
+    eraseExternalSector(i);
+    sectors_erased++;
+    // allow monitor a chance
+    if (i%8 == 7)
+      chThdYield();  
   }
   ExFlashPwrDown();
+  pState->external_blocks = 0;
+  sectors_erased = 0;
 }
 
 // Recover pState from log
@@ -87,25 +122,11 @@ enum LOGERR writeDataLog(uint16_t *data, int num)
     return LOGWRITE_FULL;
   }
 
-  int cnt;
+  int cnt = num*2;
   int addr = pState->external_blocks * 4;
 
   ExFlashPwrUp();
-  for (int i = 0; i < num; i++)
-  {
-    cnt = 2;
-    if (!ExFlashWrite(addr, (uint8_t *) &data[i], &cnt)) {
-       //ExFlashPwrDown();
-       //return LOGWRITE_ERROR;
-       /* ignore error */
-       /* what is right thing to do ? */
-    }
-    //SPI1->CR1 &= ~SPI_CR1_SPE;
-    stopMilliseconds(true,2);
-    //SPI1->CR1 |= SPI_CR1_SPE;
-    addr += 2;
-    //pState->external_blocks = addr/2;
-  }
+  ExFlashWrite(addr, (uint8_t *) data, &cnt);
   ExFlashPwrDown();
   
   return LOGWRITE_OK;
@@ -146,14 +167,18 @@ extern enum LOGERR writeDataHeader(t_DataHeader *head)
 
 int data_logAck(int index, Ack *ack)
 {
-
+  int ret;
+  chThdSetPriority(HIGHPRIO);
+  fast_msi();
   PresTagLog *data = &ack->payload.prestag_data_log;
   ack->err = Ack_Err_OK;
-
+  
   // read data
   ExFlashPwrUp();
   ExFlashRead(sizeof(databuf)*index, (uint8_t *) &databuf, sizeof(databuf));
   ExFlashPwrDown();
+
+  // create fake data
 
   if (vddHeader[index].epoch != -1)
   {
@@ -165,7 +190,6 @@ int data_logAck(int index, Ack *ack)
 
     for (int j = 0; j < DATALOG_SAMPLES; j++) // loop over samples
     {
-      // check for unwritten data
       if (databuf.data[j].pressure == -1)
         break;
       data->data[j].pressure = lpsPressure(databuf.data[j].pressure);
@@ -179,8 +203,10 @@ int data_logAck(int index, Ack *ack)
   }
 
   // encode the ack and return
-
-  return encode_ack();
+  ret = encode_ack();
+  slow_msi();
+  chThdSetPriority(NORMALPRIO);
+  return ret;
 }
 
 

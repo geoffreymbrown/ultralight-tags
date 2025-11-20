@@ -1,7 +1,10 @@
 
 #ifndef TAG_H
 #define TAG_H
+using namespace std;
+#include <mutex>
 
+#include "linkadapt.h"
 #include "tagmonitor.h"
 
 class Tag 
@@ -32,11 +35,13 @@ public:
   bool GetConfig(Config &cfg);
   bool GetStatus(Status &status);
 
+
   // Tag control
 
   bool Erase();
   bool Start(Config &cfg);
   bool Stop();
+  bool Calibrate();
 
   bool SetRtc();
   bool Test(TestReq test);
@@ -44,13 +49,19 @@ public:
   // Logs
   // next defines next log entry to fetch, returns the number of entries fetched
   // for data logs, copy the ack structure
-
  
   int GetStateLog(StateLog &state_log, int index);
   bool GetDataLog(Ack &data_log, int index);
+  bool GetCalibrationLog(Ack &calibration_log);
+
+  // Calibration Constants
+  
+  bool ReadCalibration(Ack &constants, uint32_t index);
+  bool WriteCalibration(CalibrationConstants &constants);
+
 
 private:
-  std::mutex mtx;
+  mutex mtx;
   Ack ack;
   Req req;
   TagMonitor monitor;

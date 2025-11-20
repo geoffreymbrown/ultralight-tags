@@ -11,6 +11,8 @@
 #include <vector>
 #include <QButtonGroup>
 #include <QLayout>
+#include <QGroupBox>
+#include <QVBoxLayout>
 #include "tag.pb.h"
 
 using namespace  google::protobuf;
@@ -40,6 +42,9 @@ public:
     int  checkedId();
     QAbstractButton *button(int id);
     void setCheckedId(int index);
+
+private:
+    void buttonClicked(QAbstractButton *button);
 
 signals:
 

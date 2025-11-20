@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/geobrown/Research/ultralight-tags/hardware/Multicharger-jlcpcb/Multicharger-jlcpcb.kicad_sch</source>
+    <date>Sun 09 Jul 2023 01:42:09 PM EDT</date>
+    <tool>Eeschema 6.0.11-2627ca5db0~126~ubuntu22.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Tag Charger -- multiple ms series batteries -- jlcpcb</title>
+        <company>Geoffrey Brown</company>
+        <rev>5.1</rev>
+        <date>2023-07-09</date>
+        <source>Multicharger-jlcpcb.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C101">
+      <value>0.1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 0.1UF 16V Y5V 0402</field>
+        <field name="LCSC">C1525</field>
+        <field name="MFN">Samsung</field>
+        <field name="MPN">CL05B104KO5NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Samsung"/>
+      <property name="Description" value="CAP CER 0.1UF 16V Y5V 0402"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b72d3b2</tstamps>
+    </comp>
+    <comp ref="C106">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 1UF 10V X5R 0402</field>
+        <field name="LCSC">C52923</field>
+        <field name="MFN">Samsung</field>
+        <field name="MPN">CL05A105KA5NQNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05A105KA5NQNC"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Samsung"/>
+      <property name="Description" value="CAP CER 1UF 10V X5R 0402"/>
+      <property name="LCSC" value="C52923"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b678907</tstamps>
+    </comp>
+    <comp ref="C107">
+      <value>2.2uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">CAP CER 2.2UF 35V X5R 0402</field>
+        <field name="LCSC">C12530</field>
+        <field name="MFN">Samsung</field>
+        <field name="MPN">CL05A225MQ5NSNC</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05A225MQ5NSNC"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Samsung"/>
+      <property name="Description" value="CAP CER 2.2UF 35V X5R 0402"/>
+      <property name="LCSC" value="C12530"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b6788aa</tstamps>
+    </comp>
+    <comp ref="D101">
+      <value>No Go Red</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">LED RED CLEAR 0603 SMD</field>
+        <field name="LCSC">C2286</field>
+        <field name="MFN">Hubei KENTO Elec</field>
+        <field name="MPN">KT-0603R</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Macrofab" value=""/>
+      <property name="MPN" value="KT-0603R"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Hubei KENTO Elec"/>
+      <property name="Description" value="LED RED CLEAR 0603 SMD"/>
+      <property name="LCSC" value="C2286"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b72d8d4</tstamps>
+    </comp>
+    <comp ref="D102">
+      <value>BLUE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="C72041">C72041</field>
+        <field name="Description">LED BLUE CLEAR 0603 SMD</field>
+        <field name="MFN">Everlight Elec</field>
+        <field name="MPN">19-217/GHC-YR1S2/3T</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Macrofab" value=""/>
+      <property name="MPN" value="19-217/GHC-YR1S2/3T"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Everlight Elec"/>
+      <property name="Description" value="LED BLUE CLEAR 0603 SMD"/>
+      <property name="C72041" value="C72041"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b038a86</tstamps>
+    </comp>
+    <comp ref="D103">
+      <value>Go Green</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">LED GREEN CLEAR 0603 SMD</field>
+        <field name="LCSC">C72043</field>
+        <field name="MFN">Everlight Elec</field>
+        <field name="MPN">19-217/GHC-YR1S2/3T</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Macrofab" value=""/>
+      <property name="MPN" value="19-217/GHC-YR1S2/3T"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Everlight Elec"/>
+      <property name="Description" value="LED GREEN CLEAR 0603 SMD"/>
+      <property name="LCSC" value="C72043"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b72d7b7</tstamps>
+    </comp>
+    <comp ref="D104">
+      <value>D_Schottky</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <fields>
+        <field name="LCSC">C191023</field>
+        <field name="MFN">Guangdong Hottech</field>
+        <field name="MPN">1N5819WS</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MFN" value="Guangdong Hottech"/>
+      <property name="MPN" value="1N5819WS"/>
+      <property name="LCSC" value="C191023"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c39b2280-1f41-4cc5-9bd4-abadbfe672f9</tstamps>
+    </comp>
+    <comp ref="D105">
+      <value>D_Schottky</value>
+      <footprint>Diode_SMD:D_SOD-323</footprint>
+      <fields>
+        <field name="LCSC">C191023</field>
+        <field name="MFN">Guangdong Hottech</field>
+        <field name="MPN">1N5819WS</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MFN" value="Guangdong Hottech"/>
+      <property name="MPN" value="1N5819WS"/>
+      <property name="LCSC" value="C191023"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3d3d8aed-3320-4e60-870a-6f704c6611ac</tstamps>
+    </comp>
+    <comp ref="J104">
+      <value>USB_B_Mini</value>
+      <footprint>Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal</footprint>
+      <fields>
+        <field name="Description">CONN RCPT USB2.0 MINI B SMD R/A</field>
+        <field name="LCSC">C2681563</field>
+        <field name="MFN">SHOU HAN</field>
+        <field name="MPN">MINI 5PTP</field>
+      </fields>
+      <libsource lib="Connector" part="USB_B_Mini" description="USB Mini Type B connector"/>
+      <property name="MFN" value="SHOU HAN"/>
+      <property name="MPN" value="MINI 5PTP"/>
+      <property name="LCSC" value="C2681563"/>
+      <property name="Description" value="CONN RCPT USB2.0 MINI B SMD R/A"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b01d2d6</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>680</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C23228</field>
+        <field name="MFN">Uniroyal</field>
+        <field name="MPN">0603WAF6800T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAF6800T5E"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Uniroyal"/>
+      <property name="LCSC" value="C23228"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b721820</tstamps>
+    </comp>
+    <comp ref="R101">
+      <value>220</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 220Ω 0603 </field>
+        <field name="LCSC">C22962</field>
+        <field name="MFN">Uniroyal</field>
+        <field name="MPN">0603WAF2200T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAF2200T5E"/>
+      <property name="MFN" value="Uniroyal"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 220Ω 0603 "/>
+      <property name="LCSC" value="C22962"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b72d71f</tstamps>
+    </comp>
+    <comp ref="R102">
+      <value>120</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 120Ω 0603 </field>
+        <field name="LCSC">C22787</field>
+        <field name="MFN">Uniroyal</field>
+        <field name="MPN">0603WAF1200T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAF1200T5E"/>
+      <property name="MFN" value="Uniroyal"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 120Ω 0603 "/>
+      <property name="LCSC" value="C22787"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b06b8b2</tstamps>
+    </comp>
+    <comp ref="R103">
+      <value>91K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">RES SMD 91K OHM 1% 1/16W </field>
+        <field name="LCSC">C23265</field>
+        <field name="MFN">Uniroyal</field>
+        <field name="MPN">0603WAF9102T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAF9102T5E"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Uniroyal"/>
+      <property name="Description" value="RES SMD 91K OHM 1% 1/16W "/>
+      <property name="LCSC" value="C23265"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b72cf14</tstamps>
+    </comp>
+    <comp ref="R104">
+      <value>13K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">RES SMD 13K OHM 1% 1/16W </field>
+        <field name="LCSC">C22797</field>
+        <field name="MFN">Uniroyal</field>
+        <field name="MPN">0603WAF1302T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAF1302T5E"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Uniroyal"/>
+      <property name="Description" value="RES SMD 13K OHM 1% 1/16W "/>
+      <property name="LCSC" value="C22797"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b72cf45</tstamps>
+    </comp>
+    <comp ref="R105">
+      <value>120</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 129Ω 0603 </field>
+        <field name="LCSC">C22787</field>
+        <field name="MFN">Uniroyal</field>
+        <field name="MPN">0603WAF1200T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAF1200T5E"/>
+      <property name="MFN" value="Uniroyal"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 129Ω 0603 "/>
+      <property name="LCSCC" value=""/>
+      <property name="LCSC" value="C22787"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b72d633</tstamps>
+    </comp>
+    <comp ref="R106">
+      <value>1500</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">RES SMD 1.5K OHM 1% 1/16W 0603</field>
+        <field name="LCSC">C22843</field>
+        <field name="MFN">Uniroyal</field>
+        <field name="MPN">0603WAF1501T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAF1501T5E"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Uniroyal"/>
+      <property name="Description" value="RES SMD 1.5K OHM 1% 1/16W 0603"/>
+      <property name="LCSC" value="C22843"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006111918b</tstamps>
+    </comp>
+    <comp ref="R107">
+      <value>2.2K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">RES SMD 2.2K OHM 1% 1/16W 0603</field>
+        <field name="LCSC">0603WAF2201T5E</field>
+        <field name="MFN">Uniroyal</field>
+        <field name="MPN">0603WAF2201T5E</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0603WAF2201T5E"/>
+      <property name="Digikey" value=""/>
+      <property name="MFN" value="Uniroyal"/>
+      <property name="Description" value="RES SMD 2.2K OHM 1% 1/16W 0603"/>
+      <property name="LCSC" value="0603WAF2201T5E"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006111aa70</tstamps>
+    </comp>
+    <comp ref="SW101">
+      <value>SW_DIP_x04</value>
+      <footprint>Button_Switch_SMD:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W8.61mm_P2.54mm_LowProfile</footprint>
+      <fields>
+        <field name="Description">SWITCH DIP SPST 100MA 6V</field>
+        <field name="LCSC">C3034155</field>
+        <field name="MFN">CTS</field>
+        <field name="MPN">219-4LPSTRF</field>
+      </fields>
+      <libsource lib="Switch" part="SW_DIP_x04" description="4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <property name="MPN" value="219-4LPSTRF"/>
+      <property name="MFN" value="CTS"/>
+      <property name="Description" value="SWITCH DIP SPST 100MA 6V"/>
+      <property name="LSCS" value=""/>
+      <property name="LCSC" value="C3034155"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006112e30d</tstamps>
+    </comp>
+    <comp ref="U101">
+      <value>TPS3700</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <fields>
+        <field name="Description">WIDE SUPPLY COMPARATOR</field>
+        <field name="LCSC">C3658987</field>
+        <field name="MFN">Texas Instruments</field>
+        <field name="MPN">TPS3700QDDCRQ1</field>
+      </fields>
+      <libsource lib="Multicharger" part="TPS3700" description=""/>
+      <property name="MFN" value="Texas Instruments"/>
+      <property name="MPN" value="TPS3700QDDCRQ1"/>
+      <property name="Description" value="WIDE SUPPLY COMPARATOR"/>
+      <property name="LCSC" value="C3658987"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b72cde4</tstamps>
+    </comp>
+    <comp ref="U106">
+      <value>XC6206-3.3V</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-3</footprint>
+      <datasheet>https://www.torexsemi.com/file/xc6206/XC6206.pdf</datasheet>
+      <fields>
+        <field name="JlcRotOffset">180</field>
+        <field name="LCSC">C2891841</field>
+        <field name="MFN">Yongyutai</field>
+        <field name="MPN">XC6206-3.3V</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="XC6206PxxxMR" description="Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"/>
+      <property name="MFN" value="Yongyutai"/>
+      <property name="MPN" value="XC6206-3.3V"/>
+      <property name="Digikey" value=""/>
+      <property name="LCSC" value="C2891841"/>
+      <property name="JlcRotOffset" value="180"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Multicharger-jlcpcb.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005b67840c</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="USB_B_Mini">
+      <description>USB Mini Type B connector</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_B_Mini</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="bidirectional"/>
+        <pin num="3" name="D+" type="bidirectional"/>
+        <pin num="4" name="ID" type="passive"/>
+        <pin num="5" name="GND" type="power_out"/>
+        <pin num="6" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x03_Odd_Even">
+      <description>Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x03_Odd_Even</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Multicharger" part="TPS3700">
+      <fields>
+        <field name="Reference">U101</field>
+        <field name="Value">TPS3700</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="MFN">Texas Instruments</field>
+        <field name="MPN">TPS3700QDDCRQ1</field>
+        <field name="Description">WIDE SUPPLY COMPARATOR</field>
+        <field name="LCSC">C3658987</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUTA" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="INA+" type="input"/>
+        <pin num="4" name="INB-" type="input"/>
+        <pin num="5" name="VDD" type="input"/>
+        <pin num="6" name="OUTB" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="XC6206PxxxMR">
+      <description>Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23</description>
+      <docs>https://www.torexsemi.com/file/xc6206/XC6206.pdf</docs>
+      <footprints>
+        <fp>SOT?23?3*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">XC6206PxxxMR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-3</field>
+        <field name="Datasheet">https://www.torexsemi.com/file/xc6206/XC6206.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DIP_x04">
+      <description>4x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW?DIP?x4*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DIP_x04</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+        <pin num="6" name="" type="passive"/>
+        <pin num="7" name="" type="passive"/>
+        <pin num="8" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Multicharger">
+      <uri>/home/geobrown/Research/ultralight-tags/hardware/Multicharger-jlcpcb/../kicad_libraries/lib_sch/Multicharger-jlcpcb.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/usr/share/kicad/symbols//Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/symbols//Switch.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="C107" pin="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R106" pin="2" pintype="passive"/>
+      <node ref="R107" pin="2" pintype="passive"/>
+      <node ref="U106" pin="2" pinfunction="VO" pintype="power_out"/>
+    </net>
+    <net code="2" name="/VIN">
+      <node ref="C101" pin="1" pintype="passive"/>
+      <node ref="D101" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D103" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D104" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D105" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U101" pin="5" pinfunction="VDD" pintype="input"/>
+    </net>
+    <net code="3" name="/Vsense">
+      <node ref="R103" pin="2" pintype="passive"/>
+      <node ref="R104" pin="1" pintype="passive"/>
+      <node ref="U101" pin="3" pinfunction="INA+" pintype="input"/>
+      <node ref="U101" pin="4" pinfunction="INB-" pintype="input"/>
+    </net>
+    <net code="4" name="GND">
+      <node ref="C101" pin="2" pintype="passive"/>
+      <node ref="C106" pin="2" pintype="passive"/>
+      <node ref="C107" pin="2" pintype="passive"/>
+      <node ref="D102" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J104" pin="4" pinfunction="ID" pintype="passive"/>
+      <node ref="J104" pin="5" pinfunction="GND" pintype="power_out"/>
+      <node ref="J104" pin="6" pinfunction="Shield" pintype="passive"/>
+      <node ref="R104" pin="2" pintype="passive"/>
+      <node ref="U101" pin="2" pinfunction="GND" pintype="input"/>
+      <node ref="U106" pin="1" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="5" name="Net-(C106-Pad1)">
+      <node ref="C106" pin="1" pintype="passive"/>
+      <node ref="D105" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U106" pin="3" pinfunction="VI" pintype="power_in"/>
+    </net>
+    <net code="6" name="Net-(D101-Pad1)">
+      <node ref="D101" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R101" pin="2" pintype="passive"/>
+    </net>
+    <net code="7" name="Net-(D102-Pad2)">
+      <node ref="D102" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R102" pin="2" pintype="passive"/>
+    </net>
+    <net code="8" name="Net-(D103-Pad1)">
+      <node ref="D103" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R105" pin="2" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(D104-Pad2)">
+      <node ref="D104" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J104" pin="1" pinfunction="VBUS" pintype="power_out"/>
+      <node ref="R102" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="SW101" pin="1" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(R2-Pad2)">
+      <node ref="SW101" pin="4" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(R101-Pad1)">
+      <node ref="R101" pin="1" pintype="passive"/>
+      <node ref="U101" pin="1" pinfunction="OUTA" pintype="input"/>
+    </net>
+    <net code="13" name="Net-(R105-Pad1)">
+      <node ref="R105" pin="1" pintype="passive"/>
+      <node ref="U101" pin="6" pinfunction="OUTB" pintype="input"/>
+    </net>
+    <net code="14" name="Net-(R106-Pad1)">
+      <node ref="R106" pin="1" pintype="passive"/>
+      <node ref="SW101" pin="2" pintype="passive"/>
+    </net>
+    <net code="15" name="Net-(R107-Pad1)">
+      <node ref="R107" pin="1" pintype="passive"/>
+      <node ref="SW101" pin="3" pintype="passive"/>
+    </net>
+    <net code="16" name="TAG_VBAT">
+      <node ref="R103" pin="1" pintype="passive"/>
+      <node ref="SW101" pin="5" pintype="passive"/>
+      <node ref="SW101" pin="6" pintype="passive"/>
+      <node ref="SW101" pin="7" pintype="passive"/>
+      <node ref="SW101" pin="8" pintype="passive"/>
+    </net>
+    <net code="20" name="unconnected-(J104-Pad2)">
+      <node ref="J104" pin="2" pinfunction="D-" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(J104-Pad3)">
+      <node ref="J104" pin="3" pinfunction="D+" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

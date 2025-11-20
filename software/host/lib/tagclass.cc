@@ -13,6 +13,7 @@
 extern "C"
 {
 #include "monitor.h"
+#include "log.h"
 }
 
 using namespace google::protobuf;
@@ -64,6 +65,7 @@ void Tag::Detach()
 
 bool Tag::GitSha(std::string &str)
 {
+  std::lock_guard<std::mutex> lck(mtx);
   return IsAttached() ? monitor.GitShaString(str) : false;
 }
 
@@ -85,6 +87,13 @@ bool Tag::Stop()
   return monitor.Rpc(req,ack);
 }
 
+bool Tag::Calibrate()
+{
+  std::lock_guard<std::mutex> lck(mtx);
+  req.Clear();
+  req.set_allocated_calibrate(new Empty);
+  return monitor.Rpc(req,ack);
+}
 bool Tag::Erase()
 {
   std::lock_guard<std::mutex> lck(mtx);
@@ -210,6 +219,45 @@ bool Tag::GetDataLog(Ack &data_log, int index)
   {
     return false;
   }
+}
+
+bool Tag::GetCalibrationLog(Ack &calibration_log)
+{
+  std::lock_guard<std::mutex> lck(mtx);
+  req.Clear();
+  req.set_allocated_caldata(new Empty);
+  if (monitor.Rpc(req,ack)) {
+     calibration_log.CopyFrom(ack);
+     return true;
+  }
+  else 
+  {
+    return false;
+  }
+}
+
+bool Tag::ReadCalibration(Ack &constants, uint32_t index)
+{
+  std::lock_guard<std::mutex> lck(mtx);
+  req.Clear();
+  req.set_read_calibration(index);
+  if (monitor.Rpc(req,ack)) {
+     constants.CopyFrom(ack);
+     return true;
+  }
+  else 
+  {
+    return false;
+  }
+}
+
+bool Tag::WriteCalibration(CalibrationConstants &constants)
+{
+  std::lock_guard<std::mutex> lck(mtx);
+  req.Clear();
+  req.set_allocated_write_calibration(new CalibrationConstants(constants));
+  //log_info("%s",req.DebugString().c_str());
+  return monitor.Rpc(req,ack);
 }
 
 // instantiate GetLog for bittags
