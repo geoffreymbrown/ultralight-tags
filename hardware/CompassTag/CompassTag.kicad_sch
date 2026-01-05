@@ -3643,10 +3643,10 @@
 		(uuid "a613b234-db66-41ca-a8b3-a3b2394b9dd2")
 	)
 	(junction
-		(at 94.615 127)
+		(at 101.6 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b65db78a-9b1d-413e-bb6d-889f2f28f65e")
+		(uuid "bde74748-0868-4906-8149-9324b3793359")
 	)
 	(junction
 		(at 243.84 139.7)
@@ -4094,16 +4094,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.915 127) (xy 94.615 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c738f96-a77e-45e2-841b-7174e86acdd1")
-	)
-	(wire
-		(pts
 			(xy 227.33 33.02) (xy 227.33 41.91)
 		)
 		(stroke
@@ -4284,7 +4274,7 @@
 	)
 	(wire
 		(pts
-			(xy 94.615 127) (xy 101.6 127)
+			(xy 81.915 127) (xy 101.6 127)
 		)
 		(stroke
 			(width 0)
@@ -5355,16 +5345,6 @@
 			(justify left bottom)
 		)
 		(uuid "b08fda17-5f02-4987-97f5-81b4c5397c9c")
-	)
-	(label "AK_PWR"
-		(at 97.155 127 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "b6228a74-3a1b-4b3f-87f6-874bb4a64a4a")
 	)
 	(label "AT25_SCK"
 		(at 128.27 53.34 90)
@@ -9381,17 +9361,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 94.615 127 0)
+		(lib_id "power:+2V5")
+		(at 101.6 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c14ef07-685d-4d7d-850f-632c83c6cca3")
-		(property "Reference" "#FLG1"
-			(at 94.615 125.095 0)
+		(uuid "4f913904-de97-4361-b118-e1559f3e212c")
+		(property "Reference" "#PWR11"
+			(at 101.6 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9399,8 +9378,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 94.615 121.92 0)
+		(property "Value" "+2V5"
+			(at 101.981 122.6058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9408,7 +9387,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 94.615 127 0)
+			(at 101.6 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9416,8 +9395,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 94.615 127 0)
+		(property "Datasheet" ""
+			(at 101.6 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9425,8 +9404,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 94.615 127 0)
+		(property "Description" "Power symbol creates a global label with name \"+2V5\""
+			(at 101.6 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9435,12 +9414,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "958196ec-e6db-4e0a-a999-584d2823daeb")
+			(uuid "e5926d67-55b6-49d0-b146-5177f40bc3a8")
 		)
 		(instances
-			(project ""
+			(project "CompassTag"
 				(path "/e44ca67a-43be-444b-8652-f54825a2eb6f"
-					(reference "#FLG1")
+					(reference "#PWR11")
 					(unit 1)
 				)
 			)
