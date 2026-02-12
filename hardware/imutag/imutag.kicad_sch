@@ -1846,184 +1846,6 @@
 				)
 			)
 		)
-		(symbol "Device:Q_NPN_BEC"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NPN_BEC"
-				(at 5.08 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "NPN transistor, base/emitter/collector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor NPN"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Q_NPN_BEC_0_1"
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NPN_BEC_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.715)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -3813,6 +3635,12 @@
 		(uuid "2a028fb3-1413-421f-ac48-3e84027ccbe3")
 	)
 	(junction
+		(at 215.9 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b50806d-0fb0-4c26-875d-b86cacc1f0c3")
+	)
+	(junction
 		(at 248.92 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3849,6 +3677,12 @@
 		(uuid "60a30772-51b0-424b-88d8-4655dfa26927")
 	)
 	(junction
+		(at 215.9 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64b67c78-580a-49cb-a8e4-3a43bdfdedb5")
+	)
+	(junction
 		(at 177.8 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3871,12 +3705,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9602544e-5362-4c27-9d9b-c17da663af19")
-	)
-	(junction
-		(at 217.17 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97285a18-895d-4ec7-82a9-d5183c08401e")
 	)
 	(junction
 		(at 242.57 101.6)
@@ -3919,12 +3747,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dda26ecc-b230-49a5-8686-56444d3d41d0")
-	)
-	(junction
-		(at 217.17 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e59c7208-0fa4-4bd8-9ebc-1099c2a08321")
 	)
 	(junction
 		(at 82.55 76.2)
@@ -3998,6 +3820,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 24.13) (xy 215.9 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06c227cb-e1a9-4604-b2e1-8d244dd9b6d4")
+	)
+	(wire
+		(pts
 			(xy 177.8 140.97) (xy 177.8 144.78)
 		)
 		(stroke
@@ -4045,16 +3877,6 @@
 			(type default)
 		)
 		(uuid "118a0926-895a-4c91-ad01-96a91244c2c8")
-	)
-	(wire
-		(pts
-			(xy 38.1 140.97) (xy 38.1 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13626e3b-32e7-4dd1-8576-1d47fe33d582")
 	)
 	(wire
 		(pts
@@ -4248,16 +4070,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 29.21) (xy 217.17 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3883e041-5f86-4e09-87f5-4752da4db105")
-	)
-	(wire
-		(pts
 			(xy 59.69 153.67) (xy 59.69 149.86)
 		)
 		(stroke
@@ -4315,16 +4127,6 @@
 			(type default)
 		)
 		(uuid "46dce8e2-fa5e-4c2a-ac20-7e5096116715")
-	)
-	(wire
-		(pts
-			(xy 209.55 35.56) (xy 217.17 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49694f88-1255-4c44-a523-1cd728e2b5b3")
 	)
 	(wire
 		(pts
@@ -4428,16 +4230,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 133.35) (xy 38.1 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53e635a2-d6bd-4146-aede-732ea083d249")
-	)
-	(wire
-		(pts
 			(xy 82.55 73.66) (xy 82.55 76.2)
 		)
 		(stroke
@@ -4515,6 +4307,16 @@
 			(type default)
 		)
 		(uuid "636fe648-e343-48dd-a2f3-e7dcb155fbd5")
+	)
+	(wire
+		(pts
+			(xy 207.01 31.75) (xy 215.9 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "649ba17b-91a1-4d9b-bd9a-75bdcaba7448")
 	)
 	(wire
 		(pts
@@ -4628,6 +4430,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 35.56) (xy 215.9 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8922c03c-efef-4ac9-9c1f-0fe1e3d8c935")
+	)
+	(wire
+		(pts
 			(xy 80.01 78.74) (xy 87.63 78.74)
 		)
 		(stroke
@@ -4718,16 +4530,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 153.67) (xy 57.15 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98510a1c-dee2-45cd-b58e-32e66bfed24f")
-	)
-	(wire
-		(pts
 			(xy 74.93 34.29) (xy 74.93 30.48)
 		)
 		(stroke
@@ -4775,16 +4577,6 @@
 			(type default)
 		)
 		(uuid "a7e95674-8d7a-4122-b236-7b83e8757ca9")
-	)
-	(wire
-		(pts
-			(xy 217.17 29.21) (xy 217.17 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7ea6483-fda9-4be3-9419-214936397e5f")
 	)
 	(wire
 		(pts
@@ -4838,16 +4630,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 124.46) (xy 57.15 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4a7b6f7-8b47-4c04-b67f-28a3c33ce78e")
-	)
-	(wire
-		(pts
 			(xy 191.77 135.89) (xy 165.1 135.89)
 		)
 		(stroke
@@ -4855,16 +4637,6 @@
 			(type default)
 		)
 		(uuid "b85057f8-67c2-4ac9-9c35-5fdf3e54b668")
-	)
-	(wire
-		(pts
-			(xy 215.9 24.13) (xy 217.17 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b88fc478-43ef-46b5-8d6b-9dcc324ff7a4")
 	)
 	(wire
 		(pts
@@ -4885,16 +4657,6 @@
 			(type default)
 		)
 		(uuid "b9ce2f14-846a-43c6-a8f1-f2b1c166e618")
-	)
-	(wire
-		(pts
-			(xy 217.17 35.56) (xy 217.17 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9da3864-33fe-4375-9afe-afbcfe4c3333")
 	)
 	(wire
 		(pts
@@ -4948,7 +4710,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 24.13) (xy 222.25 24.13)
+			(xy 215.9 24.13) (xy 222.25 24.13)
 		)
 		(stroke
 			(width 0)
@@ -5095,6 +4857,16 @@
 			(type default)
 		)
 		(uuid "d9080b70-2752-4b24-b8f7-fe1f796f0caa")
+	)
+	(wire
+		(pts
+			(xy 215.9 35.56) (xy 215.9 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddfc1ddd-2689-4704-a81e-a08c5d85e7ba")
 	)
 	(wire
 		(pts
@@ -5299,6 +5071,26 @@
 			(justify left bottom)
 		)
 		(uuid "9ec08a01-c427-429b-ad9c-f5f2142bcc5c")
+	)
+	(text "Switch Mag and IMU ??"
+		(exclude_from_sim no)
+		(at 144.526 155.956 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "aba4f19d-de7a-41b2-8499-a5cf51b4a8b9")
+	)
+	(text "Cap shared with adjacent\ndevices"
+		(exclude_from_sim no)
+		(at 36.068 146.812 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+		)
+		(uuid "f1fbb0f9-58e5-468a-ac79-f1601116bf12")
 	)
 	(label "USART1_CK"
 		(at 153.67 93.98 0)
@@ -5786,7 +5578,7 @@
 	)
 	(global_label "VBAT"
 		(shape input)
-		(at 209.55 29.21 180)
+		(at 207.01 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5796,7 +5588,7 @@
 		)
 		(uuid "19c2e9d8-fc09-4086-a8b6-089e3311c438")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.4555 29.21 0)
+			(at 198.9155 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5852,7 +5644,7 @@
 	)
 	(global_label "VIN"
 		(shape input)
-		(at 208.28 24.13 180)
+		(at 207.01 24.13 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5862,7 +5654,7 @@
 		)
 		(uuid "8c72ed56-c31b-40e1-811e-fadfefa85caf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.8546 24.13 0)
+			(at 200.5846 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6403,114 +6195,6 @@
 			(project "imutag"
 				(path "/e44ca67a-43be-444b-8652-f54825a2eb6f"
 					(reference "C501")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Q_NPN_BEC")
-		(at 44.45 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005b44f199")
-		(property "Reference" "Q501"
-			(at 49.53 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q_NPN_BEC"
-			(at 49.53 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-883"
-			(at 49.53 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 44.45 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFN" "Nexperia"
-			(at 44.45 92.71 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "BC847AMB,315"
-			(at 44.45 92.71 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "DISTPN" "1727-2632-1-ND"
-			(at 0 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C686658"
-			(at 44.45 92.71 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "797d1a76-eaa1-4395-86d1-3489ff9a36ba")
-		)
-		(pin "2"
-			(uuid "7dd33d18-dad7-46ea-86e0-00070e4d23d5")
-		)
-		(pin "3"
-			(uuid "dd16f63a-00de-4758-ad1b-d789954a90c7")
-		)
-		(instances
-			(project "imutag"
-				(path "/e44ca67a-43be-444b-8652-f54825a2eb6f"
-					(reference "Q501")
 					(unit 1)
 				)
 			)
@@ -7559,7 +7243,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005c0f4161")
 		(property "Reference" "J401"
-			(at 204.47 31.75 0)
+			(at 204.47 40.386 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7575,7 +7259,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "AccelTag:MS621"
+		(property "Footprint" "AccelTag:batterypads"
 			(at 204.47 35.56 0)
 			(effects
 				(font
@@ -7646,7 +7330,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 212.09 24.13 180)
+		(at 215.9 27.94 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7654,7 +7338,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005c0f416f")
 		(property "Reference" "D401"
-			(at 212.09 18.6436 0)
+			(at 210.4136 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7662,7 +7346,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 212.09 20.955 0)
+			(at 212.725 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7670,7 +7354,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
-			(at 212.09 24.13 0)
+			(at 215.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7679,7 +7363,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 212.09 24.13 0)
+			(at 215.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7688,7 +7372,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 24.13 0)
+			(at 215.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7697,7 +7381,7 @@
 			)
 		)
 		(property "MFN" "COMCHIP"
-			(at 212.09 24.13 0)
+			(at 215.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7706,7 +7390,7 @@
 			)
 		)
 		(property "MPN" "CDBQC0130L-HF"
-			(at 212.09 24.13 0)
+			(at 215.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7715,7 +7399,7 @@
 			)
 		)
 		(property "DISTPN" "641-1519-1-ND"
-			(at 443.23 -8.89 0)
+			(at 182.88 -203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7724,7 +7408,7 @@
 			)
 		)
 		(property "LCSC" "C2886012"
-			(at 212.09 24.13 0)
+			(at 215.9 27.94 0)
 			(effects
 				(font
 					(size 1.524 1.524)
