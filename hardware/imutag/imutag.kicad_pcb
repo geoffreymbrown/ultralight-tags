@@ -419,6 +419,17 @@
 			(pintype "passive")
 			(uuid "9e7b558b-19ba-484e-b423-5e9d4a80dac6")
 		)
+		(model "${KIPRJMOD}/lipo.step"
+			(offset
+				(xyz 0 -0.8 0.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 0 -90)
+			)
+		)
 	)
 	(footprint "AccelTag:RV-8803-C7"
 		(layer "F.Cu")
@@ -2336,7 +2347,7 @@
 	(footprint "AccelTag:taghole1.1mm"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-00005ff30f8d")
-		(at 154 111.671)
+		(at 156.7 112.11)
 		(property "Reference" "J301"
 			(at 0 1.9812 0)
 			(layer "F.SilkS")
@@ -2461,7 +2472,7 @@
 	(footprint "AccelTag:taghole1.1mm"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-00006054949a")
-		(at 154 105.191)
+		(at 156.7 104.89)
 		(property "Reference" "J302"
 			(at 0 1.9812 0)
 			(layer "F.SilkS")
@@ -2590,7 +2601,7 @@
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C1"
-			(at 0 -1.05 360)
+			(at 0 -1.05 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "58c85650-7024-4996-a6d3-876a0902ef19")
@@ -2602,7 +2613,7 @@
 			)
 		)
 		(property "Value" "0.1uf"
-			(at 0 1.05 360)
+			(at 0 1.05 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "02891f79-b011-499e-99b7-102ebb3d546c")
@@ -2614,7 +2625,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "45557143-ecf5-42b6-b62f-7e904cd0693a")
@@ -2626,7 +2637,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5d0f093c-c079-4300-887f-0f4da8f32d6c")
@@ -2638,7 +2649,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cbae6ae0-f379-4a34-8e18-1d3f5695e9b8")
@@ -2650,7 +2661,7 @@
 			)
 		)
 		(property "DISTPN" "490-10403-1-ND"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5680d805-dc45-4ab4-8a5e-00a42f2bdb43")
@@ -2662,7 +2673,7 @@
 			)
 		)
 		(property "LCSC" "C181047"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0b81c9bc-34b4-4f95-97b5-0fc43184c01f")
@@ -2674,7 +2685,7 @@
 			)
 		)
 		(property "MFN" "Murata"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7fa443d6-00e3-425e-8099-3cba7415c316")
@@ -2686,7 +2697,7 @@
 			)
 		)
 		(property "MPN" "C181047"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9e901dae-d049-4667-85c5-8e6743881741")
@@ -2698,7 +2709,7 @@
 			)
 		)
 		(property "Macrofab" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "76d4f3cb-0959-43d6-ad4a-4d52753180b4")
@@ -2795,7 +2806,7 @@
 			(uuid "8ebf40f3-83ed-4afc-ad4d-92fd595fa347")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 360)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "375fc190-185b-4ffd-821f-578262ee4cc3")
@@ -4021,7 +4032,7 @@
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C3"
-			(at 0 -1.05 360)
+			(at 0 -1.05 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "fdc71664-431b-436c-bf1d-4dbbba95d257")
@@ -4033,7 +4044,7 @@
 			)
 		)
 		(property "Value" "0.1uf"
-			(at 0 1.05 360)
+			(at 0 1.05 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "22a5c455-4559-4163-aee6-129098232de9")
@@ -4234,7 +4245,7 @@
 			(uuid "9a611c80-9de2-49ee-98fc-3aa82c75a406")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.68 360)
+			(at 0 -0.68 0)
 			(layer "F.Fab")
 			(uuid "667c7634-f16d-436c-b83d-8eb4bd60a104")
 			(effects
@@ -7256,7 +7267,7 @@
 		(at 142.1229 108.499999 90)
 		(tags "LSM6DSV ")
 		(property "Reference" "U5"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
