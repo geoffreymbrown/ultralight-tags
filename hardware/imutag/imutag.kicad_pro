@@ -59,7 +59,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|152554821|108327321|2e9d72ae-8d74-4738-af55-992a0413147c|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|154550000|108500000|00000000-0000-0000-0000-00005c101149|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -579,7 +582,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../gebrown/CompassTag.step",
+      "step": "../../../../IMUTag.step",
       "svg": "",
       "vrml": ""
     },

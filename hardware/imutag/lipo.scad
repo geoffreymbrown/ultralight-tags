@@ -4,5 +4,5 @@ difference() {
     translate([-.3,0,0])cube([4.2,0.8,8],true);
     translate([-1.5,1.2,0])cube([2.5,3.1,8],true);
 }
-translate([-6,-1.9,0])cube([10.5,3,9],true);
+translate([-5.5,-1.65,0])cube([9,2.5,10.5],true);
 
