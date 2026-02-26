@@ -1,1 +1,1 @@
-add_pcb_outputs(BitTagNG)
+add_pcb_outputs(CompassTag)
