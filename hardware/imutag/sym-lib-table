@@ -6,4 +6,5 @@
   (lib (name "lis2du12")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libraries/lib_sch/LIS2DU12TR.kicad_sym")(options "")(descr ""))
   (lib (name "lsm6dsv")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libraries/lib_sch/lsm6dsv.kicad_sym")(options "")(descr ""))
   (lib (name "ak09940a")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libraries/lib_sch/AK09940a.kicad_sym")(options "")(descr ""))
+  (lib (name "mx25")(type "KiCad")(uri "${KIPRJMOD}/mx25.kicad_sym")(options "")(descr ""))
 )
