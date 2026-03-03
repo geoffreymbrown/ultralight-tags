@@ -3999,10 +3999,6 @@
 		(uuid "f65d6067-2151-47e2-b064-8add3bc7970f")
 	)
 	(no_connect
-		(at 67.31 44.45)
-		(uuid "01c83342-fc9c-448f-b20c-64bc674c27d7")
-	)
-	(no_connect
 		(at 242.57 135.89)
 		(uuid "49c3ac8f-0a5e-459d-a938-dd6881727553")
 	)
@@ -4333,6 +4329,16 @@
 			(type default)
 		)
 		(uuid "38912760-d1cb-4555-b494-dc477879ebe8")
+	)
+	(wire
+		(pts
+			(xy 80.01 44.45) (xy 80.01 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b36628d-4afd-4dc3-8d13-33d95be2d9de")
 	)
 	(wire
 		(pts
@@ -4703,6 +4709,16 @@
 			(type default)
 		)
 		(uuid "7ef63d17-44d9-4588-8767-bd4c9a81a539")
+	)
+	(wire
+		(pts
+			(xy 67.31 44.45) (xy 80.01 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8517cc27-a599-46c7-99de-42f4d05237f4")
 	)
 	(wire
 		(pts
@@ -10189,6 +10205,72 @@
 			(project "imutag"
 				(path "/e44ca67a-43be-444b-8652-f54825a2eb6f"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V8")
+		(at 80.01 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d66bba4b-92ed-4eee-bf36-adffcd0f45c9")
+		(property "Reference" "#PWR10"
+			(at 80.01 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 80.01 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 80.01 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4795bf7e-181b-41bd-9402-91f76f8e4461")
+		)
+		(instances
+			(project "imutag"
+				(path "/e44ca67a-43be-444b-8652-f54825a2eb6f"
+					(reference "#PWR10")
 					(unit 1)
 				)
 			)

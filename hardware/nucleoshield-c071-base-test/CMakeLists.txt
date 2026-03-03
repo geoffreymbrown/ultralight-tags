@@ -1,0 +1,1 @@
+add_pcb_outputs(nucleoshield-c071-base-test)
