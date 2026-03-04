@@ -1,28 +1,186 @@
-(module library:RV-8803-C7 (layer F.Cu) (tedit 5B203443)
-  (attr smd)
-  (fp_text reference U501 (at 0.1 3 180) (layer F.SilkS) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value RV-3028-C7 (at 0 -3.3 180) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_line (start 1.1 -1.7) (end -1.1 -1.7) (layer F.CrtYd) (width 0.15))
-  (fp_line (start 1.1 1.7) (end 1.1 -1.7) (layer F.CrtYd) (width 0.15))
-  (fp_line (start -1.1 1.7) (end 1.1 1.7) (layer F.CrtYd) (width 0.15))
-  (fp_line (start -1.1 -1.7) (end -1.1 1.7) (layer F.CrtYd) (width 0.15))
-  (fp_line (start -1.2 -1.8) (end -1.2 -1.3) (layer F.SilkS) (width 0.15))
-  (fp_line (start -0.7 -1.8) (end -1.2 -1.8) (layer F.SilkS) (width 0.15))
-  (pad 8 smd rect (at 0.6 -1.35) (size 0.8 0.5) (layers F.Cu F.Paste F.Mask))
-  (pad 7 smd rect (at 0.6 -0.45) (size 0.8 0.5) (layers F.Cu F.Paste F.Mask))
-  (pad 6 smd rect (at 0.6 0.45) (size 0.8 0.5) (layers F.Cu F.Paste F.Mask))
-  (pad 5 smd rect (at 0.6 1.35) (size 0.8 0.5) (layers F.Cu F.Paste F.Mask))
-  (pad 4 smd rect (at -0.6 1.35) (size 0.8 0.5) (layers F.Cu F.Paste F.Mask))
-  (pad 3 smd rect (at -0.6 0.45) (size 0.8 0.5) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at -0.6 -0.45) (size 0.8 0.5) (layers F.Cu F.Paste F.Mask))
-  (pad 1 smd rect (at -0.6 -1.35) (size 0.8 0.5) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/RV-3028-C7.stp
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 90))
-  )
+(footprint "RV-8803-C7"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "U501"
+		(at 0.1 3 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8c85c434-6834-4d53-a3f3-adc5e00d06e6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RV-3028-C7"
+		(at 0 -3.3 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "03a588e8-0c22-4735-9acb-eb0b34e485fd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b33e36b6-f0c1-47aa-87d2-7b6f1ee7b022")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "df8a9c33-448b-4eb6-ae82-739f4e175392")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2532e0e1-5ee6-474a-913b-17e62601ff87")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.2 -1.8)
+		(end -1.2 -1.3)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c713d8cb-01a8-4608-8ea8-8234043f7802")
+	)
+	(fp_line
+		(start -0.7 -1.8)
+		(end -1.2 -1.8)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6a12c719-d6d1-4bee-a78e-86c803656d07")
+	)
+	(fp_line
+		(start -1.1 -1.7)
+		(end -1.1 1.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0585737b-0337-4bcd-8f9b-f636db50b766")
+	)
+	(fp_line
+		(start -1.1 1.7)
+		(end 1.1 1.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "94e33403-a5f2-43b3-86a8-493e3839b93b")
+	)
+	(fp_line
+		(start 1.1 -1.7)
+		(end -1.1 -1.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1977d47e-f86c-434d-8117-249180a94697")
+	)
+	(fp_line
+		(start 1.1 1.7)
+		(end 1.1 -1.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "09909bc0-a6b0-48ab-9662-4293219c6eee")
+	)
+	(pad "1" smd rect
+		(at -0.6 -1.35)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e9ab19bf-b4fd-45c1-bc09-b73e9f091db9")
+	)
+	(pad "2" smd rect
+		(at -0.6 -0.45)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b50c386c-054a-493e-9114-aed7f6d56e35")
+	)
+	(pad "3" smd rect
+		(at -0.6 0.45)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "69eea27f-99b7-40c4-a6e0-c3aa7eea837b")
+	)
+	(pad "4" smd rect
+		(at -0.6 1.35)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c8e8a90f-a96c-46f8-918c-2bc4997f6458")
+	)
+	(pad "5" smd rect
+		(at 0.6 1.35)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e7921c70-b973-445b-9f4f-7d914c117fde")
+	)
+	(pad "6" smd rect
+		(at 0.6 0.45)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "7b2f0fad-530e-4dd9-b200-d67cd56af86b")
+	)
+	(pad "7" smd rect
+		(at 0.6 -0.45)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "6e49986b-bee7-483d-8ff7-d0317ffc61dc")
+	)
+	(pad "8" smd rect
+		(at 0.6 -1.35)
+		(size 0.8 0.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "3cb412c9-1cd3-445d-847d-446eee43c048")
+	)
+	(model "${KIPRJMOD}/../kicad_libraries/3d_models/RV-3028-C7.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
 )

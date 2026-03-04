@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(tags "LSM6DSV ")
 	(property "Reference" "REF**"
-		(at 0 0 0)
+		(at 0.6 -2.4 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "c3a67984-b4a9-40fe-b1e7-a97018d9376c")
@@ -1137,5 +1137,16 @@
 		(size 0.3048 0.5334)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "1c946b8c-92cc-4343-ae2d-b33bee2e177b")
+	)
+	(model "${KIPRJMOD}/../kicad_libraries/3d_models/LGA14-L_2P59X3P1X0P5_STM.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )

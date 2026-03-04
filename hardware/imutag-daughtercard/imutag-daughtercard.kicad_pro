@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.1,
-          "height": 1.1,
-          "width": 1.1
+          "drill": 0.0,
+          "height": 0.5,
+          "width": 2.3
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -60,8 +60,7 @@
         }
       ],
       "drc_exclusions": [
-        "lib_footprint_mismatch|152554821|108327321|2e9d72ae-8d74-4738-af55-992a0413147c|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|154550000|108500000|00000000-0000-0000-0000-00005c101149|00000000-0000-0000-0000-000000000000"
+        "starved_thermal|136225000|91630000|00000000-0000-0000-0000-00005fad715b|7d4ac576-218f-4f19-80ba-46be0db92933|F.Cu"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -126,21 +125,21 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.1016,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
-        "min_hole_clearance": 0.254,
-        "min_hole_to_hole": 0.254,
+        "min_copper_edge_clearance": 0.075,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.2032,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.19999999999999998,
-        "min_track_width": 0.1016,
-        "min_via_annular_width": 0.1016,
-        "min_via_diameter": 0.4572,
+        "min_through_hole_diameter": 0.30479999999999996,
+        "min_track_width": 0.15239999999999998,
+        "min_via_annular_width": 0.049999999999999996,
+        "min_via_diameter": 0.6604,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -189,14 +188,8 @@
       ],
       "track_widths": [
         0.0,
-        0.1016,
-        0.127,
-        0.1524,
-        0.2032,
-        0.254,
         0.3048,
-        0.508,
-        0.762
+        0.508
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -228,18 +221,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.4064,
-          "drill": 0.2032
-        },
-        {
-          "diameter": 0.4572,
-          "drill": 0.254
-        },
-        {
-          "diameter": 0.61,
-          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false,
@@ -476,7 +457,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "imutag.kicad_pro",
+    "filename": "imutag-daughtercard.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -488,48 +469,14 @@
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.51,
-        "microvia_drill": 0.13,
+        "microvia_diameter": 0.6096,
+        "microvia_drill": 0.3048,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1016,
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.1524,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.51,
-        "microvia_drill": 0.13,
-        "name": "MEDIUM",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1524,
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.13,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.51,
-        "microvia_drill": 0.13,
-        "name": "MIN",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.13,
-        "via_diameter": 0.74,
-        "via_drill": 0.3302,
+        "via_diameter": 0.6604,
+        "via_drill": 0.3048,
         "wire_width": 6
       },
       {
@@ -539,31 +486,31 @@
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.51,
-        "microvia_drill": 0.13,
-        "name": "WIDE",
+        "microvia_diameter": 0.6096,
+        "microvia_drill": 0.3048,
+        "name": "Large",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
+        "via_diameter": 0.6604,
+        "via_drill": 0.3048,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.13,
+        "clearance": 0.1524,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.51,
-        "microvia_drill": 0.13,
-        "name": "small",
+        "microvia_diameter": 0.6096,
+        "microvia_drill": 0.3048,
+        "name": "Medium",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.13,
-        "via_diameter": 0.74,
-        "via_drill": 0.3302,
+        "track_width": 0.1524,
+        "via_diameter": 0.6604,
+        "via_drill": 0.3048,
         "wire_width": 6
       }
     ],
@@ -582,7 +529,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../IMUTag.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -713,7 +660,7 @@
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
-      "default_text_size": 60.0,
+      "default_text_size": 50.0,
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
@@ -759,7 +706,7 @@
   },
   "sheets": [
     [
-      "e44ca67a-43be-444b-8652-f54825a2eb6f",
+      "4d87b1cc-f1d4-4d5c-b687-12b1ff6c9e14",
       "Root"
     ]
   ],

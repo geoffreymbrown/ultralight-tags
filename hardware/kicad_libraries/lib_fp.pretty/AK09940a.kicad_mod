@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(tags "AK09940A ")
 	(property "Reference" "REF**"
-		(at 0 0 0)
+		(at 0.1 -1.9 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "af45b092-da7b-4e6d-b52a-c2d419e278a9")
@@ -232,5 +232,16 @@
 		(size 0.2286 0.2286)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "3ac8c42c-1385-46b5-bf0d-81d3957e7186")
+	)
+	(model "${KIPRJMOD}/../kicad_libraries/3d_models/AK09940a.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )
