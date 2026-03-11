@@ -59,7 +59,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "hole_to_hole|124460000|93345000|27571cad-f8af-41ed-b6e0-81196542addf|37467625-f1d1-4257-8242-b6c6a1d30f32",
+          ""
+        ],
+        [
+          "hole_to_hole|129540000|93345000|38068ea1-ddb8-4c59-9618-c7e9aa0dbb0d|da7d33f5-9e05-465d-837f-ba3350bef217",
+          ""
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -718,7 +727,7 @@
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
+      "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"

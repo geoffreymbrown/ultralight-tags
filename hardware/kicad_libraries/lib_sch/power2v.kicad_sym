@@ -24,7 +24,7 @@
 			)
 		)
 		(property "Value" "+2V"
-			(at 0 5.08 0)
+			(at -0.254 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
