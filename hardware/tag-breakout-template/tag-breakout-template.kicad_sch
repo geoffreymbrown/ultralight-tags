@@ -2751,6 +2751,16 @@
 		)
 		(uuid "662a7596-095d-4f0b-b106-26072c3f0a11")
 	)
+	(text "Should be lps22df but jlcpcb only has lps22hh which \nis an inferior part with different registers"
+		(exclude_from_sim no)
+		(at 79.502 198.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "77761cfe-043f-4852-9e55-2af019f42357")
+	)
 	(text "PA3"
 		(exclude_from_sim no)
 		(at 101.6 74.93 0)
@@ -4536,7 +4546,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005f963550")
@@ -4649,7 +4659,7 @@
 		(at 106.68 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005f963556")
@@ -5085,7 +5095,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 123.4948 143.51 0)
 			(effects
 				(font
@@ -5121,7 +5131,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Murata"
+		(property "MFN" "YAGEO"
 			(at 124.46 139.7 0)
 			(effects
 				(font
@@ -5139,7 +5149,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 302.26 242.57 0)
 			(effects
 				(font
@@ -5148,7 +5158,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C181047"
+		(property "LCSC" "C14663"
 			(at 124.46 139.7 0)
 			(effects
 				(font
@@ -5332,7 +5342,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 220.0148 85.09 0)
 			(effects
 				(font
@@ -5368,7 +5378,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Murata"
+		(property "MFN" "YAGEO"
 			(at 220.98 81.28 0)
 			(effects
 				(font
@@ -5386,7 +5396,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 398.78 184.15 0)
 			(effects
 				(font
@@ -5395,7 +5405,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C181047"
+		(property "LCSC" "C14663"
 			(at 220.98 81.28 0)
 			(effects
 				(font
@@ -5577,7 +5587,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 254.9652 33.02 0)
 			(effects
 				(font
@@ -5613,7 +5623,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Murata"
+		(property "MFN" "YAGEO"
 			(at 254 29.21 0)
 			(effects
 				(font
@@ -5622,7 +5632,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM033C81E104KE14D"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 254 29.21 0)
 			(effects
 				(font
@@ -5640,7 +5650,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C181047"
+		(property "LCSC" "C14663"
 			(at 254 29.21 0)
 			(effects
 				(font
@@ -5814,7 +5824,7 @@
 				)
 			)
 		)
-		(property "Value" "LSM6DSV"
+		(property "Value" "LSM6DSV16XTR"
 			(at 81.28 110.49 0)
 			(effects
 				(font
@@ -5822,7 +5832,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LGA14-L_2P59X3P1X0P5_STM"
+		(property "Footprint" "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y"
 			(at 55.88 118.11 0)
 			(effects
 				(font
@@ -5851,7 +5861,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C41785564"
+		(property "LCSC" "C5267406"
 			(at 55.88 118.11 0)
 			(effects
 				(font
@@ -5948,7 +5958,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LPS22DF"
+		(property "Value" "LPS22HH"
 			(at 69.85 176.5299 0)
 			(effects
 				(font
@@ -5986,7 +5996,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C3253714"
+		(property "LCSC" "C2827824"
 			(at 81.28 176.53 0)
 			(effects
 				(font
@@ -6004,7 +6014,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LPS22DF"
+		(property "MPN" "LPS22HH"
 			(at 81.28 176.53 0)
 			(effects
 				(font
@@ -6145,7 +6155,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 246.0752 133.35 0)
 			(effects
 				(font
@@ -6181,7 +6191,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Murata"
+		(property "MFN" "YAGEO"
 			(at 245.11 129.54 0)
 			(effects
 				(font
@@ -6190,7 +6200,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM033C81E104KE14D"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 245.11 129.54 0)
 			(effects
 				(font
@@ -6208,7 +6218,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C181047"
+		(property "LCSC" "C14663"
 			(at 245.11 129.54 0)
 			(effects
 				(font
@@ -6524,7 +6534,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 157.7848 137.16 0)
 			(effects
 				(font
@@ -6560,7 +6570,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Murata"
+		(property "MFN" "YAGEO"
 			(at 158.75 133.35 0)
 			(effects
 				(font
@@ -6578,7 +6588,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 336.55 236.22 0)
 			(effects
 				(font
@@ -6587,7 +6597,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C181047"
+		(property "LCSC" "C14663"
 			(at 158.75 133.35 0)
 			(effects
 				(font
@@ -6639,7 +6649,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 40.9448 180.34 0)
 			(effects
 				(font
@@ -6675,7 +6685,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Murata"
+		(property "MFN" "YAGEO"
 			(at 41.91 176.53 0)
 			(effects
 				(font
@@ -6693,7 +6703,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 219.71 279.4 0)
 			(effects
 				(font
@@ -6702,7 +6712,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C181047"
+		(property "LCSC" "C14663"
 			(at 41.91 176.53 0)
 			(effects
 				(font
@@ -7084,7 +7094,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 28.2448 137.16 0)
 			(effects
 				(font
@@ -7120,7 +7130,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Murata"
+		(property "MFN" "YAGEO"
 			(at 29.21 133.35 0)
 			(effects
 				(font
@@ -7138,7 +7148,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 207.01 236.22 0)
 			(effects
 				(font
@@ -7147,7 +7157,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C181047"
+		(property "LCSC" "C14663"
 			(at 29.21 133.35 0)
 			(effects
 				(font
@@ -7968,7 +7978,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 215.5952 33.02 0)
 			(effects
 				(font
@@ -8004,7 +8014,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Murata"
+		(property "MFN" "Samsung Electro-Mechanics"
 			(at 214.63 29.21 0)
 			(effects
 				(font
@@ -8013,7 +8023,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM033R60J105MEA2D"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 214.63 29.21 0)
 			(effects
 				(font
@@ -8031,7 +8041,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C76930"
+		(property "LCSC" "C15849"
 			(at 214.63 29.21 0)
 			(effects
 				(font
@@ -8083,7 +8093,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 53.6448 180.34 0)
 			(effects
 				(font
@@ -8119,7 +8129,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Murata"
+		(property "MFN" "YAGEO"
 			(at 54.61 176.53 0)
 			(effects
 				(font
@@ -8137,7 +8147,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 232.41 279.4 0)
 			(effects
 				(font
@@ -8146,7 +8156,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C181047"
+		(property "LCSC" "C14663"
 			(at 54.61 176.53 0)
 			(effects
 				(font
@@ -8197,7 +8207,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 248.6152 33.02 0)
 			(effects
 				(font
@@ -8233,7 +8243,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "Murata"
+		(property "MFN" "Samsung Electro-Mechanics"
 			(at 247.65 29.21 0)
 			(effects
 				(font
@@ -8242,7 +8252,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM033R60J105MEA2D"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 247.65 29.21 0)
 			(effects
 				(font
@@ -8260,7 +8270,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C76930"
+		(property "LCSC" "C15849"
 			(at 247.65 29.21 0)
 			(effects
 				(font
