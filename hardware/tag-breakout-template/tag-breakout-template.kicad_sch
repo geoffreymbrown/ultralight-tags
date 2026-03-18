@@ -2719,16 +2719,6 @@
 		)
 		(uuid "540c171c-ad77-44ae-b61a-d43464430b89")
 	)
-	(text "Need capacitors for\nFlash"
-		(exclude_from_sim no)
-		(at 200.406 97.536 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "590a7e73-ea3d-4abd-ae99-ba5d3fd2a96d")
-	)
 	(text "PA6"
 		(exclude_from_sim no)
 		(at 101.6 82.55 0)
@@ -2858,16 +2848,6 @@
 			)
 		)
 		(uuid "b4955e49-55dc-48d3-b3b8-d26d02854072")
-	)
-	(text "Check capacitor requirements for LSM"
-		(exclude_from_sim no)
-		(at 83.312 144.272 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b59e7429-79f8-4c5a-b657-20c232402e79")
 	)
 	(text "PA10"
 		(exclude_from_sim no)

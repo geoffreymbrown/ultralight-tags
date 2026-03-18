@@ -4048,6 +4048,12 @@
 		(uuid "64b67c78-580a-49cb-a8e4-3a43bdfdedb5")
 	)
 	(junction
+		(at 104.14 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d4ba3a1-7f8e-4b17-922e-0adecb3441d0")
+	)
+	(junction
 		(at 177.8 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4100,12 +4106,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc93630d-98b6-4991-984b-f72aa14ad8cf")
-	)
-	(junction
-		(at 113.03 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cec777b9-bb47-45ac-836a-096707926584")
 	)
 	(junction
 		(at 260.35 140.97)
@@ -4388,6 +4388,16 @@
 			(type default)
 		)
 		(uuid "29dd55e3-62e4-44b7-882a-b03bb9d5d8ff")
+	)
+	(wire
+		(pts
+			(xy 104.14 41.91) (xy 115.57 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2acf24f2-b5d3-408c-92c3-8c07ad854ba3")
 	)
 	(wire
 		(pts
@@ -4821,16 +4831,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 49.53) (xy 115.57 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "792fd2b7-7477-4614-b2a3-64327efa1215")
-	)
-	(wire
-		(pts
 			(xy 238.76 93.98) (xy 242.57 93.98)
 		)
 		(stroke
@@ -5141,7 +5141,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 49.53) (xy 115.57 53.34)
+			(xy 115.57 41.91) (xy 115.57 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6379,7 +6379,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "GRM033C81E104KE14D"
 			(at 60.96 97.79 0)
 			(effects
 				(font
@@ -6493,7 +6493,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "GRM033C81E104KE14D"
 			(at 68.58 97.79 0)
 			(effects
 				(font
@@ -6598,7 +6598,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "GRM033C81E104KE14D"
 			(at 252.73 71.12 0)
 			(effects
 				(font
@@ -8083,7 +8083,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "GRM033C81E104KE14D"
 			(at 438.15 250.19 0)
 			(effects
 				(font
@@ -8179,7 +8179,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFN" "murata"
+		(property "MFN" "Murata"
 			(at 157.48 109.22 0)
 			(effects
 				(font
@@ -8188,7 +8188,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM033R60J105MEA2D"
+		(property "MPN" "GRM033C81E104KE14D"
 			(at 157.48 109.22 0)
 			(effects
 				(font
@@ -8206,7 +8206,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C76929"
+		(property "LCSC" "C181047"
 			(at 157.48 109.22 0)
 			(effects
 				(font
@@ -8515,6 +8515,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C181047"
+			(at 255.27 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "83526fab-e980-4ce6-a586-2a630d92a6a3")
 		)
@@ -8620,6 +8629,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C76930"
+			(at 248.92 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8796a708-d140-43c8-856a-e9e391ac74ad")
 		)
@@ -8718,6 +8736,15 @@
 		)
 		(property "DISTPN" "490-10403-1-ND"
 			(at 189.23 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C181047"
+			(at 257.81 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9717,6 +9744,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C76930"
+			(at 222.25 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "af7831af-69c6-4217-8036-58d06d6b1440")
 		)
@@ -10166,6 +10202,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 104.14 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c93762bf-0ea2-4998-8063-1569dc8d3379")
+		(property "Reference" "C4"
+			(at 107.95 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7uf"
+			(at 107.95 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 103.1748 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 104.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C335103"
+			(at 104.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "Murata"
+			(at 104.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GRM035R60J475ME15D"
+			(at 104.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "688d999e-50d6-4998-bf7d-a3e41979eb7e")
+		)
+		(pin "2"
+			(uuid "94f1d7de-147a-4f11-83d9-d66b1228fb85")
+		)
+		(instances
+			(project ""
+				(path "/e44ca67a-43be-444b-8652-f54825a2eb6f"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 240.03 77.47 0)
 		(unit 1)
@@ -10509,7 +10642,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C181047"
+		(property "MPN" "GRM033C81E104KE14D"
 			(at 342.9 243.84 0)
 			(effects
 				(font
