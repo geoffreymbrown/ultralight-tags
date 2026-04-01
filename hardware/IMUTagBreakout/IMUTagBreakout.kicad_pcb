@@ -6104,7 +6104,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "LMS_RDY PA9"
+	(gr_text "LPS_RDY PA9"
 		(at 147.32 91.44 0)
 		(layer "F.SilkS")
 		(uuid "03d87912-44eb-4e2c-bcd3-3d0b9cbf63d0")
@@ -6487,7 +6487,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "PA5 LPS_CK"
+	(gr_text "PA5 LMS_CK"
 		(at 109.22 106.68 0)
 		(layer "F.SilkS")
 		(uuid "ea247e38-f023-44fd-8bed-81cba30ddbf9")
@@ -6823,7 +6823,7 @@
 			(justify right mirror)
 		)
 	)
-	(gr_text "PA5 LPS_CK"
+	(gr_text "PA5 LMS_CK"
 		(at 118.237 106.68 0)
 		(layer "B.SilkS")
 		(uuid "a704122a-b3c8-4f90-b513-da82f26c265a")
@@ -6943,7 +6943,7 @@
 			(justify right mirror)
 		)
 	)
-	(gr_text "LMS_RDY PA9"
+	(gr_text "LPS_RDY PA9"
 		(at 137.541 91.44 0)
 		(layer "B.SilkS")
 		(uuid "f1923de5-3336-4b77-be4b-a32b920fa7be")

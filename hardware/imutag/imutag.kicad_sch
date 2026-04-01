@@ -9983,7 +9983,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS7A2018PDQN"
+		(property "Value" "TPS7A0218PDQNR"
 			(at 237.49 19.05 0)
 			(effects
 				(font
@@ -10000,7 +10000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a20.pdf"
+		(property "Datasheet" "https://www.ti.com/cn/lit/ds/symlink/tps7a02.pdf?ts=1774837401876&ref_url=https%253A%252F%252Fso.szlcsc.com%252F"
 			(at 237.49 13.97 0)
 			(effects
 				(font
@@ -10027,7 +10027,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TPS7A2018PDQNR"
+		(property "MPN" "TPS7A0218PDQNR"
 			(at 237.49 26.67 0)
 			(effects
 				(font
@@ -10036,11 +10036,20 @@
 				(hide yes)
 			)
 		)
-		(property "DISTPN" "296-TPS7A2018PDQNRCT-ND"
+		(property "DISTPN" "296-TPS7A0218PDQNRTR-ND"
 			(at 237.49 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" " C2862166"
+			(at 237.49 26.67 0)
+			(effects
+				(font
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
