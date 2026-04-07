@@ -1,0 +1,8 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C1,4.7uF,C_0805_2012Metric,138.385,-115.8094,0.0,top
+C2,1uF,C_0805_2012Metric,138.415,-113.3094,0.0,top
+J101,Conn_01x03,PinHeader_1x03_P2.54mm_Vertical,119.38,-78.74,180.0,top
+J3,Conn_01x17,PinHeader_1x17_P2.54mm_Vertical_Staggered,106.68,-96.52,0.0,bottom
+J4,Conn_01x17,PinHeader_1x17_P2.54mm_Vertical_Staggered,149.86,-96.52,0.0,bottom
+U1,ST-Steval,DIP-24_W15.24mm_Socket,132.08,-90.17,0.0,top
+U3,IS38SML01G1,SOIC-16W_7.5x10.3mm_P1.27mm,127.938,-113.3856,270.0,top
