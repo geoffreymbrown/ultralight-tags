@@ -16,7 +16,8 @@
 * limitations under the License.                                          *
 **************************************************************************/
 
-#define USEEPRINTF 1
+//#define USEEPRINTF 0
+#undef USEEPRINTF
 #include <stdint.h>
 #include <dp_swd.h>
 #include <debug_cm.h>
@@ -44,7 +45,7 @@ static inline void delay(int i)
     asm("mov r0,r0");
   }*/
 }
-
+/*
 static inline void toAnalog(ioline_t line)
 {
   stm32_gpio_t *port = PAL_PORT(line);
@@ -71,7 +72,7 @@ static inline void toOutput(ioline_t line)
   stm32_gpio_t *port = PAL_PORT(line);
   uint32_t pin = PAL_PAD(line);
   MODIFY_REG(port->MODER, 3 << (pin * 2), 1 << (pin * 2));
-}
+}*/
 
 static void _SetSWPinsIdle(void)
 {
